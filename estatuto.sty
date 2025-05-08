@@ -1,0 +1,155 @@
+\ProvidesPackage{estatuto}[2025/05/07 v1.0 Estatuto del CEFIS]
+\RequirePackage[spanish]{babel}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+
+% Layout packages
+\RequirePackage{geometry}
+\RequirePackage{setspace}
+\RequirePackage{microtype}
+\RequirePackage{lastpage}
+\RequirePackage{hyperref}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{xcolor}
+\RequirePackage{tocloft}
+\RequirePackage{cleveref}
+\RequirePackage{xparse}
+
+% Page geometry
+\geometry{
+  a4paper,
+  left=25mm, right=25mm,
+  top=20mm, bottom=25mm,
+  headheight=15pt, footskip=15mm, headsep=8mm
+}
+
+% Colors
+\definecolor{primary}{rgb}{0.75,0,0}
+\definecolor{secondary}{rgb}{0.4,0.0,0.0}
+
+% Spacing
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+\linespread{1.1}
+
+% Enumerate defaults
+\setlist{itemsep=0pt, parsep=0pt}
+\setlist[enumerate,1]{label=\arabic*., leftmargin=*}
+\setlist[enumerate,2]{label=\alph*., leftmargin=*}
+\setlist[enumerate,3]{label=(\roman*)., leftmargin=*}
+
+% Reference settings
+\hypersetup{
+  bookmarksopen=true,
+  colorlinks=true,
+  linkcolor=primary,
+  urlcolor=primary,
+  citecolor=primary
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[L]{\DocCorto}
+\fancyhead[R]{Pág. \thepage{} de \pageref*{LastPage}}
+\fancyfoot[C]{\DocFecha}
+
+% TOC settings
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{0}
+\renewcommand{\cftsecfont}{\sffamily\bfseries}
+\renewcommand{\cftsecpagefont}{\sffamily}
+\renewcommand{\cftsubsecfont}{\sffamily}
+\renewcommand{\cftsubsecpagefont}{\sffamily}
+\setlength{\cftbeforesecskip}{0.3em}
+\setlength{\cftbeforesubsecskip}{0.2em}
+
+% cleveref names for Articles
+\crefname{art}{Art.}{Arts.}
+\Crefname{art}{Artículo}{Artículos}
+
+% Counters
+\newcounter{tit}
+\newcounter{cap}[tit]
+\newcounter{art}
+\newcounter{artitem}[art]
+\newcounter{subitem}[artitem]
+\newcounter{subsubitem}[subitem]
+
+% Number formats
+\renewcommand{\theart}{\arabic{art}}
+\renewcommand{\theartitem}{\theart.\arabic{artitem}}
+\renewcommand{\thesubitem}{\theartitem.\alph{subitem}}
+\renewcommand{\thesubsubitem}{\thesubitem.\roman{subsubitem}}
+
+% Helper for "Art. <ref>"
+\newcommand{\aref}[1]{Art.~\ref{art:#1}}
+
+% macros for Titulo, Capitulo, Articulo
+\newcommand{\Titulo}[1]{%
+  \clearpage
+  \refstepcounter{tit}%
+  \begingroup
+    \centering
+    {\sffamily\bfseries\large TÍTULO~\Roman{tit}}\par
+    {\sffamily\bfseries\large #1}\par
+  \endgroup
+  \medskip
+  \phantomsection
+  \addcontentsline{toc}{section}{TÍTULO \Roman{tit}: #1}
+  \markboth{TÍTULO \Roman{tit}: #1}{TÍTULO \Roman{tit}: #1}
+}
+
+\newcommand{\Capitulo}[1]{%
+  \refstepcounter{cap}%
+  \medskip
+  {\sffamily\bfseries\large CAPÍTULO~\Roman{cap}}\par
+  {\sffamily\bfseries\large #1}\par
+  \smallskip
+  \phantomsection
+  \addcontentsline{toc}{subsection}{Capítulo \Roman{cap}: #1}
+}
+
+\NewDocumentCommand{\Articulo}{ o m }{% [key]{text}
+  \refstepcounter{art}%
+  \smallskip
+  {\normalfont\bfseries Artículo~\theart°.~#2\par}
+  \IfValueT{#1}{\label{art:#1}}%
+}
+% add if you want the name of the article: ~#2\par
+
+% Modified artitems environment to use custom settings
+\NewDocumentEnvironment{artitems}{ O{} }{%
+  \begin{enumerate}[#1,nosep,topsep=0pt,partopsep=0pt,parsep=0pt,before={\vspace{0pt}},after={\vspace{0pt}}]
+}{%
+  \end{enumerate}
+}
+\makeatletter
+% artitem: step, \item, then override \@currentlabel, then label
+\NewDocumentCommand{\artitem}{ o m }{%
+  \refstepcounter{artitem}%
+  \item\ignorespaces#2\ignorespaces%
+  \protected@xdef\@currentlabel{\theartitem}%
+  \IfValueT{#1}{\label{art:#1}}%
+}
+
+% subartitem
+\NewDocumentCommand{\subartitem}{ o m }{%
+  \refstepcounter{subitem}%
+  \item\ignorespaces#2\ignorespaces%
+  \protected@xdef\@currentlabel{\thesubitem}%
+  \IfValueT{#1}{\label{art:#1}}%
+}
+
+% subsubartitem
+\NewDocumentCommand{\subsubartitem}{ o m }{%
+  \refstepcounter{subsubitem}%
+  \item\ignorespaces#2\ignorespaces%
+  \protected@xdef\@currentlabel{\thesubsubitem}%
+  \IfValueT{#1}{\label{art:#1}}%
+}
+\makeatother
