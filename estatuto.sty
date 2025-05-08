@@ -9,11 +9,13 @@
 \RequirePackage{microtype}
 \RequirePackage{lastpage}
 \RequirePackage{hyperref}
+\RequirePackage{refcount}
 \RequirePackage{enumitem}
 \RequirePackage{fancyhdr}
 \RequirePackage{xcolor}
 \RequirePackage{tocloft}
 \RequirePackage{cleveref}
+\RequirePackage{xstring}
 \RequirePackage{xparse}
 
 % Page geometry
@@ -46,7 +48,8 @@
   colorlinks=true,
   linkcolor=primary,
   urlcolor=primary,
-  citecolor=primary
+  citecolor=primary,
+  breaklinks=true
 }
 
 % Header and footer
@@ -87,7 +90,14 @@
 \renewcommand{\thesubsubitem}{\thesubitem.\roman{subsubitem}}
 
 % Helper for "Art. <ref>"
-\newcommand{\aref}[1]{Art.~\ref{art:#1}}
+\NewDocumentCommand{\aref}{ m }{%
+  \edef\CurrentRefText{\getrefnumber{art:#1}}%
+  \IfSubStr{\CurrentRefText}{.}{%
+    Art.~\ref{art:#1}
+  }{%
+    Art.~\ref{art:#1}°%
+  }%
+}
 
 % macros for Titulo, Capitulo, Articulo
 \newcommand{\Titulo}[1]{%
@@ -120,7 +130,6 @@
   {\normalfont\bfseries Artículo~\theart°.~#2\par}
   \IfValueT{#1}{\label{art:#1}}%
 }
-% add if you want the name of the article: ~#2\par
 
 % Modified artitems environment to use custom settings
 \NewDocumentEnvironment{artitems}{ O{} }{%
