@@ -93,7 +93,7 @@
 \NewDocumentCommand{\aref}{ m }{%
   \edef\CurrentRefText{\getrefnumber{art:#1}}%
   \IfSubStr{\CurrentRefText}{.}{%
-    Art.~\ref{art:#1}
+    Art.~\ref{art:#1}%
   }{%
     Art.~\ref{art:#1}°%
   }%
@@ -137,6 +137,7 @@
 }{%
   \end{enumerate}
 }
+
 \makeatletter
 % artitem: step, \item, then override \@currentlabel, then label
 \NewDocumentCommand{\artitem}{ o m }{%
