@@ -2,23 +2,30 @@
 \usepackage{estatuto}
 
 % Metadata
-\newcommand{\DocNom}{ESTATUTO DEL CENTRO DE ESTUDIANTES DE FÍSICA}
+\newcommand{\DocNom}{ESTATUTO DEL\\CENTRO DE ESTUDIANTES DE FÍSICA}
 \newcommand{\DocCorto}{Estatuto del CEFIS}
 \newcommand{\DocFecha}{\today}
-\newcommand{\DocAutor}{Propuesta del Comité Estatutario}
-
+\newcommand{\DocAutor}{Comité Estatutario de la Escuela Profesional de Física}
+\newcommand{\DocUniversidad}{Universidad Nacional Mayor de San Marcos}
 \begin{document}
 
 % Cover page
 \begin{titlepage}
-    \null%
-    \vfill
     \begin{center}
-        {\sffamily\bfseries\LARGE \DocNom\par}
+        \null%
+        \vfill
+
+        {\sffamily\bfseries\fontsize{16}{19}\selectfont \DocNom\par}
+
+        \vspace{0.5cm}
+
         {\sffamily\Large \DocAutor\par}
-        {\sffamily\large \DocFecha\par}
+        \vspace{0.25cm}
+        {\sffamily\small \DocUniversidad\par}
+
+        \vfill
+        {\sffamily\normalsize Última modificación: \DocFecha\par}
     \end{center}
-    \vfill
 \end{titlepage}
 
 % Table of contents
