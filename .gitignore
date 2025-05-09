@@ -1,0 +1,40 @@
+# LaTeX intermediate and output files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.lof
+*.lot
+*.fls
+*.gls
+*.glg
+*.glo
+*.glg-abr
+*.glo-abr
+*.gls-abr
+*.ist
+*.slg
+*.slo
+*.sls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex
+*.pdf
+*.xdv
+
+# Editors
+*.swp
+*.swo
+*~
+._*
+.DS_Store
+Thumbs.db
+
+# Output directories (optional, if you use one)
+build/
+out/
