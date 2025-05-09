@@ -20,10 +20,10 @@
 
 % Page geometry
 \geometry{
-  a4paper,
-  left=25mm, right=25mm,
-  top=20mm, bottom=25mm,
-  headheight=15pt, footskip=15mm, headsep=8mm
+    a4paper,
+    left=25mm, right=25mm,
+    top=20mm, bottom=25mm,
+    headheight=15pt, footskip=15mm, headsep=8mm
 }
 
 \definecolor{primary}{rgb}{0.75,0,0}     % Primary color (dark red)
@@ -42,13 +42,13 @@
 
 % Hyperref settings
 \hypersetup{
-  bookmarksopen=true,
-  colorlinks=true,
-  linkcolor=primary,
-  urlcolor=primary,
-  citecolor=primary,
-  breaklinks=true,
-  unicode=true
+    bookmarksopen=true,
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    citecolor=primary,
+    breaklinks=true,
+    unicode=true
 }
 
 % Cleveref names for Articles
@@ -90,33 +90,33 @@
 
 % Helper command for referencing articles
 \NewDocumentCommand{\aref}{ m }{%
-  Art.~\ref{art:#1}%
+    Art.~\ref{art:#1}%
 }
 
 % Title command
 \newcommand{\Titulo}[1]{%
-  \clearpage
-  \refstepcounter{tit}%
-  \begingroup
+    \clearpage
+    \refstepcounter{tit}%
+    \begingroup
     \centering
     {\sffamily\bfseries\large TÍTULO~\Roman{tit}}\par
     {\sffamily\bfseries\large #1}\par
-  \endgroup
-  \medskip
-  \phantomsection
-  \addcontentsline{toc}{section}{TÍTULO \Roman{tit}: #1}
-  \markboth{TÍTULO \Roman{tit}: #1}{TÍTULO \Roman{tit}: #1}
+    \endgroup
+    \medskip
+    \phantomsection
+    \addcontentsline{toc}{section}{TÍTULO \Roman{tit}: #1}
+    \markboth{TÍTULO \Roman{tit}: #1}{TÍTULO \Roman{tit}: #1}
 }
 
 % Chapter command
 \newcommand{\Capitulo}[1]{%
-  \refstepcounter{cap}%
-  \vspace{2em}
-  {\sffamily\bfseries\large CAPÍTULO~\Roman{cap}}\par
-  {\sffamily\bfseries\large #1}\par
-  \smallskip
-  \phantomsection
-  \addcontentsline{toc}{subsection}{Capítulo \Roman{cap}: #1}
+    \refstepcounter{cap}%
+    \vspace{2em}
+    {\sffamily\bfseries\large CAPÍTULO~\Roman{cap}}\par
+    {\sffamily\bfseries\large #1}\par
+    \smallskip
+    \phantomsection
+    \addcontentsline{toc}{subsection}{Capítulo \Roman{cap}: #1}
 }
 
 % Article and item commands
@@ -124,41 +124,41 @@
 
 % Article command with optional label
 \NewDocumentCommand{\Articulo}{ o m }{% [key]{text}
-  \refstepcounter{art}%
-  % Define label with degree symbol
-  \protected@xdef\@currentlabel{\theart\textdegree}%
-  \smallskip
-  {\normalfont\bfseries Artículo~\theart\textdegree.~#2\par}%
-  \IfValueT{#1}{\label{art:#1}}%
+    \refstepcounter{art}%
+    % Define label with degree symbol
+    \protected@xdef\@currentlabel{\theart\textdegree}%
+    \smallskip
+    {\normalfont\bfseries Artículo~\theart\textdegree.~#2\par}%
+    \IfValueT{#1}{\label{art:#1}}%
 }
 
 % Environment for items within an article
 \NewDocumentEnvironment{artitems}{ O{} }{%
-  \begin{enumerate}[#1,nosep,topsep=0pt,partopsep=0pt,parsep=0pt,before={\vspace{0pt}},after={\vspace{0pt}}]
-}{%
-  \end{enumerate}
+    \begin{enumerate}[#1,nosep,topsep=0pt,partopsep=0pt,parsep=0pt,before={\vspace{0pt}},after={\vspace{0pt}}]
+        }{%
+    \end{enumerate}
 }
 
 % Item commands with consistent structure
 \NewDocumentCommand{\artitem}{ o m }{%
-  \refstepcounter{artitem}%
-  \item\ignorespaces#2\ignorespaces%
-  \protected@xdef\@currentlabel{\theartitem}%
-  \IfValueT{#1}{\label{art:#1}}%
+    \refstepcounter{artitem}%
+    \item\ignorespaces#2\ignorespaces%
+    \protected@xdef\@currentlabel{\theartitem}%
+    \IfValueT{#1}{\label{art:#1}}%
 }
 
 \NewDocumentCommand{\subartitem}{ o m }{%
-  \refstepcounter{subitem}%
-  \item\ignorespaces#2\ignorespaces%
-  \protected@xdef\@currentlabel{\thesubitem}%
-  \IfValueT{#1}{\label{art:#1}}%
+    \refstepcounter{subitem}%
+    \item\ignorespaces#2\ignorespaces%
+    \protected@xdef\@currentlabel{\thesubitem}%
+    \IfValueT{#1}{\label{art:#1}}%
 }
 
 \NewDocumentCommand{\subsubartitem}{ o m }{%
-  \refstepcounter{subsubitem}%
-  \item\ignorespaces#2\ignorespaces%
-  \protected@xdef\@currentlabel{\thesubsubitem}%
-  \IfValueT{#1}{\label{art:#1}}%
+    \refstepcounter{subsubitem}%
+    \item\ignorespaces#2\ignorespaces%
+    \protected@xdef\@currentlabel{\thesubsubitem}%
+    \IfValueT{#1}{\label{art:#1}}%
 }
 
 \makeatother
