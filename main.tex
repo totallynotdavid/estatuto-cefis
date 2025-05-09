@@ -1,4 +1,10 @@
 \documentclass[11pt]{article}
+
+\usepackage[record=off, style=list, toc, section, symbols, automake, abbreviations]{glossaries-extra}
+\setabbreviationstyle[acronym]{long-short}
+\makeglossaries%
+\input{glosario.tex}
+
 \usepackage{estatuto}
 
 % Metadata
@@ -34,117 +40,120 @@
 \clearpage
 \pagenumbering{arabic}
 
+\clearpage
+\printglossary[type=\acronymtype, title={Abreviaciones}]
+
 % ----- Estatuto -----
 
 \Titulo{Disposiciones generales}
 
 \Articulo{Denominación}
-El gremio estudiantil de la Escuela Profesional de Física (E.P. de Física) de la Facultad de Ciencias Físicas de la Universidad Nacional Mayor de San Marcos (UNMSM) se denomina Centro de Estudiantes de Física, cuyas siglas son CEFIS.\@{}
+El gremio estudiantil de la \gls{epf} de la Facultad de Ciencias Físicas de la \gls{unmsm} se denomina \gls{cefis}, cuyas siglas son CEFIS.\@{}
 
 \Articulo{Naturaleza legal}
-El CEFIS, como gremio estudiantil único de la E.P. de Física, rige su existencia y funcionamiento bajo el amparo del artículo 188 del Estatuto de la UNMSM, el derecho de asociación estudiantil (Art. 100.6, Ley Universitaria 30220) y el derecho de asociación (Art. 2, inciso 13, Constitución Política del Perú).
+El \gls{cefis}, como gremio estudiantil único de la \gls{epf}, rige su existencia y funcionamiento bajo el amparo del artículo 188 del Estatuto de la \gls{unmsm}, el derecho de asociación estudiantil (Art. 100.6, Ley Universitaria 30220) y el derecho de asociación (Art. 2, inciso 13, Constitución Política del Perú).
 
 \Articulo{Duración}
-La duración del CEFIS es indefinida e inicia sus actividades luego de la aprobación del presente Estatuto y la elección de su primera Junta Directiva.
+La duración del \gls{cefis} es indefinida e inicia sus actividades luego de la aprobación del presente \gls{estatuto} y la elección de su primera \gls{jd}.
 
 \Articulo{Domicilio}
-La sede y domicilio legal del CEFIS se ubica en los espacios asignados dentro de la Facultad de Ciencias Físicas, Ciudad Universitaria de la UNMSM, Av. Venezuela cdra. 34, Cercado de Lima, Lima.
+La sede y domicilio legal del \gls{cefis} se ubica en los espacios asignados dentro de la Facultad de Ciencias Físicas, Ciudad Universitaria de la \gls{unmsm}, Av. Venezuela cdra. 34, Cercado de Lima, Lima.
 
 \Articulo[art:principios-cefis]{Principios}
-El CEFIS se rige por los siguientes principios:
+El \gls{cefis} se rige por los siguientes principios:
 \begin{artitems}[nosep]
-    \artitem{Respeto irrestricto a todos los estudiantes de la E.P. de Física, con igualdad y sin discriminación.}%
-    \artitem{Prevalencia del interés estudiantil y los derechos reconocidos en la Constitución, Ley Universitaria, Estatuto UNMSM y este Estatuto.}
+    \artitem{Respeto irrestricto a todos los estudiantes de la \gls{epf}, con igualdad y sin discriminación.}%
+    \artitem{Prevalencia del interés estudiantil y los derechos reconocidos en la Constitución, Ley Universitaria, Estatuto \gls{unmsm} y este \gls{estatuto}.}
     \artitem{Autonomía política y administrativa respecto a las autoridades universitarias y otros entes.}
     \artitem{Actitud crítica y racional frente a las propuestas y decisiones de las autoridades pertenecientes a la comunidad universitaria.}
     \artitem{Ética, transparencia y rendición de cuentas en todas sus acciones y decisiones. Acceso a la información pública del gremio garantizado.}
     \artitem{Cultura democrática y de solidaridad con la comunidad sanmarquina.}
-    \artitem{Reconocimiento y fomento de la participación voluntaria y el compromiso de los/las agremiados/as en las actividades y la gestión del CEFIS.}
+    \artitem{Reconocimiento y fomento de la participación voluntaria y el compromiso de los/las \glspl{agremiado} en las actividades y la gestión del \gls{cefis}.}
 \end{artitems}
 
 \Articulo[art:fines-obj-cefis]{Fines y objetivos}
-Los fines y objetivos del CEFIS son:
+Los fines y objetivos del \gls{cefis} son:
 \begin{artitems}
-    \artitem{Representar y defender los derechos e intereses individuales y colectivos de los estudiantes de la E.P. de Física.}
+    \artitem{Representar y defender los derechos e intereses individuales y colectivos de los estudiantes de la \gls{epf}.}
     \artitem[item:fines-obj-cefis:desarrollo-academico]{Promover y contribuir al desarrollo académico-intelectual, cultural y recreativo dentro de la formación de los estudiantes.}
     \artitem{Fiscalizar la gestión de las autoridades competentes para asegurar las condiciones adecuadas para las actividades académicas y estudiantiles.}
     \artitem{Fomentar la mejora constante y progresiva de la calidad educativa y de la plana docente.}
     \artitem{Promover la participación informada y activa del estudiantado en la vida universitaria y en las decisiones que le conciernen.}
     \artitem{Forjar y mantener una actitud crítica y una conducta consciente y comprometida con la problemática universitaria y educativa nacional.}
-    \artitem{Establecer y mantener vínculos de cooperación con otros gremios estudiantiles y organizaciones afines, dentro y fuera de la UNMSM, en concordancia con los principios y fines del CEFIS.}
+    \artitem{Establecer y mantener vínculos de cooperación con otros gremios estudiantiles y organizaciones afines, dentro y fuera de la \gls{unmsm}, en concordancia con los principios y fines del \gls{cefis}.}
 \end{artitems}
 
 \Titulo{Del patrimonio y recursos}
 
 \Articulo[art:patrimonio-cefis]{Patrimonio del CEFIS}
-El patrimonio del CEFIS comprende todos los bienes muebles e inmuebles, recursos materiales e inmateriales, y rentas derivadas, adquiridos legítimamente (compra, donación, etc.). Su administración corresponde a la Junta Directiva vigente, orientada por los fines y principios del Estatuto y sujeta a rendición de cuentas.
+El patrimonio del \gls{cefis} comprende todos los bienes muebles e inmuebles, recursos materiales e inmateriales, y rentas derivadas, adquiridos legítimamente (compra, donación, etc.). Su administración corresponde a la \gls{jd} vigente, orientada por los fines y principios del \gls{estatuto} y sujeta a rendición de cuentas.
 
 \Articulo[art:inventario-bienes]{Inventario de bienes}
 \begin{artitems}
-    \artitem{Todo el patrimonio del CEFIS se registra detalladamente en un inventario de bienes, el cual incluye una descripción precisa de cada bien, su estado de conservación y la fecha de adquisición o recepción.}
+    \artitem{Todo el patrimonio del \gls{cefis} se registra detalladamente en un inventario de bienes, el cual incluye una descripción precisa de cada bien, su estado de conservación y la fecha de adquisición o recepción.}
     \artitem{El registro es inmediato tras la adquisición o recepción. El inventario se actualiza y verifica físicamente al menos semestralmente.}
-    \artitem{La Secretaría de Actas y Economía es responsable de mantener actualizado y accesible el inventario como parte del Registro Central.}
+    \artitem{La Secretaría de Actas y Economía es responsable de mantener actualizado y accesible el inventario como parte del \gls{registro_central}.}
 \end{artitems}
 
 \Articulo[art:cefis-ambientes]{Uso de ambientes}
-El CEFIS tiene derecho al uso y administración de los espacios físicos cedidos por la Facultad para sus actividades. El uso se rige por este Estatuto y reglamentos específicos aprobados por la Junta Directiva (JD) para cada espacio, los cuales deben ser publicados y respetados. Para espacios con gestión particular, como bibliotecas estudiantiles o ambientes de representantes estudiantiles, los reglamentos de uso se elaboran en coordinación con sus responsables designados o comisiones gestoras, si las hubiere, y son aprobados por la JD.\@{} La JD es responsable de velar por el correcto uso general de los ambientes.
+El \gls{cefis} tiene derecho al uso y administración de los espacios físicos cedidos por la Facultad para sus actividades. El uso se rige por este \gls{estatuto} y reglamentos específicos aprobados por la \gls{jd} para cada espacio, los cuales deben ser publicados y respetados. Para espacios con gestión particular, como bibliotecas estudiantiles o ambientes de representantes estudiantiles, los reglamentos de uso se elaboran en coordinación con sus responsables designados o \glspl{comisiones_trabajo} gestoras, si las hubiere, y son aprobados por la \gls{jd}. La \gls{jd} es responsable de velar por el correcto uso general de los ambientes.
 
 \Articulo[art:recursos-financieros]{Recursos financieros}
-La administración y control de los recursos financieros del CEFIS se lleva a cabo conforme a las siguientes disposiciones:
+La administración y control de los recursos financieros del \gls{cefis} se lleva a cabo conforme a las siguientes disposiciones:
 \begin{artitems}
-    \artitem[item:recursos-financieros:registro-movimientos]{Todo ingreso y egreso se registra en un Libro Contable (físico o digital) dentro de los tres (3) días hábiles de ocurrida la transacción. El registro incluye fecha y hora de la transacción, concepto, monto y comprobante válido (factura, boleta, recibo, declaración jurada simple para gastos menores justificados). La Secretaría de Actas y Economía es responsable de este registro, que forma parte del Registro Central.}
-    \artitem{La Secretaría de Actas y Economía gestiona las cuentas bancarias o plataformas de pago (como Yape u otras aprobadas por la JD) a nombre del CEFIS.\@{} Solicita y archiva en el Registro Central los estados de cuenta o reportes mensuales.}
-    \artitem[item:recursos-financieros:balances]{Se presenta un Balance General semestral a la Junta de Representantes (JR) y anual a la Asamblea General de Estudiantes (AGE). Toda la documentación financiera (Libro Contable, balances, reportes de cuentas, comprobantes) es parte del Registro Central y accesible para consulta de cualquier agremiado/a habilitado/a, siguiendo el procedimiento establecido por la JD y facilitado por la Secretaría de Actas y Economía.}
-    \artitem[item:recursos-financieros:autorizacion-egresos]{Los egresos deben estar alineados al presupuesto aprobado por la AGE y ser autorizados formalmente por la JD (registrado en acta de JD), con firma conjunta de la persona titular de la Secretaría General y de la Secretaría de Actas y Economía para montos que superen el umbral definido en el reglamento interno de la JD o, en su defecto, por acuerdo específico y registrado de la JD.}
+    \artitem[item:recursos-financieros:registro-movimientos]{Todo ingreso y egreso se registra en un \gls{libro_contable} (físico o digital) dentro de los tres (3) días hábiles de ocurrida la transacción. El registro incluye fecha y hora de la transacción, concepto, monto y comprobante válido (factura, boleta, recibo, declaración jurada simple para gastos menores justificados). La Secretaría de Actas y Economía es responsable de este registro, que forma parte del \gls{registro_central}.}
+    \artitem{La Secretaría de Actas y Economía gestiona las cuentas bancarias o plataformas de pago (como Yape u otras aprobadas por la \gls{jd}) a nombre del \gls{cefis}. Solicita y archiva en el \gls{registro_central} los estados de cuenta o reportes mensuales.}
+    \artitem[item:recursos-financieros:balances]{Se presenta un Balance General semestral a la \gls{jr} y anual a la \gls{age}. Toda la documentación financiera (\gls{libro_contable}, balances, reportes de cuentas, comprobantes) es parte del \gls{registro_central} y accesible para consulta de cualquier \gls{agremiado_habilitado}, siguiendo el procedimiento establecido por la \gls{jd} y facilitado por la Secretaría de Actas y Economía.}
+    \artitem[item:recursos-financieros:autorizacion-egresos]{Los egresos deben estar alineados al presupuesto aprobado por la \gls{age} y ser autorizados formalmente por la \gls{jd} (registrado en acta de \gls{jd}), con firma conjunta de la persona titular de la Secretaría General y de la Secretaría de Actas y Economía para montos que superen el umbral definido en el reglamento interno de la \gls{jd} o, en su defecto, por acuerdo específico y registrado de la \gls{jd}.}
 \end{artitems}
 
 \Articulo[art:canales-comunicacion]{Canales oficiales de comunicación}
-El CEFIS tiene bajo su titularidad todos los canales de comunicación que requiera pertinentes para el cumplimiento de sus fines. Los principales incluyen:
+El \gls{cefis} tiene bajo su titularidad todos los canales de comunicación que requiera pertinentes para el cumplimiento de sus fines. Los principales incluyen:
 \begin{artitems}
     \artitem{Un correo electrónico oficial para la recepción y envío de comunicaciones formales.}
     \artitem{Los perfiles oficiales en plataformas de redes sociales para la difusión de actividades, eventos y anuncios importantes.}
     \artitem{Un tablón de anuncios físico en un lugar visible y accesible en la Facultad.}
-    \artitem{Publicación de actas de AGE y comunicados oficiales.}
+    \artitem{Publicación de actas de \gls{age} y comunicados oficiales.}
 \end{artitems}
-La Secretaría de Prensa y Difusión es responsable de la gestión, mantenimiento y uso adecuado de estos canales, asegurando la difusión oportuna y veraz de la información oficial. Las comunicaciones oficiales deben archivarse en el Registro Central.
+La Secretaría de Prensa y Difusión es responsable de la gestión, mantenimiento y uso adecuado de estos canales, asegurando la difusión oportuna y veraz de la información oficial. Las comunicaciones oficiales deben archivarse en el \gls{registro_central}.
 
 \Titulo{De los agremiados del CEFIS}
 
 \Articulo[art:definicion-agremiado]{Condición de agremiado/a}
-Son agremiados/as del CEFIS todos los estudiantes de pregrado con matrícula vigente en el semestre académico regular en la E.P. de Física; esto incluye a quienes cuentan con reserva de matrícula válida o se encuentran en proceso de reactualización de matrícula. Se considera agremiado/a habilitado/a a quien cumple esta condición y no tiene suspendidos sus derechos conforme a este Estatuto.
+Son \glspl{agremiado} del \gls{cefis} todos los estudiantes de pregrado con matrícula vigente en el semestre académico regular en la \gls{epf}; esto incluye a quienes cuentan con reserva de matrícula válida o se encuentran en proceso de reactualización de matrícula. Se considera \gls{agremiado_habilitado} a quien cumple esta condición y no tiene suspendidos sus derechos conforme a este \gls{estatuto}.
 
 \Articulo{Pérdida de la condición de agremiado/a}
-Se pierde la condición de agremiado/a por:
+Se pierde la condición de \gls{agremiado} por:
 \begin{artitems}
-    \artitem[item:perdida-condicion-agremiado:egreso]{Concluir los estudios de pregrado en la E.P. de Física (egreso).}
-    \artitem{Renuncia voluntaria, comunicada por escrito (físico o correo electrónico oficial) a la Junta Directiva, la cual registra la renuncia.}
+    \artitem[item:perdida-condicion-agremiado:egreso]{Concluir los estudios de pregrado en la \gls{epf} (egreso).}
+    \artitem{Renuncia voluntaria, comunicada por escrito (físico o correo electrónico oficial) a la \gls{jd}, la cual registra la renuncia.}
     \artitem{Fallecimiento.}
-    \artitem{Exclusión por falta muy grave, acordada por la AGE conforme al procedimiento establecido en el \aref{art:age-procedimiento-sancionador} y la sanción contemplada en el \aref{item:age-sanciones-aplicables:exclusion-agremiado}.}
-    \artitem[item:perdida-condicion-agremiado:definitiva]{Pérdida definitiva de la condición de estudiante de la E.P. de Física (traslado, expulsión universitaria firme).}
+    \artitem{Exclusión por \gls{falta_muy_grave}, acordada por la \gls{age} conforme al procedimiento establecido en el \aref{art:age-procedimiento-sancionador} y la sanción contemplada en el \aref{item:age-sanciones-aplicables:exclusion-agremiado}.}
+    \artitem[item:perdida-condicion-agremiado:definitiva]{Pérdida definitiva de la condición de estudiante de la \gls{epf} (traslado, expulsión universitaria firme).}
 \end{artitems}
 
 \Articulo[art:deberes-agremiados]{Deberes de los agremiados/as}
-Son deberes de los agremiados/as:
+Son deberes de los \glspl{agremiado}:
 \begin{artitems}
-    \artitem{Conocer, respetar y cumplir el presente Estatuto, los reglamentos internos y los acuerdos válidamente adoptados por los órganos del CEFIS.}
-    \artitem{Respetar y defender los derechos de todos los demás agremiados/as y miembros de la comunidad universitaria.}
-    \artitem{Participar activamente en las asambleas y actividades convocadas por el CEFIS.}
-    \artitem{Actuar con ética y probidad en el ámbito universitario y en representación del CEFIS si fuera el caso.}
-    \artitem{Contribuir al logro de los fines del CEFIS.}
-    \artitem{Utilizar responsablemente los bienes, servicios y canales de comunicación del CEFIS.}
-    \artitem{Informar a la instancia correspondiente (JR o JD) sobre actos que presuntamente atenten contra este Estatuto, los principios del CEFIS o los derechos de los agremiados/as.}
+    \artitem{Conocer, respetar y cumplir el presente \gls{estatuto}, los reglamentos internos y los acuerdos válidamente adoptados por los órganos del \gls{cefis}.}
+    \artitem{Respetar y defender los derechos de todos los demás \glspl{agremiado} y miembros de la comunidad universitaria.}
+    \artitem{Participar activamente en las asambleas y actividades convocadas por el \gls{cefis}.}
+    \artitem{Actuar con ética y probidad en el ámbito universitario y en representación del \gls{cefis} si fuera el caso.}
+    \artitem{Contribuir al logro de los fines del \gls{cefis}.}
+    \artitem{Utilizar responsablemente los bienes, servicios y canales de comunicación del \gls{cefis}.}
+    \artitem{Informar a la instancia correspondiente (\gls{jr} o \gls{jd}) sobre actos que presuntamente atenten contra este \gls{estatuto}, los principios del \gls{cefis} o los derechos de los \glspl{agremiado}.}
 \end{artitems}
 
 \Articulo{Derechos de los agremiados/as}
-Son derechos de los agremiados/as habilitados/as:
+Son derechos de los \glspl{agremiado_habilitado}:
 \begin{artitems}
     \artitem{Participar con voz y voto en las Asambleas Generales y de Base.}
-    \artitem{Elegir y ser elegido/a para los órganos del CEFIS, cumpliendo los requisitos y sin discriminación.}%
-    \artitem{Expresar libremente sus ideas y opiniones en el marco del respeto mutuo y el Estatuto.}
-    \artitem{Solicitar y recibir información sobre la gestión, finanzas y actuación de los órganos del CEFIS, accediendo al Registro Central conforme a las normas, y fiscalizar dicha gestión.}
-    \artitem{Utilizar los servicios e instalaciones del CEFIS conforme a la normativa interna.}
-    \artitem{Presentar propuestas e iniciativas a los órganos del CEFIS.}
-    \artitem{Exigir el cumplimiento de sus derechos estudiantiles a través del CEFIS.}
+    \artitem{Elegir y ser elegido/a para los órganos del \gls{cefis}, cumpliendo los requisitos y sin discriminación.}%
+    \artitem{Expresar libremente sus ideas y opiniones en el marco del respeto mutuo y el \gls{estatuto}.}
+    \artitem{Solicitar y recibir información sobre la gestión, finanzas y actuación de los órganos del \gls{cefis}, accediendo al \gls{registro_central} conforme a las normas, y fiscalizar dicha gestión.}
+    \artitem{Utilizar los servicios e instalaciones del \gls{cefis} conforme a la normativa interna.}
+    \artitem{Presentar propuestas e iniciativas a los órganos del \gls{cefis}.}
+    \artitem{Exigir el cumplimiento de sus derechos estudiantiles a través del \gls{cefis}.}
     \artitem{A la protección de sus datos personales conforme a ley (Ley N 29733), usados solo para fines estatutarios.}
     \artitem[item:derechos-agremiados:proteccion-denuncias]{A recibir protección contra represalias por denunciar irregularidades de buena fe de conformidad con el \aref{item:jr-atribuciones:velar-proteccion-represalias} y el \aref{item:denuncia-mecanismo:proteccion-buena-fe}.}
 \end{artitems}
@@ -152,121 +161,121 @@ Son derechos de los agremiados/as habilitados/as:
 \Titulo{De la administración y gobierno del CEFIS}
 
 \Articulo[art:organos-gobierno]{Órganos de gobierno}
-Constituyen órganos del CEFIS:\@{}
+Constituyen órganos del \gls{cefis}:
 \begin{artitems}
-    \artitem{La Asamblea General de Estudiantes (AGE);}
-    \artitem{La Junta de Representantes (JR);}
-    \artitem{La Junta Directiva del CEFIS (JD);}
-    \artitem{La Asamblea de Base (AB); y}
-    \artitem{El Comité Electoral (CE).}
+    \artitem{La \glsentryfull{age};}
+    \artitem{La \glsentryfull{jr};}
+    \artitem{La \glsentryfull{jd};}
+    \artitem{La \glsentryfull{ab}; y}
+    \artitem{El \glsentryfull{ce}.}
 \end{artitems}
 
 \Articulo[art:registro-central]{El Registro Central del CEFIS}
 \begin{artitems}
-    \artitem{Se establece el Registro Central del CEFIS como el archivo organizado (físico y/o digital) de toda la documentación oficial del gremio.}
+    \artitem{Se establece el \gls{registro_central} como el archivo organizado (físico y/o digital) de toda la documentación oficial del gremio.}
     \artitem{La Secretaría de Actas y Economía es responsable de su administración, organización, custodia, actualización y de facilitar el acceso controlado según las normas. La Secretaría General supervisa su correcto funcionamiento.}
-    \artitem{El Registro Central contiene, como mínimo:}
+    \artitem{El \gls{registro_central} contiene, como mínimo:}
     \begin{enumerate}
-        \subartitem{El presente Estatuto y sus modificaciones.}
+        \subartitem{El presente \gls{estatuto} y sus modificaciones.}
         \subartitem{Los Reglamentos internos aprobados (Electoral, de Asambleas, de uso de ambientes, etc.).}
-        \subartitem{Las Actas de las Asambleas Generales (AGE).}
-        \subartitem{Las Actas de las sesiones de la Junta Directiva (JD).}
-        \subartitem{Las Actas de las sesiones de la Junta de Representantes (JR).}
-        \subartitem{Las Resoluciones y Actas del Comité Electoral (CE).}
-        \subartitem{El Padrón de agremiados/as habilitados/as (actualizado).}
+        \subartitem{Las Actas de las \glspl{age}.}
+        \subartitem{Las Actas de las sesiones de la \gls{jd}.}
+        \subartitem{Las Actas de las sesiones de la \gls{jr}.}
+        \subartitem{Las Resoluciones y Actas del \gls{ce}.}
+        \subartitem{El Padrón de \glspl{agremiado_habilitado} (actualizado).}
         \subartitem{El inventario de bienes actualizado (\aref{art:inventario-bienes}).}
-        \subartitem{La documentación financiera completa (Libro Contable, balances, reportes de cuentas, comprobantes) (\aref{art:recursos-financieros}).}
+        \subartitem{La documentación financiera completa (\gls{libro_contable}, balances, reportes de cuentas, comprobantes) (\aref{art:recursos-financieros}).}
         \subartitem{Los Planes Anuales de Trabajo y Presupuestos aprobados.}
-        \subartitem{Los informes de gestión (JD, JR, Comisiones).}
+        \subartitem{Los informes de gestión (\gls{jd}, \gls{jr}, Comisiones).}
         \subartitem{Comunicaciones oficiales emitidas y recibidas.}
-        \subartitem{Decisiones documentadas de la JD (incluyendo urgentes y sus ratificaciones).}
-        \subartitem{Registro de solicitudes de convocatoria a AGE y sus respuestas.}
-        \subartitem{Registro de denuncias, informes de investigación preliminar (JR) y decisiones finales de AGE en materia disciplinaria (conforme \aref{art:sanciones-registro-confidencial} sobre confidencialidad del registro de sanciones, y la debida reserva en investigaciones según \aref{subitem:investigacion-preliminar-proceso:alcance}).}
+        \subartitem{Decisiones documentadas de la \gls{jd} (incluyendo urgentes y sus ratificaciones).}
+        \subartitem{Registro de solicitudes de convocatoria a \gls{age} y sus respuestas.}
+        \subartitem{Registro de denuncias, informes de investigación preliminar (\gls{jr}) y decisiones finales de \gls{age} en materia disciplinaria (conforme \aref{art:sanciones-registro-confidencial} sobre confidencialidad del registro de sanciones, y la debida reserva en investigaciones según \aref{subitem:investigacion-preliminar-proceso:alcance}).}
         \subartitem{Registro de apelaciones, informes de revisión y decisiones finales (conforme \aref{art:elecciones-impugnaciones-apelaciones}, \aref{art:apelaciones-no-disciplinarias-generales}).}
-        \subartitem{Registro de las decisiones urgentes adoptadas por la Junta Directiva conforme al \aref{item:jd-atribuciones-generales:decisiones-urgentes}, incluyendo su justificación, informe a la JR y acta de ratificación por la AGE, si corresponde.}%
-        \subartitem{Registro de las solicitudes y decisiones de anulación por razones éticas adoptadas por la AGE conforme al \aref{art:anulacion-razones-eticas}, incluyendo su fundamentación.}
+        \subartitem{Registro de las decisiones urgentes adoptadas por la \gls{jd} conforme al \aref{item:jd-atribuciones-generales:decisiones-urgentes}, incluyendo su justificación, informe a la \gls{jr} y acta de ratificación por la \gls{age}, si corresponde.}%
+        \subartitem{Registro de las solicitudes y decisiones de anulación por razones éticas adoptadas por la \gls{age} conforme al \aref{art:anulacion-razones-eticas}, incluyendo su fundamentación.}
         \subartitem{Actas de transferencia de cargo (\aref{art:jd-informe-transferencia}).}
         \subartitem{Convenios o acuerdos con otras organizaciones.}
     \end{enumerate}
-    \artitem{La información pública del Registro (estatutos, reglamentos, actas de AGE, balances aprobados, planes de trabajo, informes de gestión públicos) es de libre acceso para los agremiados/as. El acceso a información sensible (datos personales, detalles financieros específicos, procesos disciplinarios confidenciales) es restringido según normativa y gestionado por la Secretaría de Actas y Economía.}
+    \artitem{La información pública del Registro (estatutos, reglamentos, actas de \gls{age}, balances aprobados, planes de trabajo, informes de gestión públicos) es de libre acceso para los \glspl{agremiado}. El acceso a información sensible (datos personales, detalles financieros específicos, procesos disciplinarios confidenciales) es restringido según normativa y gestionado por la Secretaría de Actas y Economía.}
 \end{artitems}
 
 \Capitulo{De la Asamblea General de Estudiantes (AGE)}
 
 \Articulo{Definición y composición}
-La AGE es la máxima instancia deliberativa y decisoria del CEFIS.\@{} Está integrada por la totalidad de los agremiados/as habilitados/as conforme al \aref{art:definicion-agremiado}.
+La \gls{age} es la máxima instancia deliberativa y decisoria del \gls{cefis}. Está integrada por la totalidad de los \glspl{agremiado_habilitado} conforme al \aref{art:definicion-agremiado}.
 
 \Articulo{Tipos de Asamblea}
-Las Asambleas Generales de Estudiantes se clasifican en:
+Las \glspl{age} se clasifican en:
 \begin{artitems}
-    \artitem{Ordinarias (AGE-O): Se realizan obligatoriamente dos (2) veces por semestre académico regular.}
-    \artitem{Extraordinarias (AGE-E): Se convocan cuando sea necesario, conforme a este Estatuto.}
+    \artitem{\gls{ageo}: Se realizan obligatoriamente dos (2) veces por semestre académico regular.}
+    \artitem{\gls{agee}: Se convocan cuando sea necesario, conforme a este \gls{estatuto}.}
 \end{artitems}
 
 \Articulo[art:age-convocatoria]{Convocatoria}
-La convocatoria a AGE es responsabilidad primaria de la Secretaría General de la Junta Directiva, y procede en los siguientes casos:
+La convocatoria a \gls{age} es responsabilidad primaria de la Secretaría General de la \gls{jd}, y procede en los siguientes casos:
 \begin{artitems}
-    \artitem{Acuerdo registrado en acta de la Junta Directiva.}
-    \artitem{Acuerdo registrado en acta de la Junta de Representantes.}
-    \artitem{Solicitud formal y registrada del Comité Electoral, para asuntos de su competencia exclusiva.}
-    \artitem{Solicitud formal (escrita o vía correo oficial del CEFIS) de al menos el cinco por ciento (5\%) de los agremiados/as habilitados/as, dirigida a la JD, especificando agenda. La JD registra la recepción de la solicitud.}
+    \artitem{Acuerdo registrado en acta de la \gls{jd}.}
+    \artitem{Acuerdo registrado en acta de la \gls{jr}.}
+    \artitem{Solicitud formal y registrada del \gls{ce}, para asuntos de su competencia exclusiva.}
+    \artitem{Solicitud formal (escrita o vía correo oficial del \gls{cefis}) de al menos el cinco por ciento (5\%) de los \glspl{agremiado_habilitado}, dirigida a la \gls{jd}, especificando agenda. La \gls{jd} registra la recepción de la solicitud.}
 \end{artitems}
 
 \Articulo{Plazos y procedimiento de convocatoria}
 \begin{artitems}
-    \artitem[item:age-plazos-proc-convocatoria:emision]{Recibida una solicitud válida (conforme \aref{art:age-convocatoria}, numerales 2, 3 o 4), la JD tiene un plazo máximo de cinco (5) días hábiles para emitir la convocatoria o denegarla mediante decisión motivada y registrada en el Registro Central. La denegación se comunica al solicitante y a la JR en el mismo plazo.}
+    \artitem[item:age-plazos-proc-convocatoria:emision]{Recibida una solicitud válida (conforme \aref{art:age-convocatoria}, numerales 2, 3 o 4), la \gls{jd} tiene un plazo máximo de cinco (5) días hábiles para emitir la convocatoria o denegarla mediante decisión motivada y registrada en el \gls{registro_central}. La denegación se comunica al solicitante y a la \gls{jr} en el mismo plazo.}
     \artitem[item:age-plazos-proc-convocatoria:anticipacion]{La convocatoria se publica con la siguiente anticipación mínima:}
     \begin{enumerate}
-        \subartitem{Asamblea General Ordinaria: Diez (10) días calendario.}
-        \subartitem{Asamblea General Extraordinaria: Tres (3) días calendario.}
+        \subartitem{\glsentryfull{ageo}: Diez (10) días calendario.}
+        \subartitem{\glsentryfull{agee}: Tres (3) días calendario.}
     \end{enumerate}
-    \artitem{La convocatoria indica fecha, hora, lugar/plataforma, modalidad (presencial, virtual, híbrida), agenda detallada, y si aplica la segunda llamada con quórum reducido. Se difunde por todos los canales oficiales del CEFIS (\aref{art:canales-comunicacion}).}
+    \artitem{La convocatoria indica fecha, hora, lugar/plataforma, modalidad (presencial, virtual, híbrida), agenda detallada, y si aplica la segunda llamada con quórum reducido. Se difunde por todos los canales oficiales del \gls{cefis} (\aref{art:canales-comunicacion}).}
 \end{artitems}
 
 \Articulo[art:age-convocatoria-subsidiaria]{Convocatoria subsidiaria}
-Si la persona titular de la Secretaría General no convoca en el plazo (\aref{item:age-plazos-proc-convocatoria:emision}) o la deniega sin justificación válida (evaluada por la JR en tres (3) días hábiles, cuya decisión se registra), la Junta de Representantes puede convocar directamente la AGE, cumpliendo los plazos de difusión (\aref{item:age-plazos-proc-convocatoria:anticipacion}). La convocatoria y la decisión de la JR se registran en el Registro Central.
+Si la persona titular de la Secretaría General no convoca en el plazo (\aref{item:age-plazos-proc-convocatoria:emision}) o la deniega sin justificación válida (evaluada por la \gls{jr} en tres (3) días hábiles, cuya decisión se registra), la \gls{jr} puede convocar directamente la \gls{age}, cumpliendo los plazos de difusión (\aref{item:age-plazos-proc-convocatoria:anticipacion}). La convocatoria y la decisión de la \gls{jr} se registran en el \gls{registro_central}.
 
 \Articulo{Convocatoria de urgencia}
-En casos excepcionales de extrema urgencia debidamente justificada por la Junta Directiva o la Junta de Representantes, que afecten gravemente los intereses colectivos de los estudiantes, la AGE-E podrá convocarse con anticipación menor a la establecida, incluso para el mismo día. La justificación y convocatoria deben documentarse, registrarse y difundirse de inmediato. La validez de la urgencia debe ser ratificada por la propia AGE al inicio de la sesión, constando en acta.
+En casos excepcionales de extrema urgencia debidamente justificada por la \gls{jd} o la \gls{jr}, que afecten gravemente los intereses colectivos de los estudiantes, la \gls{agee} podrá convocarse con anticipación menor a la establecida, incluso para el mismo día. La justificación y convocatoria deben documentarse, registrarse y difundirse de inmediato. La validez de la urgencia debe ser ratificada por la propia \gls{age} al inicio de la sesión, constando en acta.
 
 \Articulo[art:age-quorum-1ra-llamada]{Quórum de instalación (Primera convocatoria --- primera llamada)}
 Se requiere la presencia verificada (física o virtual) y registrada en acta de:
 \begin{artitems}
-    \artitem{La persona titular de la Secretaría General y de la Secretaría de Actas y Economía de la JD (o sus reemplazos válidos, \aref{art:jd-cooperacion-suplencia}).}
-    \artitem{Personas titulares de Delegaturas o Subdelegaturas que representen a la mayoría simple (mitad más uno) de las bases activas (definidas en \aref{art:jr-definicion-composicion}).}
-    \artitem{Un mínimo de quince (15) agremiados/as habilitados/as, incluyendo a quienes se mencionan en los numerales anteriores.}
+    \artitem{La persona titular de la Secretaría General y de la Secretaría de Actas y Economía de la \gls{jd} (o sus reemplazos válidos, \aref{art:jd-cooperacion-suplencia}).}
+    \artitem{Personas titulares de \glspl{delegatura} o \glspl{subdelegatura} que representen a la mayoría simple (mitad más uno) de las \glspl{base_activa} (definidas en \aref{art:jr-definicion-composicion}).}
+    \artitem{Un mínimo de quince (15) \glspl{agremiado_habilitado}, incluyendo a quienes se mencionan en los numerales anteriores.}
 \end{artitems}
 
 \Articulo[art:age-quorum-2da-llamada]{Quórum de instalación (Primera convocatoria --- segunda llamada)}
-Treinta (30) minutos después de la hora fijada, si no se alcanza el quórum inicial, la AGE se instala válidamente con la presencia verificada y registrada de:
+Treinta (30) minutos después de la hora fijada, si no se alcanza el quórum inicial, la \gls{age} se instala válidamente con la presencia verificada y registrada de:
 \begin{artitems}
     \artitem{La persona titular de la Secretaría General y de la Secretaría de Actas y Economía (o reemplazos).}
-    \artitem{Personas titulares de Delegaturas o Subdelegaturas que representen al menos a un tercio (1/3) de las bases activas.}
-    \artitem{Un mínimo de doce (12) agremiados/as habilitados/as presentes en total, incluyendo a quienes se mencionan en los numerales anteriores.}
+    \artitem{Personas titulares de \glspl{delegatura} o \glspl{subdelegatura} que representen al menos a un tercio (1/3) de las \glspl{base_activa}.}
+    \artitem{Un mínimo de doce (12) \glspl{agremiado_habilitado} presentes en total, incluyendo a quienes se mencionan en los numerales anteriores.}
 \end{artitems}
 La posibilidad de segunda llamada debe constar en la convocatoria.
 
 \Articulo[art:age-quorum-2da-convocatoria]{Quórum de instalación (Segunda convocatoria --- reprogramada)}
-Si no se alcanza quórum en segunda llamada, la JD (o la JR si convocó subsidiariamente) debe convocar a una nueva AGE (segunda convocatoria) para la misma agenda, entre siete (7) y quince (15) días calendario después. Esta segunda convocatoria se instala válidamente con la presencia verificada y registrada de:
+Si no se alcanza quórum en segunda llamada, la \gls{jd} (o la \gls{jr} si convocó subsidiariamente) debe convocar a una nueva \gls{age} (segunda convocatoria) para la misma agenda, entre siete (7) y quince (15) días calendario después. Esta segunda convocatoria se instala válidamente con la presencia verificada y registrada de:
 \begin{artitems}
     \artitem{La persona titular de la Secretaría General y de la Secretaría de Actas y Economía (o reemplazos).}
-    \artitem{Cualquier número de titulares de Delegaturas o Subdelegaturas de bases activas presentes.}
-    \artitem{Un mínimo de diez (10) agremiados/as habilitados/as presentes en total, incluyendo a quienes se mencionan en los numerales anteriores.}
+    \artitem{Cualquier número de titulares de \glspl{delegatura} o \glspl{subdelegatura} de \glspl{base_activa} presentes.}
+    \artitem{Un mínimo de diez (10) \glspl{agremiado_habilitado} presentes en total, incluyendo a quienes se mencionan en los numerales anteriores.}
 \end{artitems}
 La convocatoria debe indicar expresamente que se trata de una segunda convocatoria y que se instalará con el quórum reducido.
 
 \Articulo{Dirección de la Asamblea}
-Preside la AGE la persona titular de la Secretaría General de la JD.\@{} En su ausencia, la persona titular de la Secretaría Académica. En ausencia de ambas, la AGE designará a un miembro presente de la JD o la JR para dirigir los debates. La persona titular de la Secretaría de Actas y Economía actúa como secretaría de la Asamblea; en su ausencia, la AGE designa una secretaría ad hoc entre los agremiados/as presentes. Estas designaciones constan en acta.
+Preside la \gls{age} la persona titular de la Secretaría General de la \gls{jd}. En su ausencia, la persona titular de la Secretaría Académica. En ausencia de ambas, la \gls{age} designará a un miembro presente de la \gls{jd} o la \gls{jr} para dirigir los debates. La persona titular de la Secretaría de Actas y Economía actúa como secretaría de la Asamblea; en su ausencia, la \gls{age} designa una secretaría ad hoc entre los \glspl{agremiado} presentes. Estas designaciones constan en acta.
 
 \Articulo[art:age-acuerdos-mayorias]{Adopción de acuerdos y mayorías}
 \begin{artitems}
-    \artitem{Los acuerdos se adoptan por regla general con el voto favorable de la mitad más uno de los agremiados/as habilitados/as presentes al momento de la votación. El número de votantes y el resultado (a favor, en contra, abstenciones) se registra en acta.}
-    \artitem{Se requiere el voto favorable de dos tercios de los agremiados/as habilitados/as presentes para:}
+    \artitem{Los acuerdos se adoptan por regla general con el voto favorable de la mitad más uno de los \glspl{agremiado_habilitado} presentes al momento de la votación. El número de votantes y el resultado (a favor, en contra, abstenciones) se registra en acta.}
+    \artitem{Se requiere el voto favorable de dos tercios de los \glspl{agremiado_habilitado} presentes para:}
     \begin{enumerate}
-        \subartitem[subitem:age-acuerdos-mayorias:modificar-estatuto-2tercios]{Modificar el presente Estatuto (\aref{item:agee-atribuciones:modificar-estatuto}, \aref{item:estatuto-aprobacion-modificacion:mayoria-2tercios}).}
-        \subartitem[subitem:age-acuerdos-mayorias:disolucion-cefis-2tercios]{Acordar la disolución del CEFIS (\aref{item:agee-atribuciones:disolver-cefis}, \aref{item:disolucion-procedimiento:voto-2tercios}).}
-        \subartitem[subitem:age-acuerdos-mayorias:remocion-jd-2tercios]{Acordar la remoción de miembros de la Junta Directiva por falta grave (\aref{item:agee-atribuciones:evaluar-remover-jd}, \aref{item:age-sanciones-aplicables:remocion-cargo}).}%
-        \subartitem[subitem:age-acuerdos-mayorias:exclusion-agremiado-2tercios]{Acordar la exclusión de un/a agremiado/a por falta muy grave (\aref{item:agee-atribuciones:resolver-faltas-graves}, \aref{item:age-sanciones-aplicables:exclusion-agremiado}).}
+        \subartitem[subitem:age-acuerdos-mayorias:modificar-estatuto-2tercios]{Modificar el presente \gls{estatuto} (\aref{item:agee-atribuciones:modificar-estatuto}, \aref{item:estatuto-aprobacion-modificacion:mayoria-2tercios}).}
+        \subartitem[subitem:age-acuerdos-mayorias:disolucion-cefis-2tercios]{Acordar la disolución del \gls{cefis} (\aref{item:agee-atribuciones:disolver-cefis}, \aref{item:disolucion-procedimiento:voto-2tercios}).}
+        \subartitem[subitem:age-acuerdos-mayorias:remocion-jd-2tercios]{Acordar la remoción de miembros de la \gls{jd} por \gls{falta_grave} (\aref{item:agee-atribuciones:evaluar-remover-jd}, \aref{item:age-sanciones-aplicables:remocion-cargo}).}%
+        \subartitem[subitem:age-acuerdos-mayorias:exclusion-agremiado-2tercios]{Acordar la exclusión de un/a \gls{agremiado} por \gls{falta_muy_grave} (\aref{item:agee-atribuciones:resolver-faltas-graves}, \aref{item:age-sanciones-aplicables:exclusion-agremiado}).}
         \subartitem[subitem:age-acuerdos-mayorias:anulacion-etica-2tercios]{Anular una decisión por razones éticas (\aref{item:anulacion-razones-eticas:procedimiento-agee}).}
     \end{enumerate}
     \artitem{Las votaciones son públicas y nominales, a mano alzada (presencial) o mediante herramientas electrónicas verificables (virtual/híbrida) que permitan el registro individual del voto, salvo que la Asamblea acuerde por mayoría simple el voto secreto para casos específicos (elecciones internas, asuntos personales sensibles), garantizando siempre la verificación del quórum y el resultado.}
@@ -274,108 +283,108 @@ Preside la AGE la persona titular de la Secretaría General de la JD.\@{} En su 
 
 \Articulo{Actas, registro y publicación}
 \begin{artitems}
-    \artitem{La persona titular de la Secretaría de Actas y Economía (o la secretaría ad hoc) es responsable de redactar el acta de cada AGE.\@{} El acta consigna lugar/plataforma, fecha, hora de inicio/fin, lista de asistentes verificados, agenda tratada, resumen de debates principales, acuerdos adoptados textualmente y resultados de las votaciones (incluyendo número de votos a favor, en contra y abstenciones).}
+    \artitem{La persona titular de la Secretaría de Actas y Economía (o la secretaría ad hoc) es responsable de redactar el acta de cada \gls{age}. El acta consigna lugar/plataforma, fecha, hora de inicio/fin, lista de asistentes verificados, agenda tratada, resumen de debates principales, acuerdos adoptados textualmente y resultados de las votaciones (incluyendo número de votos a favor, en contra y abstenciones).}
     \artitem{El acta es firmada por quien presidió y quien actuó en la secretaría.}
-    \artitem[item:age-actas-registro:publicacion-archivo]{El acta es un documento oficial, se publica en los canales oficiales del CEFIS y se archiva en el Registro Central en un plazo máximo de siete (7) días hábiles tras la sesión. Las actas son accesibles para consulta de todos los agremiados/as.}
+    \artitem[item:age-actas-registro:publicacion-archivo]{El acta es un documento oficial, se publica en los canales oficiales del \gls{cefis} y se archiva en el \gls{registro_central} en un plazo máximo de siete (7) días hábiles tras la sesión. Las actas son accesibles para consulta de todos los \glspl{agremiado}.}
 \end{artitems}
 
 \Articulo{Reglamento de Asambleas}
-El funcionamiento detallado de las AGE (debate, uso de la palabra, mociones, disciplina, procedimientos específicos por modalidad, registro de intervenciones) se rige por un Reglamento de Asambleas. Este será propuesto por la JD o la JR y aprobado/modificado por AGE por mayoría simple. Este reglamento debe ser revisado formalmente al menos cada dos (2) años (\aref{item:ageo-atribuciones:actualizar-criterios-bienal}).
+El funcionamiento detallado de las \glspl{age} (debate, uso de la palabra, mociones, disciplina, procedimientos específicos por modalidad, registro de intervenciones) se rige por un \gls{reglamento_asambleas}. Este será propuesto por la \gls{jd} o la \gls{jr} y aprobado/modificado por \gls{age} por mayoría simple. Este reglamento debe ser revisado formalmente al menos cada dos (2) años (\aref{item:ageo-atribuciones:actualizar-criterios-bienal}).
 
 \Articulo{Obligatoriedad y ejecución de acuerdos}
 \begin{artitems}
-    \artitem{Los acuerdos válidamente adoptados en AGE y registrados en acta son vinculantes para todos los agremiados/as y órganos del CEFIS.}
-    \artitem{La Junta Directiva es la principal responsable de ejecutar los acuerdos, debiendo documentar su avance en el Registro Central. La Junta de Representantes supervisa activamente su cumplimiento.}
+    \artitem{Los acuerdos válidamente adoptados en \gls{age} y registrados en acta son vinculantes para todos los \glspl{agremiado} y órganos del \gls{cefis}.}
+    \artitem{La \gls{jd} es la principal responsable de ejecutar los acuerdos, debiendo documentar su avance en el \gls{registro_central}. La \gls{jr} supervisa activamente su cumplimiento.}
 \end{artitems}
 
 \Articulo[art:ageo-atribuciones]{Atribuciones de la Asamblea General Ordinaria (AGE-O)}
-Son atribuciones principales de la AGE-O:\@{}
+Son atribuciones principales de la \gls{ageo}:
 \begin{artitems}
-    \artitem{Elegir a las personas integrantes de la Junta Directiva y del Comité Electoral.}
-    \artitem{Aprobar el Plan Anual de Trabajo y el Presupuesto presentados por la JD entrante.}
-    \artitem{Evaluar y aprobar el informe anual de gestión y el balance económico-patrimonial presentado por la JD saliente, previo informe de revisión emitido y registrado por la JR.}
-    \artitem{Aprobar la creación o disolución de comisiones permanentes, a propuesta de JD o JR, incluyendo comisiones para la gestión de espacios específicos como la Biblioteca Estudiantil.}
-    \artitem{Recibir y debatir informes periódicos de gestión de la JD y la JR.}
-    \artitem{Aprobar o modificar el Reglamento de Asambleas y otros reglamentos internos (excepto el Reglamento Electoral, cuya aprobación o modificación corresponde a la AGE-E conforme al \aref{item:agee-atribuciones:aprobar-reglamento-electoral}).}
-    \artitem[item:ageo-atribuciones:actualizar-criterios-bienal]{Revisar y actualizar formalmente, al menos cada dos (2) años, los criterios de elegibilidad para cargos, los reglamentos internos (incluyendo Asambleas y Electoral) y otros procedimientos documentados, a propuesta de la JD o la JR.}
+    \artitem{Elegir a las personas integrantes de la \gls{jd} y del \gls{ce}.}
+    \artitem{Aprobar el Plan Anual de Trabajo y el Presupuesto presentados por la \gls{jd} entrante.}
+    \artitem{Evaluar y aprobar el informe anual de gestión y el balance económico-patrimonial presentado por la \gls{jd} saliente, previo informe de revisión emitido y registrado por la \gls{jr}.}
+    \artitem{Aprobar la creación o disolución de \glspl{comisiones_trabajo} permanentes, a propuesta de \gls{jd} o \gls{jr}, incluyendo comisiones para la gestión de espacios específicos como la Biblioteca Estudiantil.}
+    \artitem{Recibir y debatir informes periódicos de gestión de la \gls{jd} y la \gls{jr}.}
+    \artitem{Aprobar o modificar el \gls{reglamento_asambleas} y otros reglamentos internos (excepto el \gls{reglamento_electoral}, cuya aprobación o modificación corresponde a la \gls{agee} conforme al \aref{item:agee-atribuciones:aprobar-reglamento-electoral}).}
+    \artitem[item:ageo-atribuciones:actualizar-criterios-bienal]{Revisar y actualizar formalmente, al menos cada dos (2) años, los criterios de elegibilidad para cargos, los reglamentos internos (incluyendo Asambleas y Electoral) y otros procedimientos documentados, a propuesta de la \gls{jd} o la \gls{jr}.}
     \artitem{Tratar otros asuntos de gestión ordinaria y planificación que consten en agenda.}
-    \artitem{Interpretar auténticamente el Estatuto (\aref{item:estatuto-interpretacion:final-age}).}
+    \artitem{Interpretar auténticamente el \gls{estatuto} (\aref{item:estatuto-interpretacion:final-age}).}
 \end{artitems}
 
 \Articulo[art:agee-atribuciones]{Atribuciones de la Asamblea General Extraordinaria (AGE-E)}
-Son atribuciones principales de la AGE-E:\@{}
+Son atribuciones principales de la \gls{agee}:
 \begin{artitems}
-    \artitem[item:agee-atribuciones:modificar-estatuto]{Modificar el presente Estatuto (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:modificar-estatuto-2tercios}).}
-    \artitem[item:agee-atribuciones:aprobar-reglamento-electoral]{Aprobar o modificar el Reglamento Electoral.}
-    \artitem[item:agee-atribuciones:evaluar-remover-jd]{Evaluar la gestión y determinar responsabilidades de la JD o sus miembros. Acordar su remoción por causa justificada (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:remocion-jd-2tercios}), previo informe documentado y recomendación de la JR o comisión ad hoc designada por la AGE.\@{} Se debe garantizar el debido proceso (derecho a descargo, presentación de pruebas), el cual queda registrado en acta (\aref{art:investigacion-preliminar-proceso}).}
-    \artitem{Evaluar la actuación de la JR y emitir recomendaciones registradas en acta.}
-    \artitem{Ratificar o anular decisiones específicas de la JD consideradas contrarias al Estatuto, sus principios, fines del CEFIS o acuerdos previos de AGE.\@{} Esto procede a solicitud fundamentada y registrada de la JR o del diez por ciento (10\%) de agremiados/as habilitados/as.}
-    \artitem[item:agee-atribuciones:resolver-faltas-graves]{Resolver sobre faltas graves o muy graves de agremiados/as, pudiendo aplicar sanciones (incluyendo la exclusión, con mayoría de 2/3 conforme al \aref{subitem:age-acuerdos-mayorias:exclusion-agremiado-2tercios}), siguiendo el procedimiento establecido en el \aref{art:age-procedimiento-sancionador}, garantizando debido proceso registrado en acta y considerando informe previo de la JR.}
+    \artitem[item:agee-atribuciones:modificar-estatuto]{Modificar el presente \gls{estatuto} (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:modificar-estatuto-2tercios}).}
+    \artitem[item:agee-atribuciones:aprobar-reglamento-electoral]{Aprobar o modificar el \gls{reglamento_electoral}.}
+    \artitem[item:agee-atribuciones:evaluar-remover-jd]{Evaluar la gestión y determinar responsabilidades de la \gls{jd} o sus miembros. Acordar su remoción por causa justificada (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:remocion-jd-2tercios}), previo informe documentado y recomendación de la \gls{jr} o comisión ad hoc designada por la \gls{age}. Se debe garantizar el debido proceso (derecho a descargo, presentación de pruebas), el cual queda registrado en acta (\aref{art:investigacion-preliminar-proceso}).}
+    \artitem{Evaluar la actuación de la \gls{jr} y emitir recomendaciones registradas en acta.}
+    \artitem{Ratificar o anular decisiones específicas de la \gls{jd} consideradas contrarias al \gls{estatuto}, sus principios, fines del \gls{cefis} o acuerdos previos de \gls{age}. Esto procede a solicitud fundamentada y registrada de la \gls{jr} o del diez por ciento (10\%) de \glspl{agremiado_habilitado}.}
+    \artitem[item:agee-atribuciones:resolver-faltas-graves]{Resolver sobre \glspl{falta_grave} o \glspl{falta_muy_grave} de \glspl{agremiado}, pudiendo aplicar sanciones (incluyendo la exclusión, con mayoría de 2/3 conforme al \aref{subitem:age-acuerdos-mayorias:exclusion-agremiado-2tercios}), siguiendo el procedimiento establecido en el \aref{art:age-procedimiento-sancionador}, garantizando debido proceso registrado en acta y considerando informe previo de la \gls{jr}.}
     \artitem{Adoptar decisiones políticas institucionales urgentes ante crisis o situaciones que afecten gravemente al estudiantado, con justificación de urgencia registrada en acta.}
-    \artitem{Acordar medidas de fuerza colectivas en defensa de los derechos estudiantiles, previa evaluación y recomendación fundamentada y registrada por la JR.}
+    \artitem{Acordar medidas de fuerza colectivas en defensa de los derechos estudiantiles, previa evaluación y recomendación fundamentada y registrada por la \gls{jr}.}
     \artitem{Aprobar acuerdos de cooperación o afiliación con otras organizaciones.}
-    \artitem[item:agee-atribuciones:disolver-cefis]{Acordar la disolución y liquidación del CEFIS (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:disolucion-cefis-2tercios}).}
-    \artitem{Cubrir vacancias en la Junta Directiva o el Comité Electoral.}
-    \artitem[item:agee-atribuciones:resolver-apelacion-ce]{Resolver, en instancia final y definitiva, apelaciones sobre resoluciones del Comité Electoral únicamente por casos de grave irregularidad probada que vicie sustancialmente el proceso (\aref{item:ce-atribuciones:decisiones-efectivas}, \aref{item:elecciones-impugnaciones-apelaciones:agee-final-instancia}). La decisión debe ser motivada y registrada en acta.}
-    \artitem{Resolver apelaciones sobre decisiones administrativas de la JD que la JR eleve (\aref{item:apelaciones-no-disciplinarias-generales:elevacion-age}).}
+    \artitem[item:agee-atribuciones:disolver-cefis]{Acordar la disolución y liquidación del \gls{cefis} (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:disolucion-cefis-2tercios}).}
+    \artitem{Cubrir vacancias en la \gls{jd} o el \gls{ce}.}
+    \artitem[item:agee-atribuciones:resolver-apelacion-ce]{Resolver, en instancia final y definitiva, apelaciones sobre resoluciones del \gls{ce} únicamente por casos de grave irregularidad probada que vicie sustancialmente el proceso (\aref{item:ce-atribuciones:decisiones-efectivas}, \aref{item:elecciones-impugnaciones-apelaciones:agee-final-instancia}). La decisión debe ser motivada y registrada en acta.}
+    \artitem{Resolver apelaciones sobre decisiones administrativas de la \gls{jd} que la \gls{jr} eleve (\aref{item:apelaciones-no-disciplinarias-generales:elevacion-age}).}
     \artitem{Resolver solicitudes de anulación de decisiones por razones éticas (\aref{art:anulacion-razones-eticas}).}
-    \artitem{Resolver cualquier otro asunto de trascendencia no previsto o no competencia de la AGE-O, siempre que conste en agenda.}
+    \artitem{Resolver cualquier otro asunto de trascendencia no previsto o no competencia de la \gls{ageo}, siempre que conste en agenda.}
 \end{artitems}
 
 \Capitulo{De la Junta de Representantes (JR)}
 
 \Articulo[art:jr-definicion-composicion]{Definición y composición}
-La JR es el órgano colegiado permanente de coordinación de bases, fiscalización de la JD y representación estudiantil articulada. Está integrada por:
+La \gls{jr} es el órgano colegiado permanente de coordinación de bases, fiscalización de la \gls{jd} y representación estudiantil articulada. Está integrada por:
 \begin{artitems}
-    \artitem{Representantes estudiantiles titulares de la E.P. de Física ante el Consejo Universitario, Asamblea Universitaria y Consejo de Facultad.}
-    \artitem{Dos (2) representantes estudiantiles titulares ante el Comité de Gestión de la E.P. de Física.}
-    \artitem{La persona titular de la Delegatura de cada base activa.}
-    \artitem{La persona titular de la Subdelegatura de cada base activa.}
+    \artitem{Representantes estudiantiles titulares de la \gls{epf} ante el Consejo Universitario, Asamblea Universitaria y Consejo de Facultad.}
+    \artitem{Dos (2) representantes estudiantiles titulares ante el Comité de Gestión de la \gls{epf}.}
+    \artitem{La persona titular de la \gls{delegatura} de cada \gls{base_activa}.}
+    \artitem{La persona titular de la \gls{subdelegatura} de cada \gls{base_activa}.}
 \end{artitems}
-Todos sus miembros participan con voz y voto. Se considera ``base activa'' a cada uno de los cinco (5) años académicos de ingreso más recientes con estudiantes matriculados en el semestre vigente. La Secretaría de Actas y Economía mantiene un registro actualizado de las bases activas y las personas titulares de sus delegaturas y subdelegaturas electas.
+Todos sus miembros participan con voz y voto. Se considera ``\gls{base_activa}'' a cada uno de los cinco (5) años académicos de ingreso más recientes con estudiantes matriculados en el semestre vigente. La Secretaría de Actas y Economía mantiene un registro actualizado de las \glspl{base_activa} y las personas titulares de sus \glspl{delegatura} y \glspl{subdelegatura} electas.
 
 \Articulo{Mandato y naturaleza}
-Los miembros ejercen su cargo en la JR mientras ostenten la representación original que les dio acceso. Actúan colegiadamente, como nexo entre bases, JD y órganos de gobierno universitario, velando por los intereses generales del CEFIS y los específicos de sus representados.
+Los miembros ejercen su cargo en la \gls{jr} mientras ostenten la representación original que les dio acceso. Actúan colegiadamente, como nexo entre bases, \gls{jd} y órganos de gobierno universitario, velando por los intereses generales del \gls{cefis} y los específicos de sus representados.
 
 \Articulo{Coordinación y sesiones}
 \begin{artitems}
-    \artitem{La JR elige entre las personas titulares de delegaturas/subdelegaturas de base a una persona para la Coordinación de la JR por seis (6) meses, renovable consecutivamente una vez. La persona titular de la Coordinación preside sesiones, modera debates, representa a la JR y gestiona el registro de sus actividades (actas). La elección se registra en acta de JR.}
-    \artitem{La JR elige entre sus miembros a una persona para la Secretaría de la JR por el mismo período que la Coordinación, responsable de llevar el libro de actas (físico/digital) de la JR.\@{} Las actas se archivan en el Registro Central y son accesibles.}
-    \artitem{Sesiona ordinariamente al menos una (1) vez al mes durante el semestre académico, y extraordinariamente cuando la convoque la persona titular de la Coordinación, la JD, o un tercio (1/3) de sus miembros. La convocatoria indica la agenda y se realiza con al menos 48 horas de anticipación para sesiones ordinarias y 24 horas para extraordinarias, salvo urgencia justificada y registrada.}
+    \artitem{La \gls{jr} elige entre las personas titulares de \glspl{delegatura}/\glspl{subdelegatura} de base a una persona para la Coordinación de la \gls{jr} por seis (6) meses, renovable consecutivamente una vez. La persona titular de la Coordinación preside sesiones, modera debates, representa a la \gls{jr} y gestiona el registro de sus actividades (actas). La elección se registra en acta de \gls{jr}.}
+    \artitem{La \gls{jr} elige entre sus miembros a una persona para la Secretaría de la \gls{jr} por el mismo período que la Coordinación, responsable de llevar el libro de actas (físico/digital) de la \gls{jr}. Las actas se archivan en el \gls{registro_central} y son accesibles.}
+    \artitem{Sesiona ordinariamente al menos una (1) vez al mes durante el semestre académico, y extraordinariamente cuando la convoque la persona titular de la Coordinación, la \gls{jd}, o un tercio (1/3) de sus miembros. La convocatoria indica la agenda y se realiza con al menos 48 horas de anticipación para sesiones ordinarias y 24 horas para extraordinarias, salvo urgencia justificada y registrada.}
     \artitem{El quórum para sesionar es la mitad más uno de sus miembros. Los acuerdos se adoptan por mayoría simple de los presentes y se registran en actas.}
-    \artitem{La JD (al menos la persona titular de la Secretaría General o Académica) debe participar en las sesiones ordinarias de la JR con voz pero sin voto, para informar, coordinar y recibir retroalimentación. Su asistencia o inasistencia justificada se registra en acta.}
+    \artitem{La \gls{jd} (al menos la persona titular de la Secretaría General o Académica) debe participar en las sesiones ordinarias de la \gls{jr} con voz pero sin voto, para informar, coordinar y recibir retroalimentación. Su asistencia o inasistencia justificada se registra en acta.}
 \end{artitems}
 
 \Articulo{Atribuciones de la Junta de Representantes}
-Son atribuciones de la JR:\@{}
+Son atribuciones de la \gls{jr}:
 \begin{artitems}
-    \artitem{Coordinar acciones y posiciones entre las bases, la JD y los representantes ante órganos de gobierno universitario.}
-    \artitem{Supervisar y fiscalizar permanentemente la gestión de la JD, velando por el cumplimiento del Estatuto, principios, reglamentos, acuerdos de AGE y el Plan de Trabajo. Puede solicitar informes periódicos de avance.}
-    \artitem{Revisar el informe semestral de gestión y balance de la JD.\@{} Emitir informe de revisión (conformidad u observaciones) registrado para el informe anual que va a la AGE-O.}
-    \artitem{Recibir, registrar, canalizar y hacer seguimiento documentado a propuestas, problemáticas y denuncias provenientes de las bases y agremiados/as.}
-    \artitem{Solicitar informes específicos y documentados a la JD sobre su gestión, con plazo adecuado para la respuesta, el cual no será menor a tres (3) ni mayor a siete (7) días hábiles, salvo complejidad justificada. La solicitud y la respuesta (o su ausencia) se registran.}
-    \artitem{Emitir opiniones, recomendaciones y alertas, debidamente fundamentadas y registradas, a la JD y a la AGE.}
-    \artitem{Convocar subsidiariamente a AGE (\aref{art:age-convocatoria-subsidiaria}).}
-    \artitem{Evaluar y validar o invalidar, mediante acuerdo registrado, la motivación de la JD para denegar una convocatoria a AGE solicitada por terceros.}
-    \artitem[item:jr-atribuciones:investigacion-preliminar-faltas]{Realizar investigaciones preliminares sobre denuncias de presuntas faltas graves/muy graves (\aref{art:investigacion-preliminar-proceso}), garantizando el derecho a descargo inicial de la persona investigada. Elevar un informe documentado con conclusiones y recomendación (archivar o iniciar procedimiento) a la JD para convocatoria de AGE-E si corresponde. Todo el proceso se registra.}
-    \artitem{Proponer temas para la agenda de las AGE.}
-    \artitem{Proponer candidatos para las comisiones ad hoc designadas por AGE.}
-    \artitem{Evaluar la pertinencia y viabilidad de medidas de fuerza, emitiendo una recomendación fundamentada y registrada a la AGE-E.}
-    \artitem{Elaborar y proponer a la AGE modificaciones al Estatuto o reglamentos internos.}
-    \artitem{Recomendar a la AGE la revisión periódica (al menos bienal) de criterios, reglamentos y procedimientos.}
-    \artitem[item:jr-atribuciones:velar-proteccion-represalias]{Velar por la protección contra represalias de agremiados/as que participen, denuncien o informen de buena fe sobre irregularidades o problemas. Puede canalizar preocupaciones a instancias pertinentes si fuera necesario, manteniendo la confidencialidad si se requiere y registrando la acción tomada.}
+    \artitem{Coordinar acciones y posiciones entre las bases, la \gls{jd} y los representantes ante órganos de gobierno universitario.}
+    \artitem{Supervisar y fiscalizar permanentemente la gestión de la \gls{jd}, velando por el cumplimiento del \gls{estatuto}, principios, reglamentos, acuerdos de \gls{age} y el Plan de Trabajo. Puede solicitar informes periódicos de avance.}
+    \artitem{Revisar el informe semestral de gestión y balance de la \gls{jd}. Emitir informe de revisión (conformidad u observaciones) registrado para el informe anual que va a la \gls{ageo}.}
+    \artitem{Recibir, registrar, canalizar y hacer seguimiento documentado a propuestas, problemáticas y denuncias provenientes de las bases y \glspl{agremiado}.}
+    \artitem{Solicitar informes específicos y documentados a la \gls{jd} sobre su gestión, con plazo adecuado para la respuesta, el cual no será menor a tres (3) ni mayor a siete (7) días hábiles, salvo complejidad justificada. La solicitud y la respuesta (o su ausencia) se registran.}
+    \artitem{Emitir opiniones, recomendaciones y alertas, debidamente fundamentadas y registradas, a la \gls{jd} y a la \gls{age}.}
+    \artitem{Convocar subsidiariamente a \gls{age} (\aref{art:age-convocatoria-subsidiaria}).}
+    \artitem{Evaluar y validar o invalidar, mediante acuerdo registrado, la motivación de la \gls{jd} para denegar una convocatoria a \gls{age} solicitada por terceros.}
+    \artitem[item:jr-atribuciones:investigacion-preliminar-faltas]{Realizar investigaciones preliminares sobre denuncias de presuntas \glspl{falta_grave}/\glspl{falta_muy_grave} (\aref{art:investigacion-preliminar-proceso}), garantizando el derecho a descargo inicial de la persona investigada. Elevar un informe documentado con conclusiones y recomendación (archivar o iniciar procedimiento) a la \gls{jd} para convocatoria de \gls{agee} si corresponde. Todo el proceso se registra.}
+    \artitem{Proponer temas para la agenda de las \glspl{age}.}
+    \artitem{Proponer candidatos para las comisiones ad hoc designadas por \gls{age}.}
+    \artitem{Evaluar la pertinencia y viabilidad de medidas de fuerza, emitiendo una recomendación fundamentada y registrada a la \gls{agee}.}
+    \artitem{Elaborar y proponer a la \gls{age} modificaciones al \gls{estatuto} o reglamentos internos.}
+    \artitem{Recomendar a la \gls{age} la revisión periódica (al menos bienal) de criterios, reglamentos y procedimientos.}
+    \artitem[item:jr-atribuciones:velar-proteccion-represalias]{Velar por la protección contra represalias de \glspl{agremiado} que participen, denuncien o informen de buena fe sobre irregularidades o problemas. Puede canalizar preocupaciones a instancias pertinentes si fuera necesario, manteniendo la confidencialidad si se requiere y registrando la acción tomada.}
     \artitem{Conducir o supervisar revisiones posincidente (\aref{art:revisiones-posincidente}).}
-    \artitem{Revisar apelaciones sobre decisiones administrativas de la JD (\aref{item:apelaciones-no-disciplinarias-generales:revision-jr}).}
-    \artitem{Las demás que le asigne el presente Estatuto o la AGE.}
+    \artitem{Revisar apelaciones sobre decisiones administrativas de la \gls{jd} (\aref{item:apelaciones-no-disciplinarias-generales:revision-jr}).}
+    \artitem{Las demás que le asigne el presente \gls{estatuto} o la \gls{age}.}
 \end{artitems}
 
 \Capitulo{De la Junta Directiva (JD)}
 
 \Articulo{Naturaleza}
-La JD es el órgano ejecutivo y administrativo del CEFIS.\@{} Es responsable de la gestión diaria, la representación institucional y la ejecución de los acuerdos de la AGE y las coordinaciones con la JR.\@{} Rinde cuentas de su gestión ante la JR de forma permanente y la AGE de forma periódica y final.
+La \gls{jd} es el órgano ejecutivo y administrativo del \gls{cefis}. Es responsable de la gestión diaria, la representación institucional y la ejecución de los acuerdos de la \gls{age} y las coordinaciones con la \gls{jr}. Rinde cuentas de su gestión ante la \gls{jr} de forma permanente y la \gls{age} de forma periódica y final.
 
 \Articulo[art:jd-composicion]{Composición}
-La JD se compone de seis (6) cargos, cuyas personas titulares dirigen las siguientes Secretarías:
+La \gls{jd} se compone de seis (6) cargos, cuyas personas titulares dirigen las siguientes Secretarías:
 \begin{artitems}
     \artitem{Secretaría General;}
     \artitem{Secretaría Académico;}
@@ -387,132 +396,132 @@ La JD se compone de seis (6) cargos, cuyas personas titulares dirigen las siguie
 
 \Articulo{Mandato y reelección}
 \begin{artitems}
-    \artitem{La JD es elegida en AGE-O por un período de un (1) año.}
-    \artitem{Las personas miembros pueden ser reelegidas consecutivamente por una (1) sola vez, pero para una Secretaría diferente dentro de la JD.}
-    \artitem{Ningún/a agremiado/a puede formar parte de la JD por más de dos (2) períodos en total durante su vida estudiantil de pregrado.}
-    \artitem{Si al concluir el período no se ha elegido una nueva JD por causas de fuerza mayor debidamente justificadas, cuya validez es determinada por la JR mediante acuerdo registrado, la JD saliente continúa en funciones con el mandato exclusivo y urgente de colaborar con el Comité Electoral para convocar y realizar el proceso electoral en el plazo más breve posible, no mayor a treinta (30) días calendario, bajo supervisión directa de la JR.}
+    \artitem{La \gls{jd} es elegida en \gls{ageo} por un período de un (1) año.}
+    \artitem{Las personas miembros pueden ser reelegidas consecutivamente por una (1) sola vez, pero para una Secretaría diferente dentro de la \gls{jd}.}
+    \artitem{Ningún/a \gls{agremiado} puede formar parte de la \gls{jd} por más de dos (2) períodos en total durante su vida estudiantil de pregrado.}
+    \artitem{Si al concluir el período no se ha elegido una nueva \gls{jd} por causas de fuerza mayor debidamente justificadas, cuya validez es determinada por la \gls{jr} mediante acuerdo registrado, la \gls{jd} saliente continúa en funciones con el mandato exclusivo y urgente de colaborar con el \gls{ce} para convocar y realizar el proceso electoral en el plazo más breve posible, no mayor a treinta (30) días calendario, bajo supervisión directa de la \gls{jr}.}
 \end{artitems}
 
 \Articulo[art:jd-requisitos]{Requisitos para ser miembro de la JD}
-Se requiere, con verificación documental por el CE:\@{}
+Se requiere, con verificación documental por el \gls{ce}:
 \begin{artitems}
-    \artitem{Ser agremiado/a habilitado/a del CEFIS (\aref{art:definicion-agremiado}).}
+    \artitem{Ser \gls{agremiado_habilitado} del \gls{cefis} (\aref{art:definicion-agremiado}).}
     \artitem{Haber aprobado como mínimo treinta y seis (36) créditos del Plan de Estudios de Física.}
     \artitem{No estar incurso en los impedimentos señalados en el \aref{art:jd-impedimentos}.}
-    \artitem{Presentar una declaración jurada simple, cuyo formato es proporcionado por el CE, de no tener impedimentos y de compromiso con los fines y principios del CEFIS.}
+    \artitem{Presentar una declaración jurada simple, cuyo formato es proporcionado por el \gls{ce}, de no tener impedimentos y de compromiso con los fines y principios del \gls{cefis}.}
 \end{artitems}
 
 \Articulo[art:jd-impedimentos]{Impedimentos para ser miembro de la Junta Directiva}
-No pueden ser elegidas ni ejercer cargos en la JD:\@{}
+No pueden ser elegidas ni ejercer cargos en la \gls{jd}:
 \begin{artitems}
-    \artitem{Quienes tengan matrícula observada por motivos académicos o estén enfrentando un proceso disciplinario formal por falta grave ante instancias universitarias al momento de la inscripción o durante el mandato.}
-    \artitem{Quienes ocupen simultáneamente un cargo como miembro titular de la Junta de Representantes (\aref{art:jr-definicion-composicion}).}
-    \artitem{Quienes hayan sido sancionados/as con remoción de cargo directivo previo en el CEFIS o exclusión como agremiados/as, por decisión firme de la AGE en los últimos dos (2) años.}
-    \artitem{Quienes formen parte del Comité Electoral en el mismo proceso electoral.}
+    \artitem{Quienes tengan matrícula observada por motivos académicos o estén enfrentando un proceso disciplinario formal por \gls{falta_grave} ante instancias universitarias al momento de la inscripción o durante el mandato.}
+    \artitem{Quienes ocupen simultáneamente un cargo como miembro titular de la \gls{jr} (\aref{art:jr-definicion-composicion}).}
+    \artitem{Quienes hayan sido sancionados/as con remoción de cargo directivo previo en el \gls{cefis} o exclusión como \glspl{agremiado}, por decisión firme de la \gls{age} en los últimos dos (2) años.}
+    \artitem{Quienes formen parte del \gls{ce} en el mismo proceso electoral.}
 \end{artitems}
 
 \Articulo{Funcionamiento colegiado y subordinación}
-La JD actúa de forma colegiada y coordinada. Sus decisiones y acciones deben estar alineadas con el Estatuto, los acuerdos de la AGE y el Plan de Trabajo aprobado. Se subordina a las decisiones de la AGE y está sujeta a la fiscalización de la JR.\@{} Todas sus decisiones significativas (acuerdos, resoluciones, autorizaciones, contrataciones) deben registrarse en actas de JD o en el registro central según corresponda.
+La \gls{jd} actúa de forma colegiada y coordinada. Sus decisiones y acciones deben estar alineadas con el \gls{estatuto}, los acuerdos de la \gls{age} y el Plan de Trabajo aprobado. Se subordina a las decisiones de la \gls{age} y está sujeta a la fiscalización de la \gls{jr}. Todas sus decisiones significativas (acuerdos, resoluciones, autorizaciones, contrataciones) deben registrarse en actas de \gls{jd} o en el \gls{registro_central} según corresponda.
 
 \Articulo{Sesiones de la JD}
 \begin{artitems}
-    \artitem{La JD sesiona ordinariamente al menos cada quince (15) días calendario durante el semestre académico, y extraordinariamente cuando lo convoque la persona titular de la Secretaría General o la mayoría simple (mitad más uno) de sus miembros.}
+    \artitem{La \gls{jd} sesiona ordinariamente al menos cada quince (15) días calendario durante el semestre académico, y extraordinariamente cuando lo convoque la persona titular de la Secretaría General o la mayoría simple (mitad más uno) de sus miembros.}
     \artitem{La convocatoria a sesión ordinaria se realiza con una anticipación mínima de 48 horas, y para sesión extraordinaria con 24 horas, salvo urgencia justificada y registrada. La convocatoria incluye la agenda.}
     \artitem{El quórum para sesionar es la mitad más uno de sus miembros titulares (mínimo cuatro). Los acuerdos se adoptan por mayoría simple de los asistentes. En caso de empate, la persona titular de la Secretaría General tiene voto dirimente, el cual se registra expresamente.}
-    \artitem{Las sesiones son reservadas para sus miembros, pero podrán invitar a miembros de la JR u otros con fines específicos, dejando constancia en acta. La JD informa periódicamente sus acuerdos a la JR y a los/as agremiados/as a través de comunicados oficiales. Sus actas son gestionadas conforme al \aref{art:jd-secretaria-actas-economia} y accesibles para consulta de la JD y para la JR.}
+    \artitem{Las sesiones son reservadas para sus miembros, pero podrán invitar a miembros de la \gls{jr} u otros con fines específicos, dejando constancia en acta. La \gls{jd} informa periódicamente sus acuerdos a la \gls{jr} y a los/as \glspl{agremiado} a través de comunicados oficiales. Sus actas son gestionadas conforme al \aref{art:jd-secretaria-actas-economia} y accesibles para consulta de la \gls{jd} y para la \gls{jr}.}
 \end{artitems}
 
 \Articulo{Asistencia y abandono de cargo}
 \begin{artitems}
-    \artitem{La asistencia a las sesiones de la JD es obligatoria y se registra en acta.}
+    \artitem{La asistencia a las sesiones de la \gls{jd} es obligatoria y se registra en acta.}
     \artitem{La inasistencia debe justificarse por escrito o correo electrónico a la Secretaría General antes de la sesión, salvo imposibilidad manifiesta debidamente acreditada. La justificación se adjunta o menciona en el acta.}
-    \artitem[item:jd-asistencia-abandono:configuracion-abandono]{Tres (3) inasistencias injustificadas consecutivas o cinco (5) alternadas injustificadas en un semestre académico, registradas en acta, constituyen abandono de cargo. La Secretaría General emite una advertencia formal registrada (con copia a la JD y JR) tras la segunda inasistencia consecutiva o cuarta alternada. Declarado el abandono por la JD en acta, se procede conforme al \aref{art:jd-causales-vacancia} y \aref{art:jd-reemplazo-vacancia}.}
+    \artitem[item:jd-asistencia-abandono:configuracion-abandono]{Tres (3) inasistencias injustificadas consecutivas o cinco (5) alternadas injustificadas en un semestre académico, registradas en acta, constituyen abandono de cargo. La Secretaría General emite una advertencia formal registrada (con copia a la \gls{jd} y \gls{jr}) tras la segunda inasistencia consecutiva o cuarta alternada. Declarado el abandono por la \gls{jd} en acta, se procede conforme al \aref{art:jd-causales-vacancia} y \aref{art:jd-reemplazo-vacancia}.}
 \end{artitems}
 
 \Articulo[art:jd-causales-vacancia]{Causales de vacancia}
-Son causales de vacancia de un cargo en la JD, debidamente acreditadas y documentadas en el Registro Central:
+Son causales de vacancia de un cargo en la \gls{jd}, debidamente acreditadas y documentadas en el \gls{registro_central}:
 \begin{artitems}
     \artitem{Fallecimiento.}
-    \artitem{Incapacidad física/mental permanente sobrevenida, declarada por la AGE-E previo informe médico si corresponde y garantizando la confidencialidad.}
-    \artitem{Abandono de cargo, declarado por la JD en acta (\aref{item:jd-asistencia-abandono:configuracion-abandono}).}
+    \artitem{Incapacidad física/mental permanente sobrevenida, declarada por la \gls{agee} previo informe médico si corresponde y garantizando la confidencialidad.}
+    \artitem{Abandono de cargo, declarado por la \gls{jd} en acta (\aref{item:jd-asistencia-abandono:configuracion-abandono}).}
     \artitem{Sentencia judicial firme por delito doloso.}
-    \artitem{Pérdida definitiva de la condición de estudiante de pregrado de la E.P. de Física (\aref{item:perdida-condicion-agremiado:egreso}, \aref{item:perdida-condicion-agremiado:definitiva}).}
-    \artitem{Renuncia voluntaria formalmente presentada por escrito al Secretario/a General y aceptada por la JD en acta.}
-    \artitem{Exclusión como agremiado/a del CEFIS, declarada por AGE-E con decisión firme.}
-    \artitem{Remoción del cargo por falta grave en sus funciones, declarada por AGE-E (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:remocion-jd-2tercios}) con decisión firme registrada en acta.}
-    \artitem{Incurrir sobrevenidamente en impedimento (\aref{art:jd-impedimentos}), verificado y declarado por la JD en acta, y comunicado a la JR.}
+    \artitem{Pérdida definitiva de la condición de estudiante de pregrado de la \gls{epf} (\aref{item:perdida-condicion-agremiado:egreso}, \aref{item:perdida-condicion-agremiado:definitiva}).}
+    \artitem{Renuncia voluntaria formalmente presentada por escrito al Secretario/a General y aceptada por la \gls{jd} en acta.}
+    \artitem{Exclusión como \gls{agremiado} del \gls{cefis}, declarada por \gls{agee} con decisión firme.}
+    \artitem{Remoción del cargo por \gls{falta_grave} en sus funciones, declarada por \gls{agee} (mayoría 2/3, conforme \aref{subitem:age-acuerdos-mayorias:remocion-jd-2tercios}) con decisión firme registrada en acta.}
+    \artitem{Incurrir sobrevenidamente en impedimento (\aref{art:jd-impedimentos}), verificado y declarado por la \gls{jd} en acta, y comunicado a la \gls{jr}.}
 \end{artitems}
 
 \Articulo[art:jd-reemplazo-vacancia]{Declaración y reemplazo por vacancia}
 \begin{artitems}
-    \artitem{Producida una causal, la JD declara la vacancia del cargo en un plazo máximo de cinco (5) días hábiles, mediante resolución registrada, comunicando inmediatamente a la JR y a los agremiados/as.}
-    \artitem{La JD solicita formalmente a la JR la convocatoria de una AGE-E en un plazo no mayor a quince (15) días hábiles desde la declaración de vacancia, para elegir a la persona reemplazante que completará el período restante.}
-    \artitem{Mientras tanto, la Secretaría General encarga temporalmente las funciones al miembro de la JD que considere más idóneo, informando formalmente a la JR.\@{} Este encargo no excede los treinta (30) días calendario.}
+    \artitem{Producida una causal, la \gls{jd} declara la vacancia del cargo en un plazo máximo de cinco (5) días hábiles, mediante resolución registrada, comunicando inmediatamente a la \gls{jr} y a los \glspl{agremiado}.}
+    \artitem{La \gls{jd} solicita formalmente a la \gls{jr} la convocatoria de una \gls{agee} en un plazo no mayor a quince (15) días hábiles desde la declaración de vacancia, para elegir a la persona reemplazante que completará el período restante.}
+    \artitem{Mientras tanto, la Secretaría General encarga temporalmente las funciones al miembro de la \gls{jd} que considere más idóneo, informando formalmente a la \gls{jr}. Este encargo no excede los treinta (30) días calendario.}
 \end{artitems}
 
 \Articulo{Renuncia al cargo}
-La renuncia se presenta por escrito a la Secretaría General (o a la Secretaría Académica si renuncia la persona titular de la Secretaría General). La JD la acepta formalmente en sesión, dejando constancia en acta, y la comunica a la JR y a los agremiados/as en un plazo de tres (3) días hábiles. Si la persona renunciante tiene procesos por falta grave en curso relacionados a su gestión, la aceptación formal puede supeditarse a la conclusión del proceso, sin afectar la efectividad inmediata de la renuncia para ejercer el cargo. Esto consta en el acta de aceptación.
+La renuncia se presenta por escrito a la Secretaría General (o a la Secretaría Académica si renuncia la persona titular de la Secretaría General). La \gls{jd} la acepta formalmente en sesión, dejando constancia en acta, y la comunica a la \gls{jr} y a los \glspl{agremiado} en un plazo de tres (3) días hábiles. Si la persona renunciante tiene procesos por \gls{falta_grave} en curso relacionados a su gestión, la aceptación formal puede supeditarse a la conclusión del proceso, sin afectar la efectividad inmediata de la renuncia para ejercer el cargo. Esto consta en el acta de aceptación.
 
 \Articulo{Atribuciones generales de la Junta Directiva}
-Son atribuciones y deberes de la JD, cuyas acciones y decisiones principales deben ser documentadas y registradas para fines de transparencia y rendición de cuentas:
+Son atribuciones y deberes de la \gls{jd}, cuyas acciones y decisiones principales deben ser documentadas y registradas para fines de transparencia y rendición de cuentas:
 \begin{artitems}
-    \artitem{Dirigir la gestión ejecutiva y administrativa diaria del CEFIS.}
-    \artitem{Ejercer la representación oficial e institucional del CEFIS ante autoridades universitarias y entidades externas, documentando las gestiones realizadas.}
-    \artitem{Elaborar y proponer a la AGE-O el Plan Anual de Trabajo y el Presupuesto.}
+    \artitem{Dirigir la gestión ejecutiva y administrativa diaria del \gls{cefis}.}
+    \artitem{Ejercer la representación oficial e institucional del \gls{cefis} ante autoridades universitarias y entidades externas, documentando las gestiones realizadas.}
+    \artitem{Elaborar y proponer a la \gls{ageo} el Plan Anual de Trabajo y el Presupuesto.}
     \artitem{Ejecutar el Plan Anual de Trabajo y el Presupuesto aprobados.}
-    \artitem{Cumplir y hacer cumplir el presente Estatuto, los reglamentos y los acuerdos adoptados por la AGE.}
-    \artitem{Presentar informes de gestión y balance económico-patrimonial semestrales a la JR y anuales a la AGE-O.}
-    \artitem{Observar e informarse de las medidas, actividades y oficios publicados por la Dirección de la E.P. de Física que afecten al estudiantado, y actuar en consecuencia si procede, documentando las acciones.}
-    \artitem{Administrar diligentemente el patrimonio y los recursos financieros (\aref{art:patrimonio-cefis} al \aref{art:recursos-financieros}), manteniendo registros contables claros, actualizados y accesibles en el Registro Central. Aprobar egresos presupuestados, registrando las autorizaciones respectivas.}
+    \artitem{Cumplir y hacer cumplir el presente \gls{estatuto}, los reglamentos y los acuerdos adoptados por la \gls{age}.}
+    \artitem{Presentar informes de gestión y balance económico-patrimonial semestrales a la \gls{jr} y anuales a la \gls{ageo}.}
+    \artitem{Observar e informarse de las medidas, actividades y oficios publicados por la Dirección de la \gls{epf} que afecten al estudiantado, y actuar en consecuencia si procede, documentando las acciones.}
+    \artitem{Administrar diligentemente el patrimonio y los recursos financieros (\aref{art:patrimonio-cefis} al \aref{art:recursos-financieros}), manteniendo registros contables claros, actualizados y accesibles en el \gls{registro_central}. Aprobar egresos presupuestados, registrando las autorizaciones respectivas.}
     \artitem{Gestionar los canales de comunicación oficiales (\aref{art:canales-comunicacion}), vía Secretaría de Prensa y Difusión.}%
-    \artitem{Convocar a AGE según lo estipulado en este Estatuto.}
-    \artitem{Coordinar permanentemente con la JR y atender sus solicitudes de información y fiscalización.}%
-    \artitem{Organizar y supervisar el funcionamiento de las secretarías y comisiones temporales creadas por la JD.}
-    \artitem{Fomentar la participación estudiantil en las actividades del CEFIS y la vida universitaria.}
+    \artitem{Convocar a \gls{age} según lo estipulado en este \gls{estatuto}.}
+    \artitem{Coordinar permanentemente con la \gls{jr} y atender sus solicitudes de información y fiscalización.}%
+    \artitem{Organizar y supervisar el funcionamiento de las secretarías y \glspl{comisiones_trabajo} temporales creadas por la \gls{jd}.}
+    \artitem{Fomentar la participación estudiantil en las actividades del \gls{cefis} y la vida universitaria.}
     \artitem{Canalizar las demandas y propuestas estudiantiles ante las autoridades competentes, registrando las gestiones realizadas y sus resultados.}
-    \artitem[item:jd-atribuciones-generales:decisiones-urgentes]{Tomar decisiones ejecutivas urgentes no previstas, cuando la situación lo amerite y no sea posible convocar a AGE-E de inmediato, actuando en resguardo de los intereses del CEFIS y sus agremiados/as. La persona titular de la Secretaría General es responsable final de activar este mecanismo. Estas decisiones deben ser:}
+    \artitem[item:jd-atribuciones-generales:decisiones-urgentes]{Tomar decisiones ejecutivas urgentes no previstas, cuando la situación lo amerite y no sea posible convocar a \gls{agee} de inmediato, actuando en resguardo de los intereses del \gls{cefis} y sus \glspl{agremiado}. La persona titular de la Secretaría General es responsable final de activar este mecanismo. Estas decisiones deben ser:}
     \begin{enumerate}
-        \subartitem{Documentadas, incluyendo la justificación de la urgencia y la imposibilidad de convocar a AGE.}
-        \subartitem{Registradas en el Registro Central.}
-        \subartitem{Informadas en detalle a la JR en un plazo máximo de cuarenta y ocho (48) horas.}
-        \subartitem{Sometidas a ratificación en la siguiente AGE (ordinaria o extraordinaria), que debe realizarse en un plazo máximo de quince (15) días calendario desde la decisión.}
-        \subartitem{La falta de ratificación por la AGE obliga a la JD a justificar su actuación ante la JR y, si la AGE lo dispone, revertir los efectos de la decisión en la medida de lo posible. La decisión de la AGE se registra en acta.}
+        \subartitem{Documentadas, incluyendo la justificación de la urgencia y la imposibilidad de convocar a \gls{age}.}
+        \subartitem{Registradas en el \gls{registro_central}.}
+        \subartitem{Informadas en detalle a la \gls{jr} en un plazo máximo de cuarenta y ocho (48) horas.}
+        \subartitem{Sometidas a ratificación en la siguiente \gls{age} (ordinaria o extraordinaria), que debe realizarse en un plazo máximo de quince (15) días calendario desde la decisión.}
+        \subartitem{La falta de ratificación por la \gls{age} obliga a la \gls{jd} a justificar su actuación ante la \gls{jr} y, si la \gls{age} lo dispone, revertir los efectos de la decisión en la medida de lo posible. La decisión de la \gls{age} se registra en acta.}
     \end{enumerate}
-    \artitem{Velar por el correcto uso de los ambientes asignados al CEFIS (\aref{art:cefis-ambientes}), aplicando los reglamentos internos correspondientes.}
-    \artitem{Las demás que le asigne el Estatuto y la AGE que no sean competencia exclusiva de otros órganos.}
+    \artitem{Velar por el correcto uso de los ambientes asignados al \gls{cefis} (\aref{art:cefis-ambientes}), aplicando los reglamentos internos correspondientes.}
+    \artitem{Las demás que le asigne el \gls{estatuto} y la \gls{age} que no sean competencia exclusiva de otros órganos.}
 \end{artitems}
 
 \Articulo[art:jd-informe-transferencia]{Informe final y transferencia de cargo}
-Al finalizar su mandato, la JD saliente presenta ante la AGE-O un informe final de gestión detallado y el balance económico-patrimonial del último periodo, previamente revisado por la JR (cuyo informe se adjunta). Realiza la transferencia formal y documentada de cargos, bienes, fondos, archivos físicos y digitales del Registro Central, claves de acceso y toda información necesaria para la continuidad de la gestión a la JD entrante. Esto se hace mediante un Acta de Entrega-Recepción firmada por las personas titulares de las Secretarías Generales y de Actas y Economía salientes y entrantes, en un plazo no mayor a siete (7) días hábiles desde la proclamación oficial de la nueva JD.\@{} Una copia del acta se remite a la JR y se archiva en el Registro Central.
+Al finalizar su mandato, la \gls{jd} saliente presenta ante la \gls{ageo} un informe final de gestión detallado y el balance económico-patrimonial del último periodo, previamente revisado por la \gls{jr} (cuyo informe se adjunta). Realiza la transferencia formal y documentada de cargos, bienes, fondos, archivos físicos y digitales del \gls{registro_central}, claves de acceso y toda información necesaria para la continuidad de la gestión a la \gls{jd} entrante. Esto se hace mediante un Acta de Entrega-Recepción firmada por las personas titulares de las Secretarías Generales y de Actas y Economía salientes y entrantes, en un plazo no mayor a siete (7) días hábiles desde la proclamación oficial de la nueva \gls{jd}. Una copia del acta se remite a la \gls{jr} y se archiva en el \gls{registro_central}.
 
 \Capitulo{De las Secretarías de la Junta Directiva}
 
-Las Secretarías son los órganos ejecutores de la JD, cada una con un ámbito de acción definido. La persona titular de cada Secretaría es la máxima responsable de su gestión. Cada Secretaría puede contar con un equipo de apoyo conformado por agremiados/as voluntarios/as, bajo la coordinación y responsabilidad de la persona titular de la Secretaría, conforme al \aref{item:jd-cooperacion-suplencia:equipos-apoyo}.
+Las Secretarías son los órganos ejecutores de la \gls{jd}, cada una con un ámbito de acción definido. La persona titular de cada Secretaría es la máxima responsable de su gestión. Cada Secretaría puede contar con un equipo de apoyo conformado por \glspl{agremiado} voluntarios/as, bajo la coordinación y responsabilidad de la persona titular de la Secretaría, conforme al \aref{item:jd-cooperacion-suplencia:equipos-apoyo}.
 
 \Articulo{Secretario/a General}
-La persona titular de la Secretaría General es la máxima representante legal y ejecutiva del CEFIS.\@{} Preside la JD.\@{} Es responsable principal de la rendición de cuentas general. Sus deberes y atribuciones específicas son:
+La persona titular de la Secretaría General es la máxima representante legal y ejecutiva del \gls{cefis}. Preside la \gls{jd}. Es responsable principal de la rendición de cuentas general. Sus deberes y atribuciones específicas son:
 \begin{artitems}
-    \artitem{Representar oficialmente al CEFIS.}
-    \artitem{Convocar y presidir las sesiones de la JD y la AGE.}
+    \artitem{Representar oficialmente al \gls{cefis}.}
+    \artitem{Convocar y presidir las sesiones de la \gls{jd} y la \gls{age}.}
     \artitem{Dirigir y supervisar la ejecución del Plan de Trabajo, asegurando el registro documentado de actividades y avances.}
-    \artitem{Velar por el cumplimiento del Estatuto y los acuerdos de la AGE por parte de la JD.}
+    \artitem{Velar por el cumplimiento del \gls{estatuto} y los acuerdos de la \gls{age} por parte de la \gls{jd}.}
     \artitem{Firmar, conjuntamente con la persona titular de la Secretaría de Actas y Economía, la documentación oficial (actas, balances, contratos, convenios) y las autorizaciones de gasto que superen el umbral definido conforme al \aref{item:recursos-financieros:autorizacion-egresos}.}
     \artitem{Coordinar las acciones de las distintas secretarías, promover el trabajo en equipo y la rendición de cuentas específica de cada secretaría, la cual debe quedar documentada.}
-    \artitem{Mantener comunicación constante con la JR y las autoridades universitarias.}
-    \artitem{Recibir, registrar y canalizar la correspondencia oficial dirigida al CEFIS.}
-    \artitem{Ejercer el voto dirimente en las sesiones de la JD, dejando constancia en acta.}
-    \artitem{Delegar funciones específicas en otros miembros de la JD cuando sea necesario, con acuerdo registrado de la JD y dejando constancia formal escrita de la delegación y su alcance.}
+    \artitem{Mantener comunicación constante con la \gls{jr} y las autoridades universitarias.}
+    \artitem{Recibir, registrar y canalizar la correspondencia oficial dirigida al \gls{cefis}.}
+    \artitem{Ejercer el voto dirimente en las sesiones de la \gls{jd}, dejando constancia en acta.}
+    \artitem{Delegar funciones específicas en otros miembros de la \gls{jd} cuando sea necesario, con acuerdo registrado de la \gls{jd} y dejando constancia formal escrita de la delegación y su alcance.}
     \artitem{Activar y justificar formalmente el mecanismo de decisión urgente (\aref{item:jd-atribuciones-generales:decisiones-urgentes}) cuando sea estrictamente necesario.}
-    \artitem{Representar al CEFIS en procesos administrativos o judiciales, con autorización previa y registrada de la JD o AGE según la naturaleza del proceso. Puede otorgar poderes específicos previo acuerdo registrado de la JD.}
+    \artitem{Representar al \gls{cefis} en procesos administrativos o judiciales, con autorización previa y registrada de la \gls{jd} o \gls{age} según la naturaleza del proceso. Puede otorgar poderes específicos previo acuerdo registrado de la \gls{jd}.}
 \end{artitems}
 
 \Articulo{Secretario/a Académico/a}
 La persona titular de la Secretaría Académica es responsable de los asuntos relacionados con la formación académica y los derechos estudiantiles en ese ámbito. Reporta directamente a la persona titular de la Secretaría General. Sus funciones son:
 \begin{artitems}
-    \artitem{Reemplazar a la persona titular de la Secretaría General en caso de ausencia o impedimento temporal, con comunicación registrada a la JD y JR.}
-    \artitem{Identificar, documentar y proponer soluciones a problemáticas académicas (plan de estudios, calidad docente, métodos de evaluación, infraestructura, etc.), a la JD y, a través de ella, a las autoridades.}
+    \artitem{Reemplazar a la persona titular de la Secretaría General en caso de ausencia o impedimento temporal, con comunicación registrada a la \gls{jd} y \gls{jr}.}
+    \artitem{Identificar, documentar y proponer soluciones a problemáticas académicas (plan de estudios, calidad docente, métodos de evaluación, infraestructura, etc.), a la \gls{jd} y, a través de ella, a las autoridades.}
     \artitem{Coordinar con las autoridades académicas para la mejora continua de los planes de estudio y la calidad educativa, documentando las gestiones.}
-    \artitem{Presentar informes periódicos sobre la situación académica de los estudiantes de la E.P. de Física a la JD.}
+    \artitem{Presentar informes periódicos sobre la situación académica de los estudiantes de la \gls{epf} a la \gls{jd}.}
     \artitem{Organizar y promover actividades académicas complementarias (talleres, seminarios, grupos de estudio, programas de mentoría, etc.), llevando un registro de las mismas.}
     \artitem{Gestionar y difundir información sobre becas, pasantías, movilidad estudiantil y oportunidades académicas.}
     \artitem{Coordinar con los representantes estudiantiles ante órganos de gobierno sobre temas académicos.}%
@@ -521,262 +530,262 @@ La persona titular de la Secretaría Académica es responsable de los asuntos re
 \end{artitems}
 
 \Articulo[art:jd-secretaria-actas-economia]{Secretario/a de Actas y Economía}
-La persona titular de la Secretaría de Actas y Economía es directamente responsable de la gestión documental (Registro Central), patrimonial y financiera. Reporta directamente a la persona titular de la Secretaría General. Sus funciones son:
+La persona titular de la Secretaría de Actas y Economía es directamente responsable de la gestión documental (\gls{registro_central}), patrimonial y financiera. Reporta directamente a la persona titular de la Secretaría General. Sus funciones son:
 \begin{artitems}
-    \artitem{Redactar y custodiar las actas de las sesiones de la JD y de la AGE, asegurando su correcta elaboración, publicación (\aref{item:age-actas-registro:publicacion-archivo}), archivo en el Registro Central y accesibilidad.}
-    \artitem{Llevar el registro de asistencia a las sesiones de JD y AGE.}
+    \artitem{Redactar y custodiar las actas de las sesiones de la \gls{jd} y de la \gls{age}, asegurando su correcta elaboración, publicación (\aref{item:age-actas-registro:publicacion-archivo}), archivo en el \gls{registro_central} y accesibilidad.}
+    \artitem{Llevar el registro de asistencia a las sesiones de \gls{jd} y \gls{age}.}
     \artitem{Administrar los recursos financieros (\aref{art:recursos-financieros}) y el presupuesto.}
-    \artitem{Llevar el Libro Contable (físico o digital, según se defina) actualizado en el Registro Central (\aref{item:recursos-financieros:registro-movimientos}).}
-    \artitem{Gestionar las cuentas bancarias o plataformas de pago autorizadas del CEFIS, solicitar reportes mensuales y archivarlos en el Registro Central.}
-    \artitem{Elaborar los balances económicos semestrales y anuales, y presentarlos a la JD, la JR y la AGE.}
+    \artitem{Llevar el \gls{libro_contable} (físico o digital, según se defina) actualizado en el \gls{registro_central} (\aref{item:recursos-financieros:registro-movimientos}).}
+    \artitem{Gestionar las cuentas bancarias o plataformas de pago autorizadas del \gls{cefis}, solicitar reportes mensuales y archivarlos en el \gls{registro_central}.}
+    \artitem{Elaborar los balances económicos semestrales y anuales, y presentarlos a la \gls{jd}, la \gls{jr} y la \gls{age}.}
     \artitem{Garantizar la transparencia y facilitar el acceso a la información financiera (\aref{item:recursos-financieros:balances}).}
-    \artitem{Custodiar y actualizar el Inventario de Bienes (\aref{art:inventario-bienes}), archivado en el Registro Central.}
+    \artitem{Custodiar y actualizar el Inventario de Bienes (\aref{art:inventario-bienes}), archivado en el \gls{registro_central}.}
     \artitem{Firmar conjuntamente con la persona titular de la Secretaría General la documentación financiera relevante y autorizaciones de gasto.}
-    \artitem{Proponer a la JD estrategias para la sostenibilidad financiera y la gestión patrimonial.}
-    \artitem{Administrar y mantener el Registro Central (\aref{art:registro-central}), asegurando su organización, integridad, seguridad y accesibilidad controlada.}
+    \artitem{Proponer a la \gls{jd} estrategias para la sostenibilidad financiera y la gestión patrimonial.}
+    \artitem{Administrar y mantener el \gls{registro_central} (\aref{art:registro-central}), asegurando su organización, integridad, seguridad y accesibilidad controlada.}
 \end{artitems}
 
 \Articulo{Secretario/a de Prensa y Difusión}
-La persona titular de la Secretaría de Prensa y Difusión es responsable de la comunicación interna y externa del CEFIS.\@{} Reporta directamente a la persona titular de la Secretaría General. Sus funciones son:
+La persona titular de la Secretaría de Prensa y Difusión es responsable de la comunicación interna y externa del \gls{cefis}. Reporta directamente a la persona titular de la Secretaría General. Sus funciones son:
 \begin{artitems}
     \artitem{Administrar y mantener actualizados los canales oficiales de comunicación (\aref{art:canales-comunicacion}), asegurando la coherencia y oportunidad de la información.}
-    \artitem{Diseñar y ejecutar la estrategia de comunicación aprobada por la JD.}
-    \artitem{Redactar y difundir comunicados, convocatorias, resúmenes informativos de actas (en coordinación con la Secretaría de Actas y Economía), notas y material gráfico sobre las actividades y posiciones del CEFIS de forma clara y oportuna.}
-    \artitem{Mantener informados a los/as agremiados/as sobre asuntos de interés de la vida universitaria.}
+    \artitem{Diseñar y ejecutar la estrategia de comunicación aprobada por la \gls{jd}.}
+    \artitem{Redactar y difundir comunicados, convocatorias, resúmenes informativos de actas (en coordinación con la Secretaría de Actas y Economía), notas y material gráfico sobre las actividades y posiciones del \gls{cefis} de forma clara y oportuna.}
+    \artitem{Mantener informados a los/as \glspl{agremiado} sobre asuntos de interés de la vida universitaria.}
     \artitem{Gestionar la imagen institucional.}
-    \artitem{Mantener un archivo organizado y accesible de todas las comunicaciones emitidas en el Registro Central.}
-    \artitem{Coordinar con las demás secretarías y comisiones del CEFIS para la difusión eficaz de sus actividades.}
+    \artitem{Mantener un archivo organizado y accesible de todas las comunicaciones emitidas en el \gls{registro_central}.}
+    \artitem{Coordinar con las demás secretarías y comisiones del \gls{cefis} para la difusión eficaz de sus actividades.}
 \end{artitems}
 
 \Articulo{Secretario/a de Eventos y Logística}
 La persona titular de la Secretaría de Eventos y Logística es responsable de la planificación, organización y ejecución de actividades culturales, deportivas, recreativas y de integración. Reporta directamente a la persona titular de la Secretaría General. Sus funciones son:
 \begin{artitems}
-    \artitem{Proponer y organizar eventos que contribuyan a los fines del CEFIS (\aref{item:fines-obj-cefis:desarrollo-academico}), llevando un registro de los mismos.}
-    \artitem{Gestionar la logística necesaria para las actividades del CEFIS (reserva de espacios, solicitud de equipos, compra de materiales, tramitación de permisos), documentando las gestiones.}
+    \artitem{Proponer y organizar eventos que contribuyan a los fines del \gls{cefis} (\aref{item:fines-obj-cefis:desarrollo-academico}), llevando un registro de los mismos.}
+    \artitem{Gestionar la logística necesaria para las actividades del \gls{cefis} (reserva de espacios, solicitud de equipos, compra de materiales, tramitación de permisos), documentando las gestiones.}
     \artitem{Coordinar con otras organizaciones estudiantiles o externas para la realización de eventos conjuntos, formalizando los acuerdos por escrito si implican uso de recursos o compromisos institucionales.}
     \artitem{Fomentar la participación estudiantil en actividades extracurriculares.}
-    \artitem{Administrar el uso de locales y materiales del CEFIS destinados a eventos, velando por su buen estado y llevando un registro de préstamos y devoluciones.}
+    \artitem{Administrar el uso de locales y materiales del \gls{cefis} destinados a eventos, velando por su buen estado y llevando un registro de préstamos y devoluciones.}
     \artitem{Elaborar cronogramas y presupuestos para los eventos, en coordinación con la Secretaría de Actas y Economía, y rendir cuentas documentadas de los gastos efectuados.}
 \end{artitems}
 
 \Articulo{Secretario/a de Bienestar y Género}
 La persona titular de la Secretaría de Bienestar y Género es responsable de promover el bienestar estudiantil integral, la equidad y la atención a problemáticas sociales y de género. Reporta directamente a la persona titular de la Secretaría General. Sus funciones son:
 \begin{artitems}
-    \artitem{Identificar necesidades y problemáticas relacionadas con el bienestar estudiantil (salud física/mental, apoyo socioeconómico, seguridad, inclusión, accesibilidad), documentándolas de forma agregada y anónima para proponer acciones a la JD.}
+    \artitem{Identificar necesidades y problemáticas relacionadas con el bienestar estudiantil (salud física/mental, apoyo socioeconómico, seguridad, inclusión, accesibilidad), documentándolas de forma agregada y anónima para proponer acciones a la \gls{jd}.}
     \artitem{Promover y coordinar campañas de sensibilización y prevención sobre salud integral, derechos humanos, no violencia, equidad de género, diversidad e interculturalidad.}
     \artitem{Servir como punto de contacto inicial confidencial y de orientación para estudiantes que enfrenten situaciones de acoso, discriminación, violencia o vulnerabilidad. Debe canalizar responsablemente los casos a las instancias especializadas pertinentes de la universidad y/o externas, siempre con el consentimiento informado del estudiante. Mantiene un registro interno y estrictamente confidencial del número y tipo de orientaciones brindadas (sin datos personales identificables) para fines estadísticos y de mejora.}
     \artitem{Organizar actividades que promuevan la integración, la solidaridad y un ambiente de respeto mutuo y seguro.}
-    \artitem{Coordinar con los servicios de bienestar universitario de la UNMSM y otras entidades de apoyo para facilitar el acceso estudiantil a dichos servicios, difundiendo información sobre las mismas.}
-    \artitem{Proponer a la JD y a la AGE políticas y acciones para promover la igualdad de oportunidades, la inclusión y prevención de la discriminación y violencia en el ámbito estudiantil.}
+    \artitem{Coordinar con los servicios de bienestar universitario de la \gls{unmsm} y otras entidades de apoyo para facilitar el acceso estudiantil a dichos servicios, difundiendo información sobre las mismas.}
+    \artitem{Proponer a la \gls{jd} y a la \gls{age} políticas y acciones para promover la igualdad de oportunidades, la inclusión y prevención de la discriminación y violencia en el ámbito estudiantil.}
 \end{artitems}
 
 \Articulo[art:jd-cooperacion-suplencia]{Cooperación y suplencia}
 \begin{artitems}
-    \artitem{Todos los miembros de la JD tienen el deber de cooperar entre sí y son corresponsables del cumplimiento de los objetivos generales del Plan de Trabajo.}
-    \artitem{En caso de ausencia temporal o impedimento de una persona titular de Secretaría (distinta a la General), la persona titular de la Secretaría General encarga temporalmente sus funciones a otro miembro de la JD, informando formalmente de ello en la siguiente sesión de JD y dejando constancia en acta. Este encargo no genera doble representación ni doble voto.}
-    \artitem[item:jd-cooperacion-suplencia:equipos-apoyo]{Cada Secretaría podrá contar con un equipo de apoyo conformado por agremiados/as voluntarios/as, quienes colaboran bajo la coordinación y responsabilidad de la persona titular de la Secretaría. La conformación de estos equipos se comunica a la JD para su conocimiento y registro. La participación voluntaria es un pilar para el funcionamiento del CEFIS.}
-    \artitem{La JD podrá proponer a la AGE la creación de comisiones temporales (\aref{art:comisiones-naturaleza-creacion}).}
+    \artitem{Todos los miembros de la \gls{jd} tienen el deber de cooperar entre sí y son corresponsables del cumplimiento de los objetivos generales del Plan de Trabajo.}
+    \artitem{En caso de ausencia temporal o impedimento de una persona titular de Secretaría (distinta a la General), la persona titular de la Secretaría General encarga temporalmente sus funciones a otro miembro de la \gls{jd}, informando formalmente de ello en la siguiente sesión de \gls{jd} y dejando constancia en acta. Este encargo no genera doble representación ni doble voto.}
+    \artitem[item:jd-cooperacion-suplencia:equipos-apoyo]{Cada Secretaría podrá contar con un equipo de apoyo conformado por \glspl{agremiado} voluntarios/as, quienes colaboran bajo la coordinación y responsabilidad de la persona titular de la Secretaría. La conformación de estos equipos se comunica a la \gls{jd} para su conocimiento y registro. La participación voluntaria es un pilar para el funcionamiento del \gls{cefis}.}
+    \artitem{La \gls{jd} podrá proponer a la \gls{age} la creación de \glspl{comisiones_trabajo} temporales (\aref{art:comisiones-naturaleza-creacion}).}
 \end{artitems}
 
 \Capitulo{De la Asamblea de Base (AB)}
 
 \Articulo{Definición y composición}
-La AB es la instancia primaria de participación y deliberación por año académico de ingreso (base). Está compuesta por todos los/as agremiados/as habilitados/as pertenecientes a dicha base. Cada base elige una Delegatura y una Subdelegatura.
+La \gls{ab} es la instancia primaria de participación y deliberación por año académico de ingreso (base). Está compuesta por todos los/as \glspl{agremiado_habilitado} pertenecientes a dicha base. Cada base elige una \gls{delegatura} y una \gls{subdelegatura}.
 
 \Articulo{Funciones de la Asamblea de Base y sus Delegaturas}
-Las funciones principales de la Asamblea de Base son:
+Las funciones principales de la \gls{ab} son:
 \begin{artitems}
     \artitem{Discutir asuntos académicos, administrativos y de bienestar específicos de su base.}
-    \artitem{Elegir democráticamente a las personas titulares de la Delegatura y Subdelegatura que los representarán ante la JR.\@{} Comunicar formalmente la elección (mediante un acta simple firmada por los asistentes o un registro verificable) a la JR y a la Secretaría de Actas y Economía para su inclusión en el Registro Central.}
-    \artitem{Proponer temas, iniciativas o problemáticas para ser tratados por la JR o la JD, a través de sus Delegaturas.}
-    \artitem{Canalizar inquietudes y reclamos colectivos de la base a través de sus Delegaturas.}
-    \artitem{Informarse sobre las actividades y decisiones del CEFIS a través de sus Delegaturas y los canales de comunicación oficiales.}
-    \artitem{Promover la integración y participación activa de la base en las actividades y asambleas del CEFIS.}
+    \artitem{Elegir democráticamente a las personas titulares de la \gls{delegatura} y \gls{subdelegatura} que los representarán ante la \gls{jr}. Comunicar formalmente la elección (mediante un acta simple firmada por los asistentes o un registro verificable) a la \gls{jr} y a la Secretaría de Actas y Economía para su inclusión en el \gls{registro_central}.}
+    \artitem{Proponer temas, iniciativas o problemáticas para ser tratados por la \gls{jr} o la \gls{jd}, a través de sus \glspl{delegatura}.}
+    \artitem{Canalizar inquietudes y reclamos colectivos de la base a través de sus \glspl{delegatura}.}
+    \artitem{Informarse sobre las actividades y decisiones del \gls{cefis} a través de sus \glspl{delegatura} y los canales de comunicación oficiales.}
+    \artitem{Promover la integración y participación activa de la base en las actividades y asambleas del \gls{cefis}.}
 \end{artitems}
 
-Las funciones específicas de la persona titular de la Delegatura de Base, con apoyo de la Subdelegatura, son:
+Las funciones específicas de la persona titular de la \gls{delegatura} de Base, con apoyo de la \gls{subdelegatura}, son:
 \begin{artitems}
-    \artitem{Convocar y presidir las Asambleas de Base.}
-    \artitem{Mantener un canal de comunicación activo y regular con los miembros de su base, informándoles sobre las gestiones realizadas y las decisiones de los órganos del CEFIS.}
-    \artitem{Representar los intereses y propuestas de su base ante la Junta de Representantes (JR).}
-    \artitem{Llevar un registro simple de los acuerdos principales de la AB para comunicación interna y para informar a la JR.}
+    \artitem{Convocar y presidir las \glspl{ab}.}
+    \artitem{Mantener un canal de comunicación activo y regular con los miembros de su base, informándoles sobre las gestiones realizadas y las decisiones de los órganos del \gls{cefis}.}
+    \artitem{Representar los intereses y propuestas de su base ante la \gls{jr}.}
+    \artitem{Llevar un registro simple de los acuerdos principales de la \gls{ab} para comunicación interna y para informar a la \gls{jr}.}
 \end{artitems}
 
 \Articulo{Convocatoria y sesiones de la Asamblea de Base}
 \begin{artitems}
-    \artitem{La AB es convocada por la persona titular de la Delegatura de Base, o en su ausencia, por la persona titular de la Subdelegatura.}
-    \artitem{También puede ser convocada a solicitud escrita (física o por medio electrónico verificable) de al menos el diez por ciento (10\%) de los agremiados/as habilitados/as de la base, dirigida a la Delegatura.}
+    \artitem{La \gls{ab} es convocada por la persona titular de la \gls{delegatura} de Base, o en su ausencia, por la persona titular de la \gls{subdelegatura}.}
+    \artitem{También puede ser convocada a solicitud escrita (física o por medio electrónico verificable) de al menos el diez por ciento (10\%) de los \glspl{agremiado_habilitado} de la base, dirigida a la \gls{delegatura}.}
     \artitem{La convocatoria se realiza con una anticipación razonable (mínimo 24 horas) a través de los grupos de informes de la base.}
-    \artitem{La AB se reúne ordinariamente al menos una vez por semestre y extraordinariamente según sea necesario.}
-    \artitem{Las sesiones son dirigidas por la persona titular de la Delegatura o, en su ausencia, por la Subdelegatura. Los acuerdos se adoptan por mayoría simple de los asistentes. La Delegatura es responsable de llevar un registro simple de los acuerdos principales.}
+    \artitem{La \gls{ab} se reúne ordinariamente al menos una vez por semestre y extraordinariamente según sea necesario.}
+    \artitem{Las sesiones son dirigidas por la persona titular de la \gls{delegatura} o, en su ausencia, por la \gls{subdelegatura}. Los acuerdos se adoptan por mayoría simple de los asistentes. La \gls{delegatura} es responsable de llevar un registro simple de los acuerdos principales.}
 \end{artitems}
 
 \Articulo{Coordinación y responsabilidad de las Delegaturas}
-La persona titular de la Delegatura y la persona titular de la Subdelegatura son el nexo oficial entre la AB y la JR.\@{} Son responsables de:
+La persona titular de la \gls{delegatura} y la persona titular de la \gls{subdelegatura} son el nexo oficial entre la \gls{ab} y la \gls{jr}. Son responsables de:
 \begin{artitems}
-    \artitem{Transmitir fielmente las decisiones, propuestas y preocupaciones de la base a la JR.}
-    \artitem{Informar diligentemente a su base sobre las gestiones realizadas, los acuerdos de la JR, la JD y la AGE que sean de interés para la base.}
-    \artitem{Fomentar la participación informada de su base en las actividades del CEFIS.}
+    \artitem{Transmitir fielmente las decisiones, propuestas y preocupaciones de la base a la \gls{jr}.}
+    \artitem{Informar diligentemente a su base sobre las gestiones realizadas, los acuerdos de la \gls{jr}, la \gls{jd} y la \gls{age} que sean de interés para la base.}
+    \artitem{Fomentar la participación informada de su base en las actividades del \gls{cefis}.}
 \end{artitems}
 
 \Capitulo{Del Comité Electoral (CE)}
 
 \Articulo{Naturaleza y autonomía}
-El CE es el órgano autónomo y temporal encargado de organizar, conducir y supervisar el proceso electoral para la renovación de la Junta Directiva y otros cargos de elección que determine la AGE.\@{} Goza de plena independencia funcional respecto a la JD y la JR en el ejercicio de sus atribuciones electorales. Rinde cuentas directamente a la AGE.\@{}
+El \gls{ce} es el órgano autónomo y temporal encargado de organizar, conducir y supervisar el proceso electoral para la renovación de la \gls{jd} y otros cargos de elección que determine la \gls{age}. Goza de plena independencia funcional respecto a la \gls{jd} y la \gls{jr} en el ejercicio de sus atribuciones electorales. Rinde cuentas directamente a la \gls{age}.
 
 \Articulo{Composición y elección}
 \begin{artitems}
-    \artitem{El Comité Electoral está compuesto por tres (3) miembros titulares, quienes asumen la Presidencia, Secretaría y Vocalía. Se eligen también dos (2) miembros suplentes. Los cargos específicos (Presidencia, Secretaría, Vocalía) son asignados por el propio CE en su primera sesión de instalación.}
-    \artitem{Son elegidos por la AGE-O convocada para tal fin, por mayoría simple, entre agremiados/as habilitados/as que cumplan los requisitos (\aref{art:ce-requisitos}) y no tengan impedimentos (conforme al \aref{art:ce-impedimentos}). La postulación es individual.}
-    \artitem{Su mandato inicia con su juramentación, la cual se registra en el acta de la AGE que los elige, y culmina con la proclamación oficial y registrada de los resultados electorales y la resolución firme de impugnaciones o apelaciones.}
+    \artitem{El \gls{ce} está compuesto por tres (3) miembros titulares, quienes asumen la Presidencia, Secretaría y Vocalía. Se eligen también dos (2) miembros suplentes. Los cargos específicos (Presidencia, Secretaría, Vocalía) son asignados por el propio \gls{ce} en su primera sesión de instalación.}
+    \artitem{Son elegidos por la \gls{ageo} convocada para tal fin, por mayoría simple, entre \glspl{agremiado_habilitado} que cumplan los requisitos (\aref{art:ce-requisitos}) y no tengan impedimentos (conforme al \aref{art:ce-impedimentos}). La postulación es individual.}
+    \artitem{Su mandato inicia con su juramentación, la cual se registra en el acta de la \gls{age} que los elige, y culmina con la proclamación oficial y registrada de los resultados electorales y la resolución firme de impugnaciones o apelaciones.}
 \end{artitems}
 
 \Articulo[art:ce-requisitos]{Requisitos}
-Para ser miembro del CE se requiere:
+Para ser miembro del \gls{ce} se requiere:
 \begin{artitems}
-    \artitem{Ser agremiado/a habilitado/a.}
+    \artitem{Ser \gls{agremiado_habilitado}.}
     \artitem{Declarar disponibilidad de tiempo para las funciones del cargo.}
     \artitem{No postular a ningún cargo en el proceso electoral que organizará.}
     \artitem{Presentar una declaración jurada de no incurrir en los impedimentos del \aref{art:ce-impedimentos} y de compromiso con la imparcialidad y transparencia del proceso electoral.}
 \end{artitems}
 
 \Articulo[art:ce-impedimentos]{Impedimentos}
-Están impedidos de ser miembros del CE:\@{}
+Están impedidos de ser miembros del \gls{ce}:
 \begin{artitems}
-    \artitem{Los miembros de la JD saliente o en funciones.}
-    \artitem{Los miembros de la JR en funciones.}
+    \artitem{Los miembros de la \gls{jd} saliente o en funciones.}
+    \artitem{Los miembros de la \gls{jr} en funciones.}
     \artitem{Quienes tengan parentesco hasta segundo grado de consanguinidad o primero de afinidad con algún candidato/a inscrita en alguna lista.}
-    \artitem{Quienes hayan sido sancionados por faltas graves por la AGE o la UNMSM en los últimos dos años, con sanción firme.}
-    \artitem{Quienes manifiesten apoyo o rechazo a alguna candidatura específica durante el proceso electoral, desde su postulación al CE.}
+    \artitem{Quienes hayan sido sancionados por \glspl{falta_grave} por la \gls{age} o la \gls{unmsm} en los últimos dos años, con sanción firme.}
+    \artitem{Quienes manifiesten apoyo o rechazo a alguna candidatura específica durante el proceso electoral, desde su postulación al \gls{ce}.}
 \end{artitems}
 
 \Articulo{Atribuciones del Comité Electoral}
-Son atribuciones del CE, cuyas decisiones deben ser justificadas, documentadas y registradas en su propio archivo público:
+Son atribuciones del \gls{ce}, cuyas decisiones deben ser justificadas, documentadas y registradas en su propio archivo público:
 \begin{artitems}
-    \artitem{Elaborar y proponer a la AGE para su aprobación el Reglamento Electoral, o aplicar el vigente, asegurando su conformidad con este Estatuto y los principios de transparencia, imparcialidad y equidad. La AGE revisa formalmente el Reglamento Electoral al menos cada dos (2) años (\aref{item:ageo-atribuciones:actualizar-criterios-bienal}, \aref{item:reglamento-electoral:revision-age-bienal}).}
-    \artitem{Convocar a elecciones de acuerdo a los plazos establecidos en el Estatuto y el Reglamento Electoral.}
-    \artitem{Elaborar, depurar y publicar el padrón electoral de miembros habilitados para votar, en coordinación con la Secretaría de Actas y Economía para verificar la condición de agremiado/a habilitado/a.}
-    \artitem{Inscribir las listas de candidatos que cumplan los requisitos establecidos en el Estatuto y Reglamento Electoral, verificando la documentación presentada. Publicar las listas inscritas.}
+    \artitem{Elaborar y proponer a la \gls{age} para su aprobación el \gls{reglamento_electoral}, o aplicar el vigente, asegurando su conformidad con este \gls{estatuto} y los principios de transparencia, imparcialidad y equidad. La \gls{age} revisa formalmente el \gls{reglamento_electoral} al menos cada dos (2) años (\aref{item:ageo-atribuciones:actualizar-criterios-bienal}, \aref{item:reglamento-electoral:revision-age-bienal}).}
+    \artitem{Convocar a elecciones de acuerdo a los plazos establecidos en el \gls{estatuto} y el \gls{reglamento_electoral}.}
+    \artitem{Elaborar, depurar y publicar el \gls{padron_electoral} de miembros habilitados para votar, en coordinación con la Secretaría de Actas y Economía para verificar la condición de \gls{agremiado_habilitado}.}
+    \artitem{Inscribir las listas de candidatos que cumplan los requisitos establecidos en el \gls{estatuto} y \gls{reglamento_electoral}, verificando la documentación presentada. Publicar las listas inscritas.}
     \artitem{Resolver tachas e impugnaciones contra actos del proceso electoral o resultados, en primera instancia. Sus resoluciones deben ser motivadas y emitidas dentro de los plazos reglamentarios debidamente notificadas y registradas.}
     \artitem{Organizar la jornada electoral, incluyendo la designación y capacitación de miembros de mesa, la instalación de mesas de sufragio (físicas o virtuales asegurando la identidad del votante y el secreto del voto), la supervisión del acto electoral, el escrutinio de votos y la elaboración de las actas correspondientes.}
     \artitem{Garantizar la transparencia, imparcialidad, neutralidad y legalidad del proceso electoral en todas sus etapas, tomando las medidas necesarias para ello.}
     \artitem{Proclamar los resultados oficiales y a los candidatos electos, mediante acta oficial registrada, una vez resueltas todas las impugnaciones en primera instancia o vencido el plazo para presentarlas.}
-    \artitem{Solicitar formalmente y por escrito a la JD los recursos logísticos y financieros necesarios y razonables para el cumplimiento de sus funciones, con cargo al presupuesto del CEFIS.\@{} La JD está obligada a proveerlos de manera oportuna y suficiente, dejando constancia documentada de la transferencia de recursos.}
+    \artitem{Solicitar formalmente y por escrito a la \gls{jd} los recursos logísticos y financieros necesarios y razonables para el cumplimiento de sus funciones, con cargo al presupuesto del \gls{cefis}. La \gls{jd} está obligada a proveerlos de manera oportuna y suficiente, dejando constancia documentada de la transferencia de recursos.}
     \artitem{Administrar su propio registro de decisiones, actas, resoluciones y actuaciones, las cuales son públicas y accesibles a todos los estudiantes.}
-    \artitem[item:ce-atribuciones:decisiones-efectivas]{Sus decisiones en materia electoral son de cumplimiento obligatorio. Solo pueden ser revisadas en instancia final por la AGE-E convocada específicamente para tal fin (\aref{item:agee-atribuciones:resolver-apelacion-ce}), únicamente en casos de grave irregularidad debidamente probada que vicie sustancialmente el proceso. La apelación debe seguir el procedimiento establecido en el Reglamento Electoral, y la carga de la prueba recae en quien la impugna.}
+    \artitem[item:ce-atribuciones:decisiones-efectivas]{Sus decisiones en materia electoral son de cumplimiento obligatorio. Solo pueden ser revisadas en instancia final por la \gls{agee} convocada específicamente para tal fin (\aref{item:agee-atribuciones:resolver-apelacion-ce}), únicamente en casos de grave irregularidad debidamente probada que vicie sustancialmente el proceso. La apelación debe seguir el procedimiento establecido en el \gls{reglamento_electoral}, y la carga de la prueba recae en quien la impugna.}
 \end{artitems}
 
 \Titulo{De los procesos electorales}
 
 \Articulo{Principios electorales}
-Los procesos electorales del CEFIS se rigen por los principios de democracia interna, transparencia, equidad entre candidaturas, imparcialidad del CE, y el derecho al voto universal, libre, secreto, directo y obligatorio de los agremiados/as habilitados/as.
+Los procesos electorales del \gls{cefis} se rigen por los principios de democracia interna, transparencia, equidad entre candidaturas, imparcialidad del \gls{ce}, y el derecho al voto universal, libre, secreto, directo y obligatorio de los \glspl{agremiado_habilitado}.
 
 \Articulo{Padrón electoral}
 \begin{artitems}
-    \artitem{El Padrón Electoral contiene la lista oficial de agremiados/as habilitados/as para votar (\aref{art:definicion-agremiado}).}
-    \artitem{El CE es el responsable de elaborar, depurar y publicar el Padrón Electoral preliminar, utilizando la información oficial de matrícula proporcionada por la E.P. de Física y verificada por la Secretaría de Actas y Economía.}
-    \artitem{El CE resuelve las observaciones de forma justificada y documentada, y publicará el Padrón Electoral definitivo antes de la jornada electoral, conforme al plazo fijado en el Reglamento Electoral. Este Padrón definitivo es archivado en el Registro Central.}
+    \artitem{El \gls{padron_electoral} contiene la lista oficial de \glspl{agremiado_habilitado} para votar (\aref{art:definicion-agremiado}).}
+    \artitem{El \gls{ce} es el responsable de elaborar, depurar y publicar el \gls{padron_electoral} preliminar, utilizando la información oficial de matrícula proporcionada por la \gls{epf} y verificada por la Secretaría de Actas y Economía.}
+    \artitem{El \gls{ce} resuelve las observaciones de forma justificada y documentada, y publicará el \gls{padron_electoral} definitivo antes de la jornada electoral, conforme al plazo fijado en el \gls{reglamento_electoral}. Este Padrón definitivo es archivado en el \gls{registro_central}.}
 \end{artitems}
 
 \Articulo{Requisitos para cargos electivos}
 \begin{artitems}
-    \artitem{Para la JD, véase el \aref{art:jd-requisitos} y \aref{art:jd-impedimentos} del presente Estatuto.}
-    \artitem{Para el CE, véanse el \aref{art:ce-requisitos} y el \aref{art:ce-impedimentos} del presente Estatuto.}
-    \artitem{El CE es responsable de verificar el cumplimiento de estos requisitos por parte de todos los postulantes, basado en la documentación especificada en el Reglamento Electoral.}
+    \artitem{Para la \gls{jd}, véase el \aref{art:jd-requisitos} y \aref{art:jd-impedimentos} del presente \gls{estatuto}.}
+    \artitem{Para el \gls{ce}, véanse el \aref{art:ce-requisitos} y el \aref{art:ce-impedimentos} del presente \gls{estatuto}.}
+    \artitem{El \gls{ce} es responsable de verificar el cumplimiento de estos requisitos por parte de todos los postulantes, basado en la documentación especificada en el \gls{reglamento_electoral}.}
 \end{artitems}
 
 \Articulo{Inscripción de candidaturas}
 \begin{artitems}
-    \artitem{La postulación a la JD se realiza mediante listas cerradas y bloqueadas, conforme a los cargos del \aref{art:jd-composicion}.}
-    \artitem{La postulación al CE es individual.}
-    \artitem{El CE es responsable de recibir y verificar las solicitudes de inscripción de candidaturas, asegurando que cumplan todos los requisitos y la documentación exigida por el Estatuto y el Reglamento Electoral.}
-    \artitem{El procedimiento detallado, los plazos para la inscripción, la subsanación de observaciones y la publicación de las listas o candidaturas aptas serán definidos en el Reglamento Electoral. Las decisiones del CE sobre las inscripciones deben ser justificadas y documentadas.}
+    \artitem{La postulación a la \gls{jd} se realiza mediante listas cerradas y bloqueadas, conforme a los cargos del \aref{art:jd-composicion}.}
+    \artitem{La postulación al \gls{ce} es individual.}
+    \artitem{El \gls{ce} es responsable de recibir y verificar las solicitudes de inscripción de candidaturas, asegurando que cumplan todos los requisitos y la documentación exigida por el \gls{estatuto} y el \gls{reglamento_electoral}.}
+    \artitem{El procedimiento detallado, los plazos para la inscripción, la subsanación de observaciones y la publicación de las listas o candidaturas aptas serán definidos en el \gls{reglamento_electoral}. Las decisiones del \gls{ce} sobre las inscripciones deben ser justificadas y documentadas.}
 \end{artitems}
 
 \Articulo{Campaña electoral}
 \begin{artitems}
-    \artitem{El Comité Electoral establece el período oficial para la realización de la campaña electoral.}
-    \artitem{El Reglamento Electoral norma las actividades permitidas y prohibidas durante la campaña, buscando garantizar la equidad, el respeto entre candidatos y el buen uso de los espacios y canales de comunicación del CEFIS.\@{} El Reglamento puede incluir disposiciones sobre límites de gastos si la AGE lo considera necesario.}
-    \artitem{Los órganos del CEFIS (JD, JR) y el propio CE deben mantener estricta neutralidad durante la campaña.}
-    \artitem{El CE supervisa el cumplimiento de las normas de campaña y puede organizar debates o foros informativos.}
+    \artitem{El \gls{ce} establece el período oficial para la realización de la campaña electoral.}
+    \artitem{El \gls{reglamento_electoral} norma las actividades permitidas y prohibidas durante la campaña, buscando garantizar la equidad, el respeto entre candidatos y el buen uso de los espacios y canales de comunicación del \gls{cefis}. El Reglamento puede incluir disposiciones sobre límites de gastos si la \gls{age} lo considera necesario.}
+    \artitem{Los órganos del \gls{cefis} (\gls{jd}, \gls{jr}) y el propio \gls{ce} deben mantener estricta neutralidad durante la campaña.}
+    \artitem{El \gls{ce} supervisa el cumplimiento de las normas de campaña y puede organizar debates o foros informativos.}
 \end{artitems}
 
 \Articulo{Miembros de mesa}
 \begin{artitems}
-    \artitem{Para cada mesa de sufragio (física o virtual), el Comité Electoral designa miembros de mesa (presidente, secretario, vocal) mediante el procedimiento que establezca el Reglamento Electoral (preferentemente sorteo público entre agremiados/as habilitados/as no candidatos/as).}
-    \artitem{El CE es responsable de capacitar a los miembros de mesa sobre sus funciones, las cuales incluyen instalar la mesa, verificar la identidad de los votantes según el padrón, entregar el material de votación (o validar acceso virtual), custodiar el desarrollo del sufragio, realizar el escrutinio inicial y redactar el acta electoral correspondiente.}
-    \artitem{Los miembros de mesa actúan bajo la dirección y supervisión del CE y están protegidos en el ejercicio imparcial de sus funciones. El Reglamento Electoral establece los impedimentos para ser Miembro de Mesa.}
+    \artitem{Para cada mesa de sufragio (física o virtual), el \gls{ce} designa miembros de mesa (presidente, secretario, vocal) mediante el procedimiento que establezca el \gls{reglamento_electoral} (preferentemente sorteo público entre \glspl{agremiado_habilitado} no candidatos/as).}
+    \artitem{El \gls{ce} es responsable de capacitar a los miembros de mesa sobre sus funciones, las cuales incluyen instalar la mesa, verificar la identidad de los votantes según el padrón, entregar el material de votación (o validar acceso virtual), custodiar el desarrollo del sufragio, realizar el escrutinio inicial y redactar el acta electoral correspondiente.}
+    \artitem{Los miembros de mesa actúan bajo la dirección y supervisión del \gls{ce} y están protegidos en el ejercicio imparcial de sus funciones. El \gls{reglamento_electoral} establece los impedimentos para ser Miembro de Mesa.}
 \end{artitems}
 
 \Articulo{Jornada electoral}
 \begin{artitems}
-    \artitem{El CE es responsable de organizar y supervisar la jornada electoral en la fecha y horario establecidos en la convocatoria.}
-    \artitem{El Reglamento Electoral detalla el procedimiento de votación, sea presencial, virtual o mixto, garantizando la identificación del agremiado/a votante, la emisión de voto único por elector y el secreto del mismo. Se implementan las medidas de seguridad técnica y logística necesarias.}
-    \artitem{El CE vela por el orden y la normalidad durante el desarrollo de la jornada.}
+    \artitem{El \gls{ce} es responsable de organizar y supervisar la jornada electoral en la fecha y horario establecidos en la convocatoria.}
+    \artitem{El \gls{reglamento_electoral} detalla el procedimiento de votación, sea presencial, virtual o mixto, garantizando la identificación del \gls{agremiado} votante, la emisión de voto único por elector y el secreto del mismo. Se implementan las medidas de seguridad técnica y logística necesarias.}
+    \artitem{El \gls{ce} vela por el orden y la normalidad durante el desarrollo de la jornada.}
 \end{artitems}
 
 \Articulo{Escrutinio y actas electorales}
 \begin{artitems}
-    \artitem{Finalizada la votación, se realizará el escrutinio de votos de forma pública en cada mesa de sufragio, bajo la dirección de los miembros de mesa y la supervisión del CE.}
-    \artitem{El procedimiento para el conteo de votos, la resolución de votos observados o impugnados en mesa, y la elaboración del Acta Electoral detallando los resultados (votos por lista/candidato, votos blancos, nulos, total de votantes) es especificado en el Reglamento Electoral.}
-    \artitem{Las Actas Electorales originales serán entregadas al CE para la consolidación de resultados. Las copias serán entregadas a los personeros acreditados, si los hubiere.}
+    \artitem{Finalizada la votación, se realizará el escrutinio de votos de forma pública en cada mesa de sufragio, bajo la dirección de los miembros de mesa y la supervisión del \gls{ce}.}
+    \artitem{El procedimiento para el conteo de votos, la resolución de votos observados o impugnados en mesa, y la elaboración del Acta Electoral detallando los resultados (votos por lista/candidato, votos blancos, nulos, total de votantes) es especificado en el \gls{reglamento_electoral}.}
+    \artitem{Las Actas Electorales originales serán entregadas al \gls{ce} para la consolidación de resultados. Las copias serán entregadas a los personeros acreditados, si los hubiere.}
 \end{artitems}
 
 \Articulo{Consolidación y proclamación de resultados}
 \begin{artitems}
-    \artitem{El CE es responsable de consolidar los resultados de todas las Actas Electorales, verificando su correcta sumatoria.}
-    \artitem{Una vez resueltas las impugnaciones presentadas ante el CE (conforme \aref{item:elecciones-impugnaciones-apelaciones:ce-1ra-instancia}) o vencido el plazo para ello, el CE proclama oficialmente los resultados finales y a los candidatos electos.}
-    \artitem{La proclamación se realiza mediante un Acta de Proclamación motivada, que será publicada en los canales oficiales del CEFIS y archivada en el Registro Central.}
+    \artitem{El \gls{ce} es responsable de consolidar los resultados de todas las Actas Electorales, verificando su correcta sumatoria.}
+    \artitem{Una vez resueltas las impugnaciones presentadas ante el \gls{ce} (conforme \aref{item:elecciones-impugnaciones-apelaciones:ce-1ra-instancia}) o vencido el plazo para ello, el \gls{ce} proclama oficialmente los resultados finales y a los candidatos electos.}
+    \artitem{La proclamación se realiza mediante un Acta de Proclamación motivada, que será publicada en los canales oficiales del \gls{cefis} y archivada en el \gls{registro_central}.}
 \end{artitems}
 
 \Articulo[art:elecciones-impugnaciones-apelaciones]{Impugnaciones y apelaciones electorales}
 \begin{artitems}
-    \artitem[item:elecciones-impugnaciones-apelaciones:ce-1ra-instancia]{Sobre la impugnación ante el CE en primera instancia:}
+    \artitem[item:elecciones-impugnaciones-apelaciones:ce-1ra-instancia]{Sobre la impugnación ante el \gls{ce} en primera instancia:}
     \begin{enumerate}
-        \subartitem{Cualquier agremiado/a o lista participante puede impugnar actos específicos del proceso electoral, decisiones del CE o los resultados consignados en las actas, dentro del plazo y por las causales establecidas en el Reglamento Electoral.}
-        \subartitem{La impugnación debe ser presentada formalmente ante el CE, debidamente sustentada y con los medios probatorios pertinentes.}
-        \subartitem{El CE resuelve la impugnación mediante resolución motivada y documentada en un plazo perentorio fijado por el Reglamento Electoral, notificando a las partes interesadas.}
+        \subartitem{Cualquier \gls{agremiado} o lista participante puede impugnar actos específicos del proceso electoral, decisiones del \gls{ce} o los resultados consignados en las actas, dentro del plazo y por las causales establecidas en el \gls{reglamento_electoral}.}
+        \subartitem{La impugnación debe ser presentada formalmente ante el \gls{ce}, debidamente sustentada y con los medios probatorios pertinentes.}
+        \subartitem{El \gls{ce} resuelve la impugnación mediante resolución motivada y documentada en un plazo perentorio fijado por el \gls{reglamento_electoral}, notificando a las partes interesadas.}
     \end{enumerate}
-    \artitem[item:elecciones-impugnaciones-apelaciones:agee-final-instancia]{Sobre la apelación ante la AGE-E en instancia final:}
+    \artitem[item:elecciones-impugnaciones-apelaciones:agee-final-instancia]{Sobre la apelación ante la \gls{agee} en instancia final:}
     \begin{enumerate}
-        \subartitem{Las resoluciones del CE solo pueden ser apeladas ante la AGE-E convocada específicamente para tal fin (conforme \aref{item:agee-atribuciones:resolver-apelacion-ce}, \aref{item:ce-atribuciones:decisiones-efectivas}).}
+        \subartitem{Las resoluciones del \gls{ce} solo pueden ser apeladas ante la \gls{agee} convocada específicamente para tal fin (conforme \aref{item:agee-atribuciones:resolver-apelacion-ce}, \aref{item:ce-atribuciones:decisiones-efectivas}).}
         \subartitem{La apelación procederá únicamente en casos de grave irregularidad debidamente probada que, a criterio del apelante, vicie sustancialmente la validez del proceso o altere de forma determinante el resultado electoral. La carga de la prueba recae en el apelante.}
-        \subartitem{El Reglamento Electoral establece el procedimiento y plazo para interponer la apelación ante la AGE-E.}
-        \subartitem{La decisión de la AGE-E es adoptada por mayoría simple de los asistentes, debe ser motivada, se registra en el acta respectiva y tiene carácter definitivo e inapelable dentro del ámbito del CEFIS.}
+        \subartitem{El \gls{reglamento_electoral} establece el procedimiento y plazo para interponer la apelación ante la \gls{agee}.}
+        \subartitem{La decisión de la \gls{agee} es adoptada por mayoría simple de los asistentes, debe ser motivada, se registra en el acta respectiva y tiene carácter definitivo e inapelable dentro del ámbito del \gls{cefis}.}
     \end{enumerate}
 \end{artitems}
-Las decisiones firmes del CE (si no hay apelación) o de la AGE-E (en caso de apelación) son de cumplimiento obligatorio.
+Las decisiones firmes del \gls{ce} (si no hay apelación) o de la \gls{agee} (en caso de apelación) son de cumplimiento obligatorio.
 
 \Articulo{El Reglamento Electoral}
 \begin{artitems}
-    \artitem{Los procedimientos para la organización, ejecución y control de los procesos electorales se establecen en el Reglamento Electoral del CEFIS.}
-    \artitem{El Reglamento Electoral es elaborado o actualizado por el CE y debe ser aprobado o modificado por la AGE por mayoría simple.}
-    \artitem{El Reglamento Electoral debe ser coherente con los principios y disposiciones del presente Estatuto.}
-    \artitem{El CE está obligado a aplicar el Reglamento Electoral vigente y puede proponer su actualización a la AGE basándose en la experiencia de procesos anteriores.}
-    \artitem[item:reglamento-electoral:revision-age-bienal]{La AGE revisa formalmente el Reglamento Electoral al menos cada dos (2) años (\aref{item:ageo-atribuciones:actualizar-criterios-bienal}).}
+    \artitem{Los procedimientos para la organización, ejecución y control de los procesos electorales se establecen en el \gls{reglamento_electoral} del \gls{cefis}.}
+    \artitem{El \gls{reglamento_electoral} es elaborado o actualizado por el \gls{ce} y debe ser aprobado o modificado por la \gls{age} por mayoría simple.}
+    \artitem{El \gls{reglamento_electoral} debe ser coherente con los principios y disposiciones del presente \gls{estatuto}.}
+    \artitem{El \gls{ce} está obligado a aplicar el \gls{reglamento_electoral} vigente y puede proponer su actualización a la \gls{age} basándose en la experiencia de procesos anteriores.}
+    \artitem[item:reglamento-electoral:revision-age-bienal]{La \gls{age} revisa formalmente el \gls{reglamento_electoral} al menos cada dos (2) años (\aref{item:ageo-atribuciones:actualizar-criterios-bienal}).}
 \end{artitems}
 
 \Titulo{De las Comisiones de Trabajo}
 
 \Articulo[art:comisiones-naturaleza-creacion]{Naturaleza y creación}
-Las Comisiones de Trabajo son órganos de apoyo, de carácter temporal o permanente, destinadas a estudiar, proponer o ejecutar tareas específicas que contribuyan a los fines del CEFIS.\@{} Pueden ser creadas por acuerdo de la AGE o de la JD.\@{} El acuerdo de creación debe especificar, como mínimo:
+Las \glspl{comisiones_trabajo} son órganos de apoyo, de carácter temporal o permanente, destinadas a estudiar, proponer o ejecutar tareas específicas que contribuyan a los fines del \gls{cefis}. Pueden ser creadas por acuerdo de la \gls{age} o de la \gls{jd}. El acuerdo de creación debe especificar, como mínimo:
 \begin{artitems}
     \artitem{El mandato específico y los objetivos de la comisión.}
     \artitem{Su duración estimada o carácter permanente.}
     \artitem{Su composición inicial o el mecanismo para designar a sus miembros.}
-    \artitem{El órgano (AGE o JD) o la Secretaría de la JD responsable de su supervisión directa.}
+    \artitem{El órgano (\gls{age} o \gls{jd}) o la Secretaría de la \gls{jd} responsable de su supervisión directa.}
 \end{artitems}
-Este acuerdo se registra en el acta correspondiente (de AGE o JD) y una copia se archiva en el Registro Central.
+Este acuerdo se registra en el acta correspondiente (de \gls{age} o \gls{jd}) y una copia se archiva en el \gls{registro_central}.
 
 \Articulo{Mandato y funciones}
 \begin{artitems}
-    \artitem{Las funciones y el ámbito de acción de cada Comisión de Trabajo están estrictamente delimitados por el mandato establecido en su acuerdo de creación.}
+    \artitem{Las funciones y el ámbito de acción de cada \gls{comisiones_trabajo} están estrictamente delimitados por el mandato establecido en su acuerdo de creación.}
     \artitem{En ningún caso podrán arrogarse funciones decisorias o de representación que correspondan a los órganos de gobierno (\aref{art:organos-gobierno}). Sus conclusiones o propuestas tienen carácter de recomendación para el órgano que la creó o supervisa.}
 \end{artitems}
 
 \Articulo{Composición y coordinación}
 \begin{artitems}
-    \artitem{Los miembros son designados por el órgano que las creó (AGE o JD), procurando la participación voluntaria de agremiados/as con interés, conocimiento o experiencia en la materia específica.}
+    \artitem{Los miembros son designados por el órgano que las creó (\gls{age} o \gls{jd}), procurando la participación voluntaria de \glspl{agremiado} con interés, conocimiento o experiencia en la materia específica.}
     \artitem{Cada comisión cuenta con un/a Coordinador/a, quien es elegido democráticamente entre sus miembros o designado directamente en el acuerdo de creación.}
     \artitem{El/la Coordinador/a es responsable de organizar el trabajo interno, dirigir las reuniones, asegurar el cumplimiento del mandato y servir como enlace principal con el órgano responsable de su supervisión.}
 \end{artitems}
@@ -786,232 +795,235 @@ Este acuerdo se registra en el acta correspondiente (de AGE o JD) y una copia se
     \artitem{Las comisiones establecen su propio ritmo y método de trabajo para cumplir su mandato, manteniendo comunicación con el órgano supervisor.}
     \artitem{Las comisiones llevan un registro simple y ordenado de sus actividades principales, discusiones y acuerdos internos, que está a disposición del órgano supervisor.}
     \artitem{El/la Coordinador/a presenta informes periódicos de avance al órgano que creó la comisión o al responsable de su supervisión, con la frecuencia que este determine en el acuerdo de creación o posteriormente.}
-    \artitem{Los informes finales o aquellos considerados de especial importancia por el órgano supervisor pueden ser puestos en conocimiento de la JR y/o publicados a través de los canales oficiales del CEFIS.}
+    \artitem{Los informes finales o aquellos considerados de especial importancia por el órgano supervisor pueden ser puestos en conocimiento de la \gls{jr} y/o publicados a través de los canales oficiales del \gls{cefis}.}
 \end{artitems}
 
 \Articulo{Disolución}
 \begin{artitems}
-    \artitem{Las Comisiones de Trabajo se disuelven automáticamente al cumplir su mandato específico o al vencer el plazo establecido en su acuerdo de creación.}
+    \artitem{Las \glspl{comisiones_trabajo} se disuelven automáticamente al cumplir su mandato específico o al vencer el plazo establecido en su acuerdo de creación.}
     \artitem{También pueden ser disueltas antes del plazo por acuerdo documentado del órgano que las creó, si se considera que han cumplido su objetivo, que su continuación ya no es necesaria, o por incumplimiento grave de su mandato.}
     \artitem{Al momento de su disolución, o al finalizar un periodo significativo si es permanente, la comisión debe presentar un informe final documentado de sus actividades, logros y recomendaciones al órgano que la creó.}
-    \artitem{Tanto el informe final como el acuerdo de disolución (si aplica) se archivan en el Registro Central.}
+    \artitem{Tanto el informe final como el acuerdo de disolución (si aplica) se archivan en el \gls{registro_central}.}
 \end{artitems}
 
 \Titulo{Conducta, procedimientos disciplinarios y apelaciones}
 
 \Articulo{Conducta esperada}
-Todo/a agremiado/a debe actuar conforme a los principios (\aref{art:principios-cefis}) y deberes (\aref{art:deberes-agremiados}). Se espera una conducta basada en el respeto mutuo, la probidad, la colaboración, el uso adecuado de los recursos y bienes del CEFIS, y la integridad en el desempeño de cualquier cargo o representación.
+Todo/a \gls{agremiado} debe actuar conforme a los principios (\aref{art:principios-cefis}) y deberes (\aref{art:deberes-agremiados}). Se espera una conducta basada en el respeto mutuo, la probidad, la colaboración, el uso adecuado de los recursos y bienes del \gls{cefis}, y la integridad en el desempeño de cualquier cargo o representación.
 
 \Articulo[art:faltas-definicion]{Definición de faltas}
-Para efectos de este Estatuto, las faltas contra los deberes, principios o normas del CEFIS se clasifican en:
+Para efectos de este \gls{estatuto}, las faltas contra los deberes, principios o normas del \gls{cefis} se clasifican en:
 \begin{artitems}
-    \artitem{Faltas leves: Incumplimientos menores de deberes o normativas internas que no causen perjuicio significativo al CEFIS, sus fines o sus agremiados (Ej: negligencia puntual en tareas asignadas sin consecuencias graves).}
-    \artitem{Faltas graves: Acciones u omisiones que atentan seriamente contra los principios, fines o patrimonio del CEFIS, los derechos de otros/as agremiados/as, o el normal funcionamiento de sus órganos (Ej: incumplimiento reiterado de deberes, mal uso comprobado de fondos o bienes del CEFIS, actos de hostigamiento o discriminación, obstrucción deliberada de acuerdos de AGE, incumplimiento grave del Estatuto o reglamentos).}
-    \artitem{Faltas muy graves: Faltas graves que, por su naturaleza, intencionalidad, daño causado o reincidencia, revisten una especial trascendencia negativa para el CEFIS o sus agremiados/as (Ej: apropiación indebida de fondos, actos de violencia física o acoso sexual comprobados, falsificación de documentos oficiales del CEFIS, usurpación de funciones).}
+    \artitem{\Gls{falta_leve}: Incumplimientos menores de deberes o normativas internas que no causen perjuicio significativo al \gls{cefis}, sus fines o sus \glspl{agremiado} (Ej: negligencia puntual en tareas asignadas sin consecuencias graves).}
+    \artitem{\Gls{falta_grave}: Acciones u omisiones que atentan seriamente contra los principios, fines o patrimonio del \gls{cefis}, los derechos de otros/as \glspl{agremiado}, o el normal funcionamiento de sus órganos (Ej: incumplimiento reiterado de deberes, mal uso comprobado de fondos o bienes del \gls{cefis}, actos de hostigamiento o discriminación, obstrucción deliberada de acuerdos de \gls{age}, incumplimiento grave del \gls{estatuto} o reglamentos).}
+    \artitem{\Gls{falta_muy_grave}: \glspl{falta_grave} que, por su naturaleza, intencionalidad, daño causado o reincidencia, revisten una especial trascendencia negativa para el \gls{cefis} o sus \glspl{agremiado} (Ej: apropiación indebida de fondos, actos de violencia física o acoso sexual comprobados, falsificación de documentos oficiales del \gls{cefis}, usurpación de funciones).}
 \end{artitems}
 La calificación específica de una falta se determinará al concluir el procedimiento correspondiente, basándose en los hechos probados y la normativa aplicable.
 
 \Articulo{Mecanismo de denuncia}
 \begin{artitems}
-    \artitem{Cualquier agremiado/a que tenga conocimiento de una presunta falta puede presentar una denuncia formal.}
-    \artitem{La denuncia sobre presuntas faltas graves o muy graves se presenta por escrito (físico o correo electrónico oficial), debidamente sustentada y dirigida a la Coordinación de la JR.\@{} La Coordinación registra la recepción de la denuncia.}
-    \artitem{La denuncia sobre presuntas faltas leves puede presentarse ante la Secretaría General de la JD o ante la Coordinación de la JR.}
-    \artitem{La persona denunciante puede solicitar la reserva de su identidad, la cual es mantenida por la JR o JD durante la investigación preliminar hasta donde sea procesalmente posible y no impida el derecho a la defensa.}
-    \artitem[item:denuncia-mecanismo:proteccion-buena-fe]{Los/as agremiados/as que presenten denuncias de buena fe están protegidos contra represalias, conforme a la supervisión de la JR (\aref{item:derechos-agremiados:proteccion-denuncias}, \aref{item:jr-atribuciones:velar-proteccion-represalias}).}
+    \artitem{Cualquier \gls{agremiado} que tenga conocimiento de una presunta falta puede presentar una denuncia formal.}
+    \artitem{La denuncia sobre presuntas \glspl{falta_grave} o \glspl{falta_muy_grave} se presenta por escrito (físico o correo electrónico oficial), debidamente sustentada y dirigida a la Coordinación de la \gls{jr}. La Coordinación registra la recepción de la denuncia.}
+    \artitem{La denuncia sobre presuntas \glspl{falta_leve} puede presentarse ante la Secretaría General de la \gls{jd} o ante la Coordinación de la \gls{jr}.}
+    \artitem{La persona denunciante puede solicitar la reserva de su identidad, la cual es mantenida por la \gls{jr} o \gls{jd} durante la investigación preliminar hasta donde sea procesalmente posible y no impida el derecho a la defensa.}
+    \artitem[item:denuncia-mecanismo:proteccion-buena-fe]{Los/as \glspl{agremiado} que presenten denuncias de buena fe están protegidos contra represalias, conforme a la supervisión de la \gls{jr} (\aref{item:derechos-agremiados:proteccion-denuncias}, \aref{item:jr-atribuciones:velar-proteccion-represalias}).}
 \end{artitems}
 
 \Articulo[art:investigacion-preliminar-proceso]{Investigación preliminar}
 \begin{artitems}
-    \artitem{Faltas leves: Son gestionadas directamente por la JD o la JR mediante comunicación escrita o amonestación verbal, buscando la corrección de la conducta. Se deja constancia simple si se considera necesario.}
-    \artitem[item:art:investigacion-preliminar-proceso:faltas-graves-muy-graves]{Faltas graves o muy graves (procedimiento interno):}
+    \artitem{\Glspl{falta_leve}: Son gestionadas directamente por la \gls{jd} o la \gls{jr} mediante comunicación escrita o amonestación verbal, buscando la corrección de la conducta. Se deja constancia simple si se considera necesario.}
+    \artitem[item:art:investigacion-preliminar-proceso:faltas-graves-muy-graves]{\Glspl{falta_grave} o \glspl{falta_muy_grave} (procedimiento interno):}
     \begin{enumerate}
-        \subartitem{Recibida una denuncia, la JR inicia una investigación preliminar (\aref{item:jr-atribuciones:investigacion-preliminar-faltas}). Para casos de alta complejidad o que involucren a miembros de la propia JR, esta puede solicitar a la AGE la conformación de una comisión investigadora ad hoc.}
-        \subartitem[subitem:investigacion-preliminar-proceso:alcance]{La investigación preliminar tiene como objetivo recabar información y elementos de juicio sobre los hechos denunciados. Incluye, como mínimo, la recopilación de documentos o testimonios pertinentes y la oportunidad para que el/la agremiado/a investigado/a presente sus descargos iniciales por escrito. Se desarrolla con la debida reserva.}
-        \subartitem{La JR (o la comisión ad hoc) elabora un informe documentado en un plazo razonable (no mayor a veinte (20) días hábiles, prorrogable justificadamente por la JR). Dicho informe contiene los hechos indagados, los descargos recibidos, las conclusiones preliminares y una recomendación sobre si procede archivar la denuncia o iniciar un procedimiento sancionador ante la AGE.}
-        \subartitem{El informe es registrado y elevado a la JD para que convoque a AGE-E si la recomendación es iniciar procedimiento sancionador. Si la recomendación es archivar, se notifica al denunciante (si es identificable) y al/la investigado/a.}
+        \subartitem{Recibida una denuncia, la \gls{jr} inicia una investigación preliminar (\aref{item:jr-atribuciones:investigacion-preliminar-faltas}). Para casos de alta complejidad o que involucren a miembros de la propia \gls{jr}, esta puede solicitar a la \gls{age} la conformación de una comisión investigadora ad hoc.}
+        \subartitem[subitem:investigacion-preliminar-proceso:alcance]{La investigación preliminar tiene como objetivo recabar información y elementos de juicio sobre los hechos denunciados. Incluye, como mínimo, la recopilación de documentos o testimonios pertinentes y la oportunidad para que el/la \gls{agremiado} investigado/a presente sus descargos iniciales por escrito. Se desarrolla con la debida reserva.}
+        \subartitem{La \gls{jr} (o la comisión ad hoc) elabora un informe documentado en un plazo razonable (no mayor a veinte (20) días hábiles, prorrogable justificadamente por la \gls{jr}). Dicho informe contiene los hechos indagados, los descargos recibidos, las conclusiones preliminares y una recomendación sobre si procede archivar la denuncia o iniciar un procedimiento sancionador ante la \gls{age}.}
+        \subartitem{El informe es registrado y elevado a la \gls{jd} para que convoque a \gls{agee} si la recomendación es iniciar procedimiento sancionador. Si la recomendación es archivar, se notifica al denunciante (si es identificable) y al/la investigado/a.}
     \end{enumerate}
     \artitem{Actuación ante hechos que podrían constituir delito (violencia, acoso sexual, hurto, etc.):}
     \begin{enumerate}
-        \subartitem{El CEFIS, a través de la JD o la Secretaría de Bienestar y Género, tiene el deber de informar al/la agremiado/a afectado/a sobre sus derechos y las vías de denuncia ante las autoridades universitarias (Secretaría de Instrucción, Defensoría Universitaria) y/o externas (Policía Nacional, Ministerio Público). Ofrece orientación y acompañamiento si el/la afectado/a lo solicita.}
-        \subartitem{La decisión de denunciar ante instancias externas corresponde exclusivamente al/la afectado/a o a las autoridades competentes según ley. El CEFIS respeta esta decisión.}
-        \subartitem{Si se inicia un proceso formal de investigación o judicial por estos hechos ante autoridades externas competentes, y el/la agremiado/a denunciado/a ocupa un cargo en el CEFIS (JD, JR, CE, Delegaturas, Subdelegaturas) o su permanencia activa representa un riesgo evidente para la comunidad estudiantil, la JD, previo informe a la JR, puede acordar la suspensión cautelar del/la agremiado/a de sus cargos y/o participación en actividades del CEFIS, mientras dure la investigación externa. Esta medida es administrativa, no disciplinaria, y debe ser comunicada formalmente y registrada.}
-        \subartitem{Independientemente de la vía externa, si los hechos también constituyen una falta grave o muy grave según el \aref{art:faltas-definicion}, la JR puede realizar la investigación preliminar (\aref{item:art:investigacion-preliminar-proceso:faltas-graves-muy-graves}) y, si el/la afectado/a consiente expresamente en seguir también la vía interna del CEFIS o si la falta afecta directamente al gremio (ej.\ malversación), se puede continuar con el procedimiento sancionador ante la AGE (\aref{art:age-procedimiento-sancionador}). Las sanciones internas son independientes de las externas.}
+        \subartitem{El \gls{cefis}, a través de la \gls{jd} o la Secretaría de Bienestar y Género, tiene el deber de informar al/la \gls{agremiado} afectado/a sobre sus derechos y las vías de denuncia ante las autoridades universitarias (Secretaría de Instrucción, Defensoría Universitaria) y/o externas (Policía Nacional, Ministerio Público). Ofrece orientación y acompañamiento si el/la afectado/a lo solicita.}
+        \subartitem{La decisión de denunciar ante instancias externas corresponde exclusivamente al/la afectado/a o a las autoridades competentes según ley. El \gls{cefis} respeta esta decisión.}
+        \subartitem{Si se inicia un proceso formal de investigación o judicial por estos hechos ante autoridades externas competentes, y el/la \gls{agremiado} denunciado/a ocupa un cargo en el \gls{cefis} (\gls{jd}, \gls{jr}, \gls{ce}, \glspl{delegatura}, \glspl{subdelegatura}) o su permanencia activa representa un riesgo evidente para la comunidad estudiantil, la \gls{jd}, previo informe a la \gls{jr}, puede acordar la suspensión cautelar del/la \gls{agremiado} de sus cargos y/o participación en actividades del \gls{cefis}, mientras dure la investigación externa. Esta medida es administrativa, no disciplinaria, y debe ser comunicada formalmente y registrada.}
+        \subartitem{Independientemente de la vía externa, si los hechos también constituyen una \gls{falta_grave} o \gls{falta_muy_grave} según el \aref{art:faltas-definicion}, la \gls{jr} puede realizar la investigación preliminar (\aref{item:art:investigacion-preliminar-proceso:faltas-graves-muy-graves}) y, si el/la afectado/a consiente expresamente en seguir también la vía interna del \gls{cefis} o si la falta afecta directamente al gremio (ej.\ malversación), se puede continuar con el procedimiento sancionador ante la \gls{age} (\aref{art:age-procedimiento-sancionador}). Las sanciones internas son independientes de las externas.}
     \end{enumerate}
 \end{artitems}
 
 \Articulo[art:age-procedimiento-sancionador]{Procedimiento sancionador ante la AGE (faltas graves/muy graves)}
 \begin{artitems}
-    \artitem{Recibido el informe de la JR, o comisión ad hoc, que recomienda iniciar procedimiento sancionador, la JD convoca a AGE-E cuyo punto de agenda único o principal será resolver dicho procedimiento.}
-    \artitem{El/la agremiado/a investigado/a es notificado formalmente por la JD (con copia a la JR) de la convocatoria y del informe de investigación, con una antelación mínima de cinco (5) días hábiles a la fecha de la AGE-E.}
-    \artitem{Durante la AGE-E, se garantiza el debido proceso, que incluye:}
+    \artitem{Recibido el informe de la \gls{jr}, o comisión ad hoc, que recomienda iniciar procedimiento sancionador, la \gls{jd} convoca a \gls{agee} cuyo punto de agenda único o principal será resolver dicho procedimiento.}
+    \artitem{El/la \gls{agremiado} investigado/a es notificado formalmente por la \gls{jd} (con copia a la \gls{jr}) de la convocatoria y del informe de investigación, con una antelación mínima de cinco (5) días hábiles a la fecha de la \gls{agee}.}
+    \artitem{Durante la \gls{agee}, se garantiza el debido proceso, que incluye:}
     \begin{enumerate}
-        \subartitem{Presentación del caso por parte de un miembro designado de la JR o comisión ad hoc.}
-        \subartitem{Derecho del agremiado/a investigado/a a ejercer su defensa personalmente (o con asistencia de otro agremiado si lo solicita), presentando sus descargos, pruebas y argumentos.}
-        \subartitem{Posibilidad de un debate ordenado dirigido por quien presida la AGE.}
+        \subartitem{Presentación del caso por parte de un miembro designado de la \gls{jr} o comisión ad hoc.}
+        \subartitem{Derecho del \gls{agremiado} investigado/a a ejercer su defensa personalmente (o con asistencia de otro \gls{agremiado} si lo solicita), presentando sus descargos, pruebas y argumentos.}
+        \subartitem{Posibilidad de un debate ordenado dirigido por quien presida la \gls{age}.}
     \end{enumerate}
-    \artitem{Concluida la presentación y el debate, la AGE-E delibera y vota la aplicación o no de una sanción. La decisión sobre la existencia de la falta y la sanción a imponer debe ser adoptada por la mayoría según \aref{art:age-acuerdos-mayorias} y \aref{art:age-sanciones-aplicables}.}
-    \artitem{La decisión final debe ser motivada, consta en el acta de la AGE-E y es notificada formalmente al agremiado/a sancionado/a y al denunciante (si es identificable).}
+    \artitem{Concluida la presentación y el debate, la \gls{agee} delibera y vota la aplicación o no de una sanción. La decisión sobre la existencia de la falta y la sanción a imponer debe ser adoptada por la mayoría según \aref{art:age-acuerdos-mayorias} y \aref{art:age-sanciones-aplicables}.}
+    \artitem{La decisión final debe ser motivada, consta en el acta de la \gls{agee} y es notificada formalmente al \gls{agremiado} sancionado/a y al denunciante (si es identificable).}
 \end{artitems}
 
 \Articulo[art:age-sanciones-aplicables]{Sanciones aplicables por AGE}
-Según la gravedad de la falta probada, la AGE puede imponer las siguientes sanciones:
+Según la gravedad de la falta probada, la \gls{age} puede imponer las siguientes sanciones:
 \begin{artitems}
-    \artitem{Amonestación escrita: Llamada de atención formal registrada en acta de AGE.\@{} Aplicable a faltas graves. (Mayoría simple).}
-    \artitem{Suspensión temporal de derechos: Inhabilitación para participar en actividades, votar o ser elegido/a por un período determinado (máximo 1 año). Aplicable a faltas graves o muy graves. (Mayoría simple).}
-    \artitem[item:age-sanciones-aplicables:remocion-cargo]{Remoción del cargo: Destitución de cualquier cargo electivo o de representación dentro del CEFIS.\@{} Aplicable a faltas graves o muy graves cometidas en ejercicio del cargo. (Mayoría calificada 2/3, conforme \aref{subitem:age-acuerdos-mayorias:remocion-jd-2tercios}).}
-    \artitem[item:age-sanciones-aplicables:exclusion-agremiado]{Exclusión del CEFIS:\@{} Pérdida definitiva de la condición de agremiado. Aplicable únicamente a faltas muy graves. (Mayoría calificada 2/3, conforme \aref{subitem:age-acuerdos-mayorias:exclusion-agremiado-2tercios}).}
+    \artitem{Amonestación escrita: Llamada de atención formal registrada en acta de \gls{age}. Aplicable a \glspl{falta_grave}. (Mayoría simple).}
+    \artitem{Suspensión temporal de derechos: Inhabilitación para participar en actividades, votar o ser elegido/a por un período determinado (máximo 1 año). Aplicable a \glspl{falta_grave} o \glspl{falta_muy_grave}. (Mayoría simple).}
+    \artitem[item:age-sanciones-aplicables:remocion-cargo]{Remoción del cargo: Destitución de cualquier cargo electivo o de representación dentro del \gls{cefis}. Aplicable a \glspl{falta_grave} o \glspl{falta_muy_grave} cometidas en ejercicio del cargo. (Mayoría calificada 2/3, conforme \aref{subitem:age-acuerdos-mayorias:remocion-jd-2tercios}).}
+    \artitem[item:age-sanciones-aplicables:exclusion-agremiado]{Exclusión del \gls{cefis}: Pérdida definitiva de la condición de \gls{agremiado}. Aplicable únicamente a \glspl{falta_muy_grave}. (Mayoría calificada 2/3, conforme \aref{subitem:age-acuerdos-mayorias:exclusion-agremiado-2tercios}).}
 \end{artitems}
 Las sanciones se aplican respetando el principio de proporcionalidad entre la falta cometida y la sanción impuesta. La reincidencia puede ser considerada un agravante.
 
 \Articulo[art:sanciones-registro-confidencial]{Registro confidencial de sanciones}
 \begin{artitems}
-    \artitem{Todas las sanciones firmes impuestas por la AGE se registran en archivo específico de carácter confidencial, gestionado por la Secretaría de Actas y Economía como parte del Registro Central.}
-    \artitem{Este archivo consigna los datos del agremiado/a sancionado/a, la falta cometida, la sanción impuesta, la fecha y el órgano que la decidió.}
-    \artitem{El acceso a este archivo está restringido a la persona titular de la Secretaría de Actas y Economía y de la Secretaría General para fines de gestión interna, y a la JR o al CE para verificar antecedentes en procesos disciplinarios o electorales, previa solicitud justificada y registrada. Su contenido no es de acceso público general.}
+    \artitem{Todas las sanciones firmes impuestas por la \gls{age} se registran en archivo específico de carácter confidencial, gestionado por la Secretaría de Actas y Economía como parte del \gls{registro_central}.}
+    \artitem{Este archivo consigna los datos del \gls{agremiado} sancionado/a, la falta cometida, la sanción impuesta, la fecha y el órgano que la decidió.}
+    \artitem{El acceso a este archivo está restringido a la persona titular de la Secretaría de Actas y Economía y de la Secretaría General para fines de gestión interna, y a la \gls{jr} o al \gls{ce} para verificar antecedentes en procesos disciplinarios o electorales, previa solicitud justificada y registrada. Su contenido no es de acceso público general.}
 \end{artitems}
 
 \Articulo[art:apelaciones-no-disciplinarias-generales]{Apelaciones generales (no disciplinarias graves/no electorales)}
 \begin{artitems}
-    \artitem{Las decisiones administrativas adoptadas por la JD, sus Secretarías o las Comisiones de Trabajo, que no constituyan sanciones por faltas graves o muy graves (\aref{art:age-procedimiento-sancionador}) ni decisiones del CE (\aref{art:elecciones-impugnaciones-apelaciones}), pueden ser apeladas por cualquier agremiado/a afectado/a.}
-    \artitem{La apelación se presenta por escrito y de forma motivada ante la Coordinación de la JR dentro de los diez (10) días hábiles siguientes a la comunicación de la decisión.}
-    \artitem[item:apelaciones-no-disciplinarias-generales:revision-jr]{La JR evalúa la apelación, solicita informes que considere necesarios al órgano que emitió la decisión, y emite una recomendación documentada a la JD o a la AGE, según la trascendencia del asunto, en un plazo de quince (15) días hábiles.}
-    \artitem[item:apelaciones-no-disciplinarias-generales:elevacion-age]{Si la decisión apelada fue de la JD y esta no acoge la recomendación de la JR, o si el asunto es de competencia originaria de la AGE, la JR puede elevar el caso a la siguiente AGE (ordinaria o extraordinaria) para su resolución final. La decisión de la AGE es definitiva en el ámbito del CEFIS y se registra en acta.}
+    \artitem{Las decisiones administrativas adoptadas por la \gls{jd}, sus Secretarías o las \glspl{comisiones_trabajo}, que no constituyan sanciones por \glspl{falta_grave} o \glspl{falta_muy_grave} (\aref{art:age-procedimiento-sancionador}) ni decisiones del \gls{ce} (\aref{art:elecciones-impugnaciones-apelaciones}), pueden ser apeladas por cualquier \gls{agremiado} afectado/a.}
+    \artitem{La apelación se presenta por escrito y de forma motivada ante la Coordinación de la \gls{jr} dentro de los diez (10) días hábiles siguientes a la comunicación de la decisión.}
+    \artitem[item:apelaciones-no-disciplinarias-generales:revision-jr]{La \gls{jr} evalúa la apelación, solicita informes que considere necesarios al órgano que emitió la decisión, y emite una recomendación documentada a la \gls{jd} o a la \gls{age}, según la trascendencia del asunto, en un plazo de quince (15) días hábiles.}
+    \artitem[item:apelaciones-no-disciplinarias-generales:elevacion-age]{Si la decisión apelada fue de la \gls{jd} y esta no acoge la recomendación de la \gls{jr}, o si el asunto es de competencia originaria de la \gls{age}, la \gls{jr} puede elevar el caso a la siguiente \gls{age} (ordinaria o extraordinaria) para su resolución final. La decisión de la \gls{age} es definitiva en el ámbito del \gls{cefis} y se registra en acta.}
 \end{artitems}
 
 \Articulo[art:anulacion-razones-eticas]{Anulación por razones éticas}
 \begin{artitems}
-    \artitem{Si una decisión o acto de un órgano del CEFIS formalmente correcto respecto al Estatuto o reglamentos produce un resultado manifiestamente injusto, contrario a los principios fundamentales del CEFIS (\aref{art:principios-cefis}), o perjudicial para la integridad de la comunidad estudiantil, cualquier agremiado/a, la JD o la JR pueden solicitar su revisión a la AGE-E.}
+    \artitem{Si una decisión o acto de un órgano del \gls{cefis} formalmente correcto respecto al \gls{estatuto} o reglamentos produce un resultado manifiestamente injusto, contrario a los principios fundamentales del \gls{cefis} (\aref{art:principios-cefis}), o perjudicial para la integridad de la comunidad estudiantil, cualquier \gls{agremiado}, la \gls{jd} o la \gls{jr} pueden solicitar su revisión a la \gls{agee}.}
     \artitem{La solicitud debe presentarse por escrito, fundamentando de manera sólida y clara la contravención ética o la injusticia manifiesta del resultado.}
-    \artitem[item:anulacion-razones-eticas:procedimiento-agee]{La AGE-E evalúa la solicitud y los antecedentes del caso. Si considera justificada la revisión por razones éticas, puede, por mayoría calificada de dos tercios (2/3) de los agremiados/as presentes y votantes (conforme \aref{subitem:age-acuerdos-mayorias:anulacion-etica-2tercios}), confirmar, modificar o anular la decisión o acto original.}
-    \artitem{La decisión de la AGE-E debe ser explícitamente motivada en consideraciones éticas y de justicia, quedando registrada en acta. Este mecanismo es de uso excepcional.}
+    \artitem[item:anulacion-razones-eticas:procedimiento-agee]{La \gls{agee} evalúa la solicitud y los antecedentes del caso. Si considera justificada la revisión por razones éticas, puede, por mayoría calificada de dos tercios (2/3) de los \glspl{agremiado} presentes y votantes (conforme \aref{subitem:age-acuerdos-mayorias:anulacion-etica-2tercios}), confirmar, modificar o anular la decisión o acto original.}
+    \artitem{La decisión de la \gls{agee} debe ser explícitamente motivada en consideraciones éticas y de justicia, quedando registrada en acta. Este mecanismo es de uso excepcional.}
 \end{artitems}
 
 \Articulo[art:revisiones-posincidente]{Revisiones posincidente}
 \begin{artitems}
-    \artitem{Tras la conclusión de un procedimiento sancionador por falta grave o muy grave, o después de cualquier incidente significativo que haya requerido una intervención excepcional (como una anulación por razones éticas o la resolución de una crisis interna), la JR tendrá la responsabilidad de conducir o supervisar una revisión del caso.}
-    \artitem{Esta revisión no tiene como fin reevaluar la responsabilidad individual ya determinada, sino identificar posibles fallas en los procedimientos, normativas, comunicación interna o salvaguardas del CEFIS que pudieron haber contribuido al incidente.}
-    \artitem{La JR elabora un informe documentado con enfoque sistémico, que incluye recomendaciones concretas para mejorar los procesos, reglamentos o prácticas del CEFIS y prevenir la recurrencia de situaciones similares.}
-    \artitem{Este informe es presentado a la JD y a la AGE, y sus recomendaciones serán consideradas para futuras actualizaciones normativas o de gestión. El informe se archiva en el Registro Central.}
+    \artitem{Tras la conclusión de un procedimiento sancionador por \gls{falta_grave} o \gls{falta_muy_grave}, o después de cualquier incidente significativo que haya requerido una intervención excepcional (como una anulación por razones éticas o la resolución de una crisis interna), la \gls{jr} tendrá la responsabilidad de conducir o supervisar una revisión del caso.}
+    \artitem{Esta revisión no tiene como fin reevaluar la responsabilidad individual ya determinada, sino identificar posibles fallas en los procedimientos, normativas, comunicación interna o salvaguardas del \gls{cefis} que pudieron haber contribuido al incidente.}
+    \artitem{La \gls{jr} elabora un informe documentado con enfoque sistémico, que incluye recomendaciones concretas para mejorar los procesos, reglamentos o prácticas del \gls{cefis} y prevenir la recurrencia de situaciones similares.}
+    \artitem{Este informe es presentado a la \gls{jd} y a la \gls{age}, y sus recomendaciones serán consideradas para futuras actualizaciones normativas o de gestión. El informe se archiva en el \gls{registro_central}.}
 \end{artitems}
 
 \Titulo{Modificación del Estatuto}
 
 \Articulo{Iniciativa de modificación}
-La propuesta para modificar parcial o totalmente el presente Estatuto puede ser presentada formalmente por:
+La propuesta para modificar parcial o totalmente el presente \gls{estatuto} puede ser presentada formalmente por:
 \begin{artitems}
-    \artitem{La JD, mediante acuerdo registrado en acta.}
-    \artitem{La JR, mediante acuerdo registrado en acta.}
-    \artitem[item:estatuto-iniciativa-modificacion:por-agremiados-10pct]{Un número no menor al diez por ciento (10\%) de los agremiados/as habilitados/as, mediante solicitud escrita fundamentada dirigida a la JD, la cual registra su recepción.}
+    \artitem{La \gls{jd}, mediante acuerdo registrado en acta.}
+    \artitem{La \gls{jr}, mediante acuerdo registrado en acta.}
+    \artitem[item:estatuto-iniciativa-modificacion:por-agremiados-10pct]{Un número no menor al diez por ciento (10\%) de los \glspl{agremiado_habilitado}, mediante solicitud escrita fundamentada dirigida a la \gls{jd}, la cual registra su recepción.}
 \end{artitems}
 
 \Articulo{Procedimiento de modificación}
 \begin{artitems}
     \artitem{La propuesta de modificación, sea cual sea su origen, debe ser presentada por escrito, especificando los artículos a modificar, suprimir o añadir, y adjuntando una exposición de motivos que justifique el cambio propuesto.}
-    \artitem{La JD es responsable de verificar que la propuesta cumpla los requisitos formales y, en caso de iniciativa de los agremiados (\aref{item:estatuto-iniciativa-modificacion:por-agremiados-10pct}), de incluirla obligatoriamente en la agenda de la próxima AGE-E convocada para tal efecto o en una AGE-E específica.}
-    \artitem{La convocatoria a la AGE-E que incluya la modificación del Estatuto debe realizarse con una anticipación mínima de quince (15) días calendario. La convocatoria debe adjuntar el texto completo de la propuesta de modificación y su exposición de motivos.}
-    \artitem{La difusión de la convocatoria y la propuesta se realiza a través de los canales oficiales de comunicación del CEFIS.}
-    \artitem{Durante la AGE-E se realiza el debate correspondiente sobre la propuesta de modificación.}
+    \artitem{La \gls{jd} es responsable de verificar que la propuesta cumpla los requisitos formales y, en caso de iniciativa de los \glspl{agremiado} (\aref{item:estatuto-iniciativa-modificacion:por-agremiados-10pct}), de incluirla obligatoriamente en la agenda de la próxima \gls{agee} convocada para tal efecto o en una \gls{agee} específica.}
+    \artitem{La convocatoria a la \gls{agee} que incluya la modificación del \gls{estatuto} debe realizarse con una anticipación mínima de quince (15) días calendario. La convocatoria debe adjuntar el texto completo de la propuesta de modificación y su exposición de motivos.}
+    \artitem{La difusión de la convocatoria y la propuesta se realiza a través de los canales oficiales de comunicación del \gls{cefis}.}
+    \artitem{Durante la \gls{agee} se realiza el debate correspondiente sobre la propuesta de modificación.}
 \end{artitems}
 
 \Articulo{Aprobación de la modificación}
 \begin{artitems}
-    \artitem{Para la instalación válida de la AGE-E que trate la modificación del Estatuto, se aplican las reglas de quórum establecidas (\aref{art:age-quorum-1ra-llamada}, \aref{art:age-quorum-2da-llamada} y \aref{art:age-quorum-2da-convocatoria}).}
-    \artitem[item:estatuto-aprobacion-modificacion:mayoria-2tercios]{La aprobación de cualquier modificación al presente Estatuto requiere el voto favorable de una mayoría de dos tercios (2/3) de agremiados/as habilitados/as presentes y votantes en la AGE-E (\aref{subitem:age-acuerdos-mayorias:modificar-estatuto-2tercios}, \aref{item:agee-atribuciones:modificar-estatuto}). La votación es registrada en acta.}
+    \artitem{Para la instalación válida de la \gls{agee} que trate la modificación del \gls{estatuto}, se aplican las reglas de quórum establecidas (\aref{art:age-quorum-1ra-llamada}, \aref{art:age-quorum-2da-llamada} y \aref{art:age-quorum-2da-convocatoria}).}
+    \artitem[item:estatuto-aprobacion-modificacion:mayoria-2tercios]{La aprobación de cualquier modificación al presente \gls{estatuto} requiere el voto favorable de una mayoría de dos tercios (2/3) de \glspl{agremiado_habilitado} presentes y votantes en la \gls{agee} (\aref{subitem:age-acuerdos-mayorias:modificar-estatuto-2tercios}, \aref{item:agee-atribuciones:modificar-estatuto}). La votación es registrada en acta.}
 \end{artitems}
 
 \Articulo{Registro y vigencia}
 \begin{artitems}
-    \artitem{La modificación aprobada del Estatuto será transcrita literalmente en el acta de la AGE-E correspondiente.}
-    \artitem{El texto íntegro del Estatuto actualizado, incorporando las modificaciones aprobadas, es elaborado por la Secretaría de Actas y Economía bajo supervisión de la JD, y archivado formalmente en el Registro Central.}
-    \artitem{La JD es responsable de publicar el Estatuto actualizado a través de los canales oficiales en un plazo no mayor a diez (10) días hábiles desde su aprobación.}
-    \artitem{Las modificaciones entran en vigencia a partir del día siguiente de su publicación oficial, salvo que la propia AGE-E acuerde una fecha distinta, la cual consta en acta.}
+    \artitem{La modificación aprobada del \gls{estatuto} será transcrita literalmente en el acta de la \gls{agee} correspondiente.}
+    \artitem{El texto íntegro del \gls{estatuto} actualizado, incorporando las modificaciones aprobadas, es elaborado por la Secretaría de Actas y Economía bajo supervisión de la \gls{jd}, y archivado formalmente en el \gls{registro_central}.}
+    \artitem{La \gls{jd} es responsable de publicar el \gls{estatuto} actualizado a través de los canales oficiales en un plazo no mayor a diez (10) días hábiles desde su aprobación.}
+    \artitem{Las modificaciones entran en vigencia a partir del día siguiente de su publicación oficial, salvo que la propia \gls{agee} acuerde una fecha distinta, la cual consta en acta.}
 \end{artitems}
 
 \Articulo{Revisión periódica integral}
 \begin{artitems}
-    \artitem{Independientemente de las modificaciones puntuales que puedan surgir, el presente Estatuto debe ser sometido a una revisión integral al menos cada cuatro (4) años.}
-    \artitem{La AGE-O designa una Comisión Revisora del Estatuto, a propuesta de la JD o la JR, con el mandato específico de evaluar la vigencia, coherencia y efectividad del Estatuto y proponer las actualizaciones que considere necesarias.}
-    \artitem{La Comisión Revisora presenta sus conclusiones y propuestas de modificación documentadas, las cuales siguen el procedimiento regular establecido en este Título para su debate y aprobación por la AGE-E.}
+    \artitem{Independientemente de las modificaciones puntuales que puedan surgir, el presente \gls{estatuto} debe ser sometido a una revisión integral al menos cada cuatro (4) años.}
+    \artitem{La \gls{ageo} designa una Comisión Revisora del \gls{estatuto}, a propuesta de la \gls{jd} o la \gls{jr}, con el mandato específico de evaluar la vigencia, coherencia y efectividad del \gls{estatuto} y proponer las actualizaciones que considere necesarias.}
+    \artitem{La Comisión Revisora presenta sus conclusiones y propuestas de modificación documentadas, las cuales siguen el procedimiento regular establecido en este Título para su debate y aprobación por la \gls{agee}.}
 \end{artitems}
 
 \Titulo{Disolución y liquidación}
 
 \Articulo{Causales de disolución}
-El CEFIS solo podrá ser disuelto por las siguientes causales:
+El \gls{cefis} solo podrá ser disuelto por las siguientes causales:
 \begin{artitems}
-    \artitem{Por decisión expresa de la AGE-E, adoptada conforme al procedimiento establecido en este Título.}
-    \artitem{Por imposibilidad manifiesta y permanente de cumplir con los fines y objetivos establecidos en el \aref{art:fines-obj-cefis} del presente Estatuto, declarada formalmente por la AGE-E.}
+    \artitem{Por decisión expresa de la \gls{agee}, adoptada conforme al procedimiento establecido en este Título.}
+    \artitem{Por imposibilidad manifiesta y permanente de cumplir con los fines y objetivos establecidos en el \aref{art:fines-obj-cefis} del presente \gls{estatuto}, declarada formalmente por la \gls{agee}.}
 \end{artitems}
 
 \Articulo{Procedimiento de disolución}
 \begin{artitems}
-    \artitem{La propuesta de disolución del CEFIS solo puede ser presentada por la JD, la JR, o por un número no menor al veinte por ciento (20\%) de los agremiados habilitados, mediante solicitud escrita y fundamentada dirigida a la JD.}
-    \artitem{Recibida una propuesta válida, la JD convoca obligatoriamente a una AGE-E con punto de agenda único: ``Debate y decisión sobre la disolución del CEFIS''.}
+    \artitem{La propuesta de disolución del \gls{cefis} solo puede ser presentada por la \gls{jd}, la \gls{jr}, o por un número no menor al veinte por ciento (20\%) de los \glspl{agremiado_habilitado}, mediante solicitud escrita y fundamentada dirigida a la \gls{jd}.}
+    \artitem{Recibida una propuesta válida, la \gls{jd} convoca obligatoriamente a una \gls{agee} con punto de agenda único: ``Debate y decisión sobre la disolución del \gls{cefis}''.}
     \artitem{La convocatoria debe realizarse con una anticipación mínima de veinte (20) días calendario, adjuntando la propuesta de disolución y su fundamentación. La difusión es máxima a través de todos los canales oficiales.}
-    \artitem{Para la instalación válida de esta AGE-E se requiere un quórum especial de asistencia de, al menos, el treinta por ciento (30\%) de los agremiados/as habilitados/as en primera convocatoria. En segunda convocatoria, a realizarse una hora después, se instala con la asistencia de, al menos, el veinte por ciento (20\%) de los agremiados/as habilitados/as. Si no se alcanza el quórum en segunda convocatoria, no se puede tratar la disolución y la propuesta queda sin efecto.}
-    \artitem[item:disolucion-procedimiento:voto-2tercios]{La decisión de disolver el CEFIS requiere el voto favorable de una mayoría de dos tercios (2/3) de agremiados/as habilitados/as presentes y votantes en la AGE-E válidamente instalada (\aref{subitem:age-acuerdos-mayorias:disolucion-cefis-2tercios}, \aref{item:agee-atribuciones:disolver-cefis}). La votación será nominal y registrada en acta.}
+    \artitem{Para la instalación válida de esta \gls{agee} se requiere un quórum especial de asistencia de, al menos, el treinta por ciento (30\%) de los \glspl{agremiado_habilitado} en primera convocatoria. En segunda convocatoria, a realizarse una hora después, se instala con la asistencia de, al menos, el veinte por ciento (20\%) de los \glspl{agremiado_habilitado}. Si no se alcanza el quórum en segunda convocatoria, no se puede tratar la disolución y la propuesta queda sin efecto.}
+    \artitem[item:disolucion-procedimiento:voto-2tercios]{La decisión de disolver el \gls{cefis} requiere el voto favorable de una mayoría de dos tercios (2/3) de \glspl{agremiado_habilitado} presentes y votantes en la \gls{agee} válidamente instalada (\aref{subitem:age-acuerdos-mayorias:disolucion-cefis-2tercios}, \aref{item:agee-atribuciones:disolver-cefis}). La votación será nominal y registrada en acta.}
 \end{artitems}
 
 \Articulo{Comisión Liquidadora}
 \begin{artitems}
-    \artitem{Aprobada la disolución, la misma AGE-E designa una Comisión Liquidadora compuesta por tres (3) personas agremiadas titulares y una (1) suplente, quienes no pueden ser miembros de la última JD.}
-    \artitem{La Comisión Liquidadora asume la representación del CEFIS exclusivamente para los fines de la liquidación y es responsable de:}
+    \artitem{Aprobada la disolución, la misma \gls{agee} designa una \gls{comision_liquidadora} compuesta por tres (3) personas \glspl{agremiado} titulares y una (1) suplente, quienes no pueden ser miembros de la última \gls{jd}.}
+    \artitem{La \gls{comision_liquidadora} asume la representación del \gls{cefis} exclusivamente para los fines de la liquidación y es responsable de:}
     \begin{enumerate}
-        \subartitem{Realizar el inventario final de todos los bienes y activos del CEFIS.}
+        \subartitem{Realizar el inventario final de todos los bienes y activos del \gls{cefis}.}
         \subartitem{Realizar el balance final y determinar el activo y pasivo existente.}
-        \subartitem{Cobrar los créditos pendientes a favor del CEFIS.}
-        \subartitem{Pagar todas las deudas y obligaciones pendientes del CEFIS.}
+        \subartitem{Cobrar los créditos pendientes a favor del \gls{cefis}.}
+        \subartitem{Pagar todas las deudas y obligaciones pendientes del \gls{cefis}.}
         \subartitem{Distribuir el patrimonio remanente conforme a lo establecido en el \aref{art:destino-patrimonio-remanente}.}
     \end{enumerate}
-    \artitem{La Comisión Liquidadora actúa bajo supervisión de la propia AGE-E, a la cual presenta un informe final documentado de todo el proceso de liquidación para su aprobación. El mandato de la comisión cesa con la aprobación de dicho informe.}
-    \artitem{Las personas miembros de la Comisión Liquidadora son responsables personal y solidariamente por los actos realizados en el ejercicio de sus funciones que excedan su mandato o contravengan el Estatuto o los acuerdos de la AGE.}
+    \artitem{La \gls{comision_liquidadora} actúa bajo supervisión de la propia \gls{agee}, a la cual presenta un informe final documentado de todo el proceso de liquidación para su aprobación. El mandato de la comisión cesa con la aprobación de dicho informe.}
+    \artitem{Las personas miembros de la \gls{comision_liquidadora} son responsables personal y solidariamente por los actos realizados en el ejercicio de sus funciones que excedan su mandato o contravengan el \gls{estatuto} o los acuerdos de la \gls{age}.}
 \end{artitems}
 
 \Articulo[art:destino-patrimonio-remanente]{Destino del patrimonio remanente}
 \begin{artitems}
-    \artitem{Una vez pagadas todas las deudas y obligaciones del CEFIS, el patrimonio remanente (bienes muebles, saldos financieros, etc.) no puede ser distribuido, bajo ninguna circunstancia, entre los/as agremiados/as.}
-    \artitem{El patrimonio remanente es destinado íntegramente, por decisión de la misma AGE-E que aprueba la disolución y a propuesta documentada de la Comisión Liquidadora, a una o más de las siguientes opciones, priorizando siempre fines educativos, culturales o de bienestar estudiantil dentro de la Universidad Nacional Mayor de San Marcos:}
+    \artitem{Una vez pagadas todas las deudas y obligaciones del \gls{cefis}, el patrimonio remanente (bienes muebles, saldos financieros, etc.) no puede ser distribuido, bajo ninguna circunstancia, entre los/as \glspl{agremiado}.}
+    \artitem{El patrimonio remanente es destinado íntegramente, por decisión de la misma \gls{agee} que aprueba la disolución y a propuesta documentada de la \gls{comision_liquidadora}, a una o más de las siguientes opciones, priorizando siempre fines educativos, culturales o de bienestar estudiantil dentro de la \gls{unmsm}:}
     \begin{enumerate}
         \subartitem{La Biblioteca de la Facultad de Ciencias Físicas.}
-        \subartitem{Laboratorios o proyectos de investigación de la E.P. de Física.}
+        \subartitem{Laboratorios o proyectos de investigación de la \gls{epf}.}
         \subartitem{Programas de bienestar estudiantil administrados por la Facultad o la Universidad.}
-        \subartitem{Otro gremio estudiantil formalmente reconocido dentro de la Facultad o la Universidad con fines similares a los del CEFIS.}
+        \subartitem{Otro gremio estudiantil formalmente reconocido dentro de la Facultad o la Universidad con fines similares a los del \gls{cefis}.}
     \end{enumerate}
-    \artitem{La decisión sobre el destino específico del patrimonio remanente consta en el acta final de la AGE-E que apruebe el informe de la Comisión Liquidadora.}
+    \artitem{La decisión sobre el destino específico del patrimonio remanente consta en el acta final de la \gls{agee} que apruebe el informe de la \gls{comision_liquidadora}.}
 \end{artitems}
 
 \Articulo{Registro de la disolución y liquidación}
 \begin{artitems}
-    \artitem{El acuerdo de disolución, la designación de la Comisión Liquidadora, el destino del patrimonio remanente y la aprobación del informe final de liquidación constan en las actas respectivas de la AGE-E.}
-    \artitem{Estos documentos, junto con el inventario y balance finales, serán: (a) archivados permanentemente en el Registro Central o entregados a la Facultad de Ciencias Físicas para su custodia; y (b) compilados en formato digital para su descarga íntegra por los/as agremiados/as interesados/as durante un período mínimo de un (1) año posterior a la disolución.}%
-    \artitem{La JD saliente o la Comisión Liquidadora comunica formalmente la disolución del CEFIS a las autoridades de la E.P. de Física y de la Facultad de Ciencias Físicas.}
+    \artitem{El acuerdo de disolución, la designación de la \gls{comision_liquidadora}, el destino del patrimonio remanente y la aprobación del informe final de liquidación constan en las actas respectivas de la \gls{agee}.}
+    \artitem{Estos documentos, junto con el inventario y balance finales, serán: (a) archivados permanentemente en el \gls{registro_central} o entregados a la Facultad de Ciencias Físicas para su custodia; y (b) compilados en formato digital para su descarga íntegra por los/as \glspl{agremiado} interesados/as durante un período mínimo de un (1) año posterior a la disolución.}%
+    \artitem{La \gls{jd} saliente o la \gls{comision_liquidadora} comunica formalmente la disolución del \gls{cefis} a las autoridades de la \gls{epf} y de la Facultad de Ciencias Físicas.}
 \end{artitems}
 
 \Titulo{Disposiciones finales y transitorias}
 
 \Articulo{Entrada en vigencia}
-El presente Estatuto entra en vigencia al día siguiente de su publicación oficial por parte de la JD a través de los canales oficiales de comunicación del CEFIS, previa aprobación por AGE conforme a la normativa anterior vigente o, si no existiera, por mayoría simple en Asamblea convocada para tal fin. La aprobación consta en acta.
+El presente \gls{estatuto} entra en vigencia al día siguiente de su publicación oficial por parte de la \gls{jd} a través de los canales oficiales de comunicación del \gls{cefis}, previa aprobación por \gls{age} conforme a la normativa anterior vigente o, si no existiera, por mayoría simple en Asamblea convocada para tal fin. La aprobación consta en acta.
 
 \Articulo{Normas supletorias}
-En todo lo no previsto expresamente en el presente Estatuto, regirán supletoriamente las disposiciones del Estatuto de la Universidad Nacional Mayor de San Marcos, la Ley Universitaria N 30220 y sus modificatorias, la Constitución Política del Perú, y las normas pertinentes del Código Civil en materia de asociaciones, siempre que no contravengan los principios y fines del CEFIS.\@{}
+En todo lo no previsto expresamente en el presente \gls{estatuto}, regirán supletoriamente las disposiciones del Estatuto de la \gls{unmsm}, la Ley Universitaria N 30220 y sus modificatorias, la Constitución Política del Perú, y las normas pertinentes del Código Civil en materia de asociaciones, siempre que no contravengan los principios y fines del \gls{cefis}.
 
 \Articulo{Interpretación del Estatuto}
 \begin{artitems}
-    \artitem[item:estatuto-interpretacion:final-age]{La interpretación auténtica y definitiva de las disposiciones del presente Estatuto corresponde exclusivamente a la AGE, adoptada por mayoría simple en sesión ordinaria o extraordinaria.}
-    \artitem{La JD o la JR podrán emitir opiniones interpretativas documentadas sobre la aplicación del Estatuto para guiar la gestión ordinaria, las cuales podrán ser sometidas a ratificación o modificación por la AGE si se genera controversia o a solicitud de un órgano o un número significativo de agremiados/as. Dichas opiniones son archivadas en el Registro Central.}
+    \artitem[item:estatuto-interpretacion:final-age]{La interpretación auténtica y definitiva de las disposiciones del presente \gls{estatuto} corresponde exclusivamente a la \gls{age}, adoptada por mayoría simple en sesión ordinaria o extraordinaria.}
+    \artitem{La \gls{jd} o la \gls{jr} podrán emitir opiniones interpretativas documentadas sobre la aplicación del \gls{estatuto} para guiar la gestión ordinaria, las cuales podrán ser sometidas a ratificación o modificación por la \gls{age} si se genera controversia o a solicitud de un órgano o un número significativo de \glspl{agremiado}. Dichas opiniones son archivadas en el \gls{registro_central}.}
 \end{artitems}
 
 \Articulo{Disposición transitoria}
 \begin{artitems}
-    \artitem{Todos los reglamentos internos del CEFIS existentes a la fecha de entrada en vigencia de este Estatuto (incluyendo, pero no limitándose al Reglamento Electoral y Reglamento de Asambleas) deben ser revisados y adecuados a este Estatuto.}
-    \artitem{La JD, la JR y el CE (según corresponda a cada reglamento) son responsables de presentar las propuestas de adecuación a la AGE para su aprobación en un plazo máximo de noventa (90) días calendario contados desde la entrada en vigencia del presente Estatuto.}
-    \artitem{Hasta que no se aprueben los reglamentos adecuados, seguirán aplicándose los anteriores en lo que no contradigan expresamente a este Estatuto, bajo la interpretación del órgano competente (JD, JR, CE) supervisada por la AGE si fuera necesario.}
+    \artitem{Todos los reglamentos internos del \gls{cefis} existentes a la fecha de entrada en vigencia de este \gls{estatuto} (incluyendo, pero no limitándose al \gls{reglamento_electoral} y \gls{reglamento_asambleas}) deben ser revisados y adecuados a este \gls{estatuto}.}
+    \artitem{La \gls{jd}, la \gls{jr} y el \gls{ce} (según corresponda a cada reglamento) son responsables de presentar las propuestas de adecuación a la \gls{age} para su aprobación en un plazo máximo de noventa (90) días calendario contados desde la entrada en vigencia del presente \gls{estatuto}.}
+    \artitem{Hasta que no se aprueben los reglamentos adecuados, seguirán aplicándose los anteriores en lo que no contradigan expresamente a este \gls{estatuto}, bajo la interpretación del órgano competente (\gls{jd}, \gls{jr}, \gls{ce}) supervisada por la \gls{age} si fuera necesario.}
 \end{artitems}
 
 \Articulo{Primera elección bajo este Estatuto}
-La primera elección de la JD y del CE bajo la vigencia del presente Estatuto se realizará conforme a las disposiciones del Título V y es convocada y organizada por un Comité Electoral Ad-Hoc designado por la misma Asamblea General que apruebe este Estatuto. El proceso electoral completo deberá concluir en un plazo no mayor a sesenta (60) días calendario desde la entrada en vigencia del Estatuto.
+La primera elección de la \gls{jd} y del \gls{ce} bajo la vigencia del presente \gls{estatuto} se realizará conforme a las disposiciones del Título V y es convocada y organizada por un \gls{ce} Ad-Hoc designado por la misma Asamblea General que apruebe este \gls{estatuto}. El proceso electoral completo deberá concluir en un plazo no mayor a sesenta (60) días calendario desde la entrada en vigencia del \gls{estatuto}.
 
 \Articulo{Derogación}
-A partir de la entrada en vigencia del presente Estatuto, quedan derogados todos los estatutos, reglamentos y disposiciones anteriores del Centro de Estudiantes de Física (CEFIS) que se le opongan total o parcialmente.
+A partir de la entrada en vigencia del presente \gls{estatuto}, quedan derogados todos los estatutos, reglamentos y disposiciones anteriores del \gls{cefis} que se le opongan total o parcialmente.
+
+\clearpage
+\printglossary[type=main, title={Glosario de términos}]
 
 \end{document}
